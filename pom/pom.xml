@@ -3,7 +3,7 @@
 	<groupId>org.jresearch</groupId>
 	<artifactId>pom</artifactId>
 	<name>Jresearch general POM</name>
-	<version>1.0.0-rel-500</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<description>Jresearch root pom</description>
 	<packaging>pom</packaging>
 	<properties>
@@ -540,11 +540,6 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-	<scm>
-		<developerConnection>scm:svn:svn://svn.jresearch.org/opensource/new_root/org.jresearch.pom</developerConnection>
-		<connection>scm:svn:svn://svn.jresearch.org/opensource/new_root/org.jresearch.pom</connection>
-		<url>http://svn.jresearch.org:16180/browse/Opensource/org.jresearch.pom</url>
-	</scm>
 	<ciManagement>
 		<system>hudson</system>
 		<url>https://www.jresearchsoft.com/hudson</url>
@@ -559,6 +554,7 @@
 	</ciManagement>
 	<build>
 		<defaultGoal>clean deploy</defaultGoal>
+		<finalName>${groupId}.${artifactId}-${version}</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -577,7 +573,7 @@
 			<timezone>GMT+1</timezone>
 		</developer>
 		<developer>
-			<email>cathy@jresearch.org</email>
+			<email>ekaterina.gorshkova@jresearchsoft.com</email>
 			<id>cathy</id>
 			<name>Ekaterina Gorshkova</name>
 			<timezone>GMT+1</timezone>
@@ -597,7 +593,7 @@
 		<repository>
 			<id>jopen</id>
 			<name>Jresearch Software Repository (Open Source)</name>
-			<url>http://www.jresearchsoft.com/open</url>
+			<url>http://www.jresearchsoft.com/nexus/content/repositories/releases</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
@@ -608,7 +604,7 @@
 		<repository>
 			<id>jopen-sn</id>
 			<name>Jresearch Software Snapshot Repository (Open Source)</name>
-			<url>http://www.jresearchsoft.com/open-snapshot</url>
+			<url>http://www.jresearchsoft.com/nexus/content/repositories/snapshots</url>
 			<releases>
 				<enabled>false</enabled>
 			</releases>
@@ -621,7 +617,7 @@
 		<pluginRepository>
 			<id>jopen</id>
 			<name>Jresearch Software Repository (Open Source)</name>
-			<url>http://www.jresearchsoft.com/open</url>
+			<url>http://www.jresearchsoft.com/nexus/content/repositories/releases</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
@@ -632,27 +628,7 @@
 		<pluginRepository>
 			<id>jopen-sn</id>
 			<name>Jresearch Software Snapshot Repository (Open Source)</name>
-			<url>http://www.jresearchsoft.com/open-snapshot</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</pluginRepository>
-		<pluginRepository>
-			<id>apache snapshot repository</id>
-			<url>http://people.apache.org/repo/m2-snapshot-repository</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</pluginRepository>
-		<pluginRepository>
-			<id>codehaus snapshot repository</id>
-			<url>http://snapshots.repository.codehaus.org</url>
+			<url>http://www.jresearchsoft.com/nexus/content/repositories/snapshots</url>
 			<releases>
 				<enabled>false</enabled>
 			</releases>
