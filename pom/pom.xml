@@ -638,16 +638,16 @@
 		</pluginRepository>
 	</pluginRepositories>
 	<distributionManagement>
-		<repository>
-			<id>jopen</id>
-			<name>Jresearch open repository</name>
-			<url>http://www.jresearchsoft.com/nexus/content/repositories/releases</url>
-		</repository>
-		<snapshotRepository>
-			<id>jopen-sn</id>
-			<name>Jresearch open snapshot repository</name>
-			<url>http://www.jresearchsoft.com/nexus/content/repositories/snapshots</url>
-		</snapshotRepository>
+        	<repository>
+            		<id>jopen</id>
+            		<name>Jresearch open repository</name>
+            		<url>scp://server.jresearch.org/var/zfs/data/maven/open</url>
+        	</repository>
+        	<snapshotRepository>
+            		<id>jopen-sn</id>
+            		<name>Jresearch open snapshot repository</name>
+            		<url>scp://server.jresearch.org/var/zfs/data/maven/open-sn</url>
+        	</snapshotRepository>
 	</distributionManagement>
 	<profiles>
 		<profile>
