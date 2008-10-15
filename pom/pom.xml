@@ -1,9 +1,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.jresearch</groupId>
-	<artifactId>pom</artifactId>
+	<artifactId>org.jresearch.pom</artifactId>
 	<name>Jresearch general POM</name>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<description>Jresearch root pom</description>
 	<packaging>pom</packaging>
 	<properties>
@@ -554,7 +554,6 @@
 	</ciManagement>
 	<build>
 		<defaultGoal>clean deploy</defaultGoal>
-		<finalName>${groupId}.${artifactId}-${version}</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
