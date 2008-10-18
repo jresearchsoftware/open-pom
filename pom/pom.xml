@@ -562,6 +562,10 @@
 					<target>1.5</target>
 				</configuration>
 			</plugin>
+			<plugin>
+        			<artifactId>maven-deploy-plugin</artifactId>
+			        <version>2.4</version>
+			</plugin>
 		</plugins>
 	</build>
 	<developers>
@@ -637,7 +641,7 @@
 		</pluginRepository>
 	</pluginRepositories>
 	<distributionManagement>
-        	<repository>
+        	<!-- <repository>
             		<id>jopen</id>
             		<name>Jresearch open repository</name>
             		<url>scp://server.jresearch.org/var/zfs/data/maven/open</url>
@@ -646,6 +650,16 @@
             		<id>jopen-sn</id>
             		<name>Jresearch open snapshot repository</name>
             		<url>scp://server.jresearch.org/var/zfs/data/maven/open-sn</url>
+        	</snapshotRepository> -->
+        	<repository>
+            		<id>jopen</id>
+            		<name>Jresearch open repository</name>
+            		<url>http://www.jresearchsoft.com/nexus/content/repositories/releases</url>
+        	</repository>
+        	<snapshotRepository>
+            		<id>jopen-sn</id>
+            		<name>Jresearch open snapshot repository</name>
+            		<url>http://www.jresearchsoft.com/nexus/content/repositories/snapshots</url>
         	</snapshotRepository>
 	</distributionManagement>
 	<profiles>
