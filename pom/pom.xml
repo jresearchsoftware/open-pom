@@ -596,7 +596,7 @@
 		<repository>
 			<id>jopen</id>
 			<name>Jresearch Software Repository (Open Source)</name>
-			<url>http://www.jresearchsoft.com/nexus/content/repositories/releases</url>
+			<url>http://www.jresearchsoft.com:9091/nexus/content/repositories/releases</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
@@ -607,7 +607,7 @@
 		<repository>
 			<id>jopen-sn</id>
 			<name>Jresearch Software Snapshot Repository (Open Source)</name>
-			<url>http://www.jresearchsoft.com/nexus/content/repositories/snapshots</url>
+			<url>http://www.jresearchsoft.com:9091/nexus/content/repositories/snapshots</url>
 			<releases>
 				<enabled>false</enabled>
 			</releases>
@@ -620,7 +620,7 @@
 		<pluginRepository>
 			<id>jopen</id>
 			<name>Jresearch Software Repository (Open Source)</name>
-			<url>http://www.jresearchsoft.com/nexus/content/repositories/releases</url>
+			<url>http://www.jresearchsoft.com:9091/nexus/content/repositories/releases</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
@@ -631,7 +631,7 @@
 		<pluginRepository>
 			<id>jopen-sn</id>
 			<name>Jresearch Software Snapshot Repository (Open Source)</name>
-			<url>http://www.jresearchsoft.com/nexus/content/repositories/snapshots</url>
+			<url>http://www.jresearchsoft.com:9091/nexus/content/repositories/snapshots</url>
 			<releases>
 				<enabled>false</enabled>
 			</releases>
@@ -641,25 +641,15 @@
 		</pluginRepository>
 	</pluginRepositories>
 	<distributionManagement>
-        	<!-- <repository>
-            		<id>jopen</id>
-            		<name>Jresearch open repository</name>
-            		<url>scp://server.jresearch.org/var/zfs/data/maven/open</url>
-        	</repository>
-        	<snapshotRepository>
-            		<id>jopen-sn</id>
-            		<name>Jresearch open snapshot repository</name>
-            		<url>scp://server.jresearch.org/var/zfs/data/maven/open-sn</url>
-        	</snapshotRepository> -->
         	<repository>
             		<id>jopen</id>
             		<name>Jresearch open repository</name>
-            		<url>http://www.jresearchsoft.com/nexus/content/repositories/releases</url>
+            		<url>http://www.jresearchsoft.com:9091/nexus/content/repositories/releases</url>
         	</repository>
         	<snapshotRepository>
             		<id>jopen-sn</id>
             		<name>Jresearch open snapshot repository</name>
-            		<url>http://www.jresearchsoft.com/nexus/content/repositories/snapshots</url>
+            		<url>http://www.jresearchsoft.com:9091/nexus/content/repositories/snapshots</url>
         	</snapshotRepository>
 	</distributionManagement>
 	<profiles>
