@@ -3,7 +3,7 @@
 	<groupId>org.jresearch</groupId>
 	<artifactId>org.jresearch.pom</artifactId>
 	<name>Jresearch general POM</name>
-	<version>1.0.1</version>
+	<version>1.0.2-SNAPSHOT</version>
 	<description>Jresearch root pom</description>
 	<packaging>pom</packaging>
 	<properties>
@@ -11,7 +11,7 @@
 		<spring.ver>2.5.5</spring.ver>
 		<junit.ver>4.1</junit.ver>
 		<xfire.ver>1.2.4</xfire.ver>
-		<maven.ver>[2.0,)</maven.ver>
+		<maven.ver>2.0.9</maven.ver>
 		<jetty.ver>6.1.1</jetty.ver>
 		<tomcat.ver>5.5.15</tomcat.ver>
 		<slf4j.ver>1.0-rc5</slf4j.ver>
