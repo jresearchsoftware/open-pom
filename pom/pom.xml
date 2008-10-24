@@ -153,16 +153,6 @@
 			</dependency>
 			<dependency>
 				<groupId>org.springframework</groupId>
-				<artifactId>spring-hibernate3</artifactId>
-				<version>${spring.ver}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-remoting</artifactId>
-				<version>${spring.ver}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
 				<artifactId>spring-orm</artifactId>
 				<version>${spring.ver}</version>
 			</dependency>
@@ -185,12 +175,6 @@
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-webmvc</artifactId>
 				<version>${spring.ver}</version>
-				<exclusions>
-					<exclusion>
-						<artifactId>struts</artifactId>
-						<groupId>struts</groupId>
-					</exclusion>
-				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework</groupId>
@@ -209,19 +193,13 @@
 			</dependency>
 			<dependency>
 				<groupId>org.springframework</groupId>
-				<artifactId>spring-support</artifactId>
+				<artifactId>spring-context-support</artifactId>
 				<version>${spring.ver}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework</groupId>
-				<artifactId>spring-struts</artifactId>
+				<artifactId>spring-webmvc-struts</artifactId>
 				<version>${spring.ver}</version>
-				<exclusions>
-					<exclusion>
-						<artifactId>struts</artifactId>
-						<groupId>struts</groupId>
-					</exclusion>
-				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.springmodules</groupId>
