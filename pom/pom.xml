@@ -3,10 +3,12 @@
 	<groupId>org.jresearch</groupId>
 	<artifactId>org.jresearch.pom</artifactId>
 	<name>Jresearch general POM</name>
-	<version>1.0.2</version>
+	<version>1.0.3</version>
 	<description>Jresearch root pom</description>
 	<packaging>pom</packaging>
 	<properties>
+		<!-- See http://docs.codehaus.org/display/MAVENUSER/POM+Element+for+Source+File+Encoding --> 
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<struts.ver>1.3.8</struts.ver>
 		<spring.ver>2.5.5</spring.ver>
 		<junit.ver>4.1</junit.ver>
