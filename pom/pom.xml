@@ -18,6 +18,7 @@
 		<tomcat.ver>5.5.15</tomcat.ver>
 		<slf4j.ver>1.0-rc5</slf4j.ver>
 		<xerces.ver>2.8.1</xerces.ver>
+		<asm.ver>3.1</asm.ver>
 		<scm.protocol>svn</scm.protocol>
 		<scm.server>svn.jresearch.org</scm.server>
 		<scm.uri>scm:svn:${scm.protocol}://${scm.server}</scm.uri>
@@ -26,7 +27,27 @@
 	</properties>
 	<dependencyManagement>
 		<dependencies>
-			<!-- XML -->
+			<dependency>
+				<groupId>asm</groupId>
+				<artifactId>asm</artifactId>
+				<version>${asm.ver}</version>
+			</dependency>
+			<dependency>
+				<groupId>asm</groupId>
+				<artifactId>asm-util</artifactId>
+				<version>${asm.ver}</version>
+			</dependency>
+			<dependency>
+				<groupId>asm</groupId>
+				<artifactId>asm-commons</artifactId>
+				<version>${asm.ver}</version>
+			</dependency>
+			<dependency>
+				<groupId>asm</groupId>
+				<artifactId>asm-analysis</artifactId>
+				<version>${asm.ver}</version>
+			</dependency>
+       			<!-- XML -->
 			<dependency>
 				<groupId>xerces</groupId>
 				<artifactId>xmlParserAPIs</artifactId>
