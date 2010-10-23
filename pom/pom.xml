@@ -7,7 +7,7 @@
 	<description>Jresearch root pom</description>
 	<packaging>pom</packaging>
 	<properties>
-		<!-- See http://docs.codehaus.org/display/MAVENUSER/POM+Element+for+Source+File+Encoding --> 
+		<!-- See http://docs.codehaus.org/display/MAVENUSER/POM+Element+for+Source+File+Encoding -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<struts.ver>1.3.8</struts.ver>
 		<spring.ver>3.0.1.RELEASE</spring.ver>
@@ -47,7 +47,7 @@
 				<artifactId>asm-analysis</artifactId>
 				<version>${asm.ver}</version>
 			</dependency>
-       			<!-- XML -->
+			<!-- XML -->
 			<dependency>
 				<groupId>xerces</groupId>
 				<artifactId>xmlParserAPIs</artifactId>
@@ -310,11 +310,11 @@
 				<artifactId>ajaxanywhere</artifactId>
 				<version>1.2.1</version>
 			</dependency>
-        		<dependency>
-            			<groupId>org.jresearch.lib-patches</groupId>
-            			<artifactId>ajaxanywhere-patch</artifactId>
-            			<version>1.2.1</version>
-        		</dependency>
+			<dependency>
+				<groupId>org.jresearch.lib-patches</groupId>
+				<artifactId>ajaxanywhere-patch</artifactId>
+				<version>1.2.1</version>
+			</dependency>
 			<!-- Hibernate -->
 			<dependency>
 				<artifactId>hibernate</artifactId>
@@ -422,7 +422,7 @@
 				<artifactId>maven-model</artifactId>
 				<version>${maven.ver}</version>
 			</dependency>
-			<!--Others-->
+			<!--Others -->
 			<dependency>
 				<groupId>berkeleydb</groupId>
 				<artifactId>je</artifactId>
@@ -544,6 +544,29 @@
 				<version>1.4</version>
 				<scope>provided</scope>
 			</dependency>
+			<!-- GWT related -->
+			<dependency>
+				<groupId>com.extjs</groupId>
+				<artifactId>gxt</artifactId>
+				<version>2.2.0</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.gwt</groupId>
+				<artifactId>gwt-servlet</artifactId>
+				<version>2.0.4</version>
+				<scope>compile</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.google.gwt</groupId>
+				<artifactId>gwt-user</artifactId>
+				<version>2.0.4</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.allen_sauer.gwt</groupId>
+				<artifactId>gwt-log</artifactId>
+				<version>3.0.0</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	<ciManagement>
@@ -569,8 +592,8 @@
 				</configuration>
 			</plugin>
 			<plugin>
-        			<artifactId>maven-deploy-plugin</artifactId>
-			        <version>2.4</version>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<version>2.4</version>
 			</plugin>
 		</plugins>
 	</build>
@@ -647,16 +670,16 @@
 		</pluginRepository>
 	</pluginRepositories>
 	<distributionManagement>
-        	<repository>
-            		<id>jopen</id>
-            		<name>Jresearch open repository</name>
-            		<url>http://maven.jresearch.org:9091/nexus/content/repositories/releases</url>
-        	</repository>
-        	<snapshotRepository>
-            		<id>jopen-sn</id>
-            		<name>Jresearch open snapshot repository</name>
-            		<url>http://maven.jresearch.org:9091/nexus/content/repositories/snapshots</url>
-        	</snapshotRepository>
+		<repository>
+			<id>jopen</id>
+			<name>Jresearch open repository</name>
+			<url>http://maven.jresearch.org:9091/nexus/content/repositories/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>jopen-sn</id>
+			<name>Jresearch open snapshot repository</name>
+			<url>http://maven.jresearch.org:9091/nexus/content/repositories/snapshots</url>
+		</snapshotRepository>
 	</distributionManagement>
 	<profiles>
 		<profile>
