@@ -3,7 +3,7 @@
 	<groupId>org.jresearch</groupId>
 	<artifactId>org.jresearch.pom</artifactId>
 	<name>Jresearch general POM</name>
-	<version>1.0.4-SNAPSHOT</version>
+	<version>1.0.4</version>
 	<description>Jresearch root pom</description>
 	<packaging>pom</packaging>
 	<properties>
