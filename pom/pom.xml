@@ -88,12 +88,7 @@
 				<groupId>net.sf.dozer</groupId>
 				<artifactId>dozer</artifactId>
 				<version>5.3.2</version>
-				<!-- <exclusions>
-					<exclusion>
-						<artifactId>slf4j-api</artifactId>
-						<groupId>org.slf4j</groupId>
-					</exclusion>
-				</exclusions> -->
+				<!-- <exclusions> <exclusion> <artifactId>slf4j-api</artifactId> <groupId>org.slf4j</groupId> </exclusion> </exclusions> -->
 			</dependency>
 			<!-- slf4j -->
 			<dependency>
@@ -285,6 +280,12 @@
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-ldap</artifactId>
 				<version>1.1.2</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-test</artifactId>
+				<version>${spring.ver}</version>
+				<scope>test</scope>
 			</dependency>
 			<!-- JUnit -->
 			<dependency>
