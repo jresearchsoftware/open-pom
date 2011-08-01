@@ -28,19 +28,9 @@
 			<artifactId>org.jresearch.commons.logger</artifactId>
 			<version>1.2.0</version>
 		</dependency>
-		<!-- Allows to use the local module beans -->
-		<dependency>
-			<groupId>org.jresearch.commons.spring-local</groupId>
-			<artifactId>org.jresearch.commons.spring-local.context</artifactId>
-		</dependency>
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
-			<dependency>
-				<groupId>org.jresearch.commons.spring-local</groupId>
-				<artifactId>org.jresearch.commons.spring-local.context</artifactId>
-				<version>1.0.0-SNAPSHOT</version>
-			</dependency>
 			<dependency>
 				<groupId>asm</groupId>
 				<artifactId>asm</artifactId>
