@@ -664,6 +664,18 @@
 										<versionRange>[1.2,)</versionRange>
 										<goals>
 											<goal>resources</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<execute/>
+									</action>
+								</pluginExecution>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>org.codehaus.mojo</groupId>
+										<artifactId>gwt-maven-plugin</artifactId>
+										<versionRange>[1.2,)</versionRange>
+										<goals>
 											<goal>compile</goal>
 										</goals>
 									</pluginExecutionFilter>
