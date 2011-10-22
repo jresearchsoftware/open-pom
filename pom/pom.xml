@@ -506,7 +506,7 @@
 			<dependency>
 				<groupId>postgresql</groupId>
 				<artifactId>postgresql</artifactId>
-				<version>8.1-404.jdbc3</version>
+				<version>9.0-801.jdbc4</version>
 			</dependency>
 			<!-- XFire -->
 			<dependency>
