@@ -596,7 +596,7 @@
 			<dependency>
 				<groupId>javax.mail</groupId>
 				<artifactId>mail</artifactId>
-				<version>1.4</version>
+				<version>1.4.2</version>
 				<scope>provided</scope>
 			</dependency>
 			<!-- GWT related -->
@@ -624,6 +624,11 @@
 				<version>3.1.3</version>
 			</dependency>
 			<!-- <dependency> <groupId>com.extjs</groupId> <artifactId>gxt</artifactId> <version>2.2.4</version> <classifier>gwt22</classifier> </dependency> <dependency> <groupId>com.google.gwt</groupId> <artifactId>gwt-servlet</artifactId> <version>2.3.0</version> <scope>compile</scope> </dependency> <dependency> <groupId>com.google.gwt</groupId> <artifactId>gwt-user</artifactId> <version>2.3.0</version> <scope>provided</scope> </dependency> <dependency> <groupId>com.allen_sauer.gwt</groupId> <artifactId>gwt-log</artifactId> <version>3.1.3</version> </dependency> -->
+			<dependency>
+				<groupId>javax.activation</groupId>
+				<artifactId>activation</artifactId>
+				<version>1.1.1</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	<ciManagement>
@@ -640,6 +645,26 @@
 	</ciManagement>
 	<build>
 		<defaultGoal>clean deploy</defaultGoal>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-eclipse-plugin</artifactId>
+				<version>2.8</version>  <!-- Note 2.8 does not work with AspectJ aspect path -->
+				<configuration>
+					<downloadSources>true</downloadSources>
+					<downloadJavadocs>false</downloadJavadocs>
+					<wtpversion>2.0</wtpversion>
+					<additionalBuildcommands>
+						<buildCommand>
+							<name>org.springframework.ide.eclipse.core.springbuilder</name>
+						</buildCommand>
+					</additionalBuildcommands>
+					<additionalProjectnatures>
+						<projectnature>org.springframework.ide.eclipse.core.springnature</projectnature>
+					</additionalProjectnatures>
+				</configuration>
+			</plugin>
+		</plugins>
 		<pluginManagement>
 			<plugins>
 				<plugin>
