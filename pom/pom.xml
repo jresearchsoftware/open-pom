@@ -4,7 +4,7 @@
 	<groupId>org.jresearch</groupId>
 	<artifactId>org.jresearch.pom</artifactId>
 	<name>Jresearch general POM</name>
-	<version>1.0.7-SNAPSHOT</version>
+	<version>7</version>
 	<description>Jresearch root pom</description>
 	<packaging>pom</packaging>
 	<properties>
@@ -83,15 +83,13 @@
 			<dependency>
 				<groupId>net.sf.dozer</groupId>
 				<artifactId>dozer</artifactId>
-				<version>5.3.3-JRS-SNAPSHOT</version>
+				<version>5.3.3-JRS</version>
 				<exclusions>
 					<exclusion>
 						<groupId>org.hibernate</groupId>
 						<artifactId>hibernate-core</artifactId>
 					</exclusion>
 				</exclusions>
-				<!-- <exclusions> <exclusion> <artifactId>slf4j-api</artifactId> <groupId>org.slf4j</groupId> 
-					</exclusion> </exclusions> -->
 			</dependency>
 			<!-- slf4j -->
 			<dependency>
