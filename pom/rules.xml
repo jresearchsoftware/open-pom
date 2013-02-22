@@ -5,5 +5,6 @@
     		<ignoreVersion type="regex">.*-does-not-exist</ignoreVersion>
     		<ignoreVersion type="regex">.*-alpha.*</ignoreVersion>
     		<ignoreVersion type="regex">.*-Draft.*</ignoreVersion>
+    		<ignoreVersion type="regex">.*-rc.*</ignoreVersion>
 	</ignoreVersions>
 </ruleset>
