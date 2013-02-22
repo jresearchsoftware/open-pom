@@ -4,7 +4,10 @@
 	<ignoreVersions>
     		<ignoreVersion type="regex">.*-does-not-exist</ignoreVersion>
     		<ignoreVersion type="regex">.*-alpha.*</ignoreVersion>
-    		<ignoreVersion type="regex">.*-Draft.*</ignoreVersion>
+    		<ignoreVersion type="regex">.*[Dd]raft.*</ignoreVersion>
     		<ignoreVersion type="regex">.*-rc.*</ignoreVersion>
+    		<ignoreVersion type="regex">20041228.180559</ignoreVersion>
+    		<ignoreVersion type="regex">.*jbossorg.*</ignoreVersion>
+    		<ignoreVersion type="regex">.*dev.*</ignoreVersion>
 	</ignoreVersions>
 </ruleset>
