@@ -672,6 +672,11 @@
 				<artifactId>hsqldb</artifactId>
 				<version>1.8.0.10</version>
 			</dependency>
+			<dependency>
+				<groupId>dumbster</groupId>
+				<artifactId>dumbster</artifactId>
+				<version>1.6</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	<repositories>
