@@ -586,6 +586,11 @@
 				<version>${spring.ver}</version>
 			</dependency>
 			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-expression</artifactId>
+				<version>${spring.ver}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.springmodules</groupId>
 				<artifactId>spring-modules-validation</artifactId>
 				<version>0.6</version>
