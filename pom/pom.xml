@@ -707,6 +707,11 @@
 				<artifactId>imgscalr-lib</artifactId>
 				<version>4.2</version>
 			</dependency>
+			<dependency>
+				<groupId>ma.glasnost.orika</groupId>
+				<artifactId>orika-eclipse-tools</artifactId>
+				<version>1.4.1</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	<repositories>
