@@ -7,6 +7,10 @@
 	<packaging>pom</packaging>
 	<name>Jresearch general POM</name>
 	<description>Jresearch root pom</description>
+	<scm>
+		<developerConnection>scm:hg:ssh://hg@bitbucket.org/JRS/open-pom.general</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
 	<organization>
 		<name>Jresearch Software s.r.o.</name>
 		<url>http://www.jresearchsoft.com</url>
