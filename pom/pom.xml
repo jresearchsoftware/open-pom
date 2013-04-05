@@ -3,13 +3,13 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.jresearch</groupId>
 	<artifactId>org.jresearch.pom</artifactId>
-	<version>11-SNAPSHOT</version>
+	<version>11</version>
 	<packaging>pom</packaging>
 	<name>Jresearch general POM</name>
 	<description>Jresearch root pom</description>
 	<scm>
 		<developerConnection>scm:hg:ssh://hg@bitbucket.org/JRS/open-pom.general</developerConnection>
-		<tag>HEAD</tag>
+		<tag>11</tag>
 	</scm>
 	<organization>
 		<name>Jresearch Software s.r.o.</name>
@@ -826,7 +826,7 @@
 				</plugin>
 				<plugin>
 					<artifactId>maven-release-plugin</artifactId>
-					<version>2.3.2</version>
+					<version>2.4.1</version>
 					<configuration>
 						<!-- All projects use the mercurial -->
 						<localCheckout>true</localCheckout>
