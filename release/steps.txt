@@ -1,0 +1,36 @@
+#update snap to rel
+
+mvn versions:update-parent versions:use-releases versions:update-properties
+
+#commit
+hg commit -m "SNAPSHOTS to releases"
+
+mvn release:prepare -Darguments="-DskipTests" release:clean
+#hg push
+hg update -r -2
+mvn deploy -DskipTests
+hg update
+
+
+#update rel to next snapshot
+
+mvn -U versions:update-parent versions:use-next-snapshots versions:update-properties -DallowSnapshots -Dincludes=org.jresearch:*
+
+hg commit -m "releases to SNAPSHOTS"
+hg push
+
+
+cd C:\Development\work\repo\JRS\open\pom.general\pom
+cd C:\Development\work\repo\JRS\open\base\pom
+cd C:\Development\work\repo\JRS\open\base\resources\pom
+cd C:\Development\work\repo\JRS\open\flexess.oss\pom
+cd C:\Development\work\repo\JRS\open\base\manager\pom
+cd C:\Development\work\repo\JRS\open\gwt\pom
+cd C:\Development\work\repo\JRS\open\gxt\pom
+cd C:\Development\work\repo\JRS\open\gxt\calendar
+cd C:\Development\work\repo\JRS\open\gxt\files
+cd C:\Development\work\repo\JRS\open\gxt\info
+cd C:\Development\work\repo\JRS\internal\pom.internal\pom
+cd C:\Development\work\repo\JRS\internal\catalog\pom.catalog\pom
+cd C:\Development\work\repo\JRS\internal\catalog\base\pom
+cd C:\Development\work\repo\JRS\internal\catalog\clothes\pom
