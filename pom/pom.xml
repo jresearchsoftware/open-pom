@@ -937,6 +937,11 @@
 		</profile>
 		<profile>
 			<id>hosted</id>
+			<activation>
+				<property>
+					<name>m2e.version</name>
+				</property>
+			</activation>
 			<build>
 				<plugins>
 					<plugin>
