@@ -82,6 +82,12 @@
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
+				<artifactId>org.jresearch.pom</artifactId>
+				<groupId>org.jresearch</groupId>
+				<version>12-SNAPSHOT</version>
+				<type>pom</type>
+			</dependency>
+			<dependency>
 				<groupId>com.googlecode.ehcache-spring-annotations</groupId>
 				<artifactId>ehcache-spring-annotations</artifactId>
 				<version>1.2.0</version>
