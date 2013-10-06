@@ -54,12 +54,12 @@
 		<repository>
 			<id>jopen</id>
 			<name>Jresearch open repository</name>
-			<url>http://maven.jresearch.org:9091/nexus/content/repositories/releases</url>
+			<url>http://corp.chnch.us:8081/content/repositories/releases/</url>
 		</repository>
 		<snapshotRepository>
 			<id>jopen-sn</id>
 			<name>Jresearch open snapshot repository</name>
-			<url>http://maven.jresearch.org:9091/nexus/content/repositories/snapshots</url>
+			<url>http://corp.chnch.us:8081/content/repositories/snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
 	<properties>
