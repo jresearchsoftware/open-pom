@@ -78,7 +78,7 @@
 		<asm.ver>3.3.1</asm.ver>
 		<hibernate.ver>4.1.9.Final</hibernate.ver>
 		<guava.ver>14.0.1</guava.ver>
-		<orika.ver>1.4.3</orika.ver>
+		<orika.ver>1.4.4</orika.ver>
 		<aspectj.ver>1.7.3</aspectj.ver>
 	</properties>
 	<dependencyManagement>
