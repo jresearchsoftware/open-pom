@@ -938,10 +938,18 @@
 					<artifactId>gwt-maven-plugin</artifactId>
 					<version>2.5.1</version>
 				</plugin>
-				<plugin>
-					<artifactId>maven-source-plugin</artifactId>
-					<version>2.2.1</version>
-				</plugin>
+                <!-- attach sources -->
+                <plugin>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>2.2.1</version>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>jar-no-fork</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
 				<plugin>
 					<artifactId>maven-clean-plugin</artifactId>
 					<version>2.5</version>
@@ -977,7 +985,16 @@
 				</plugin>
 			</plugins>
 		</pluginManagement>
-		<!-- <plugins> <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-eclipse-plugin</artifactId> <version>2.8</version> Note 2.8 does not work with AspectJ aspect path <configuration> <downloadSources>true</downloadSources> <downloadJavadocs>false</downloadJavadocs> <wtpversion>2.0</wtpversion> <additionalBuildcommands> <buildCommand> <name>org.springframework.ide.eclipse.core.springbuilder</name> </buildCommand> </additionalBuildcommands> <additionalProjectnatures> <projectnature>org.springframework.ide.eclipse.core.springnature</projectnature> </additionalProjectnatures> </configuration> </plugin> </plugins> -->
+        <plugins>
+            <!-- enforce environmental constraints -->
+            <plugin>
+                <artifactId>maven-enforcer-plugin</artifactId>
+            </plugin>
+            <!-- attach sources -->
+            <plugin>
+                <artifactId>maven-source-plugin</artifactId>
+            </plugin>
+        </plugins>
 	</build>
 	<profiles>
 		<profile>
