@@ -773,6 +773,12 @@
 				<groupId>org.apache.httpcomponents</groupId>
 				<artifactId>httpclient</artifactId>
 				<version>4.2.5</version>
+				<exclusions>
+					<exclusion>
+						<artifactId>commons-logging</artifactId>
+						<groupId>commons-logging</groupId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
@@ -844,34 +850,34 @@
 		</resources>
 		<pluginManagement>
 			<plugins>
-                <!-- environmental constraint checking configuraiton -->
-                <plugin>
-                    <artifactId>maven-enforcer-plugin</artifactId>
-                    <version>1.2</version>
-                    <executions>
-                        <!-- check that neither JCL nor log4j is used for logging - SLF4J and LOGBack should be used for logging (ignore in Eclipse!) -->
-                        <execution>
-                            <id>enforce-logging-dependecies</id>
-                            <goals>
-                                <goal>enforce</goal>
-                            </goals>
-                            <configuration>
-                                <rules>
-                                    <bannedDependencies>
-                                        <excludes>
-                                            <!-- exclude JCL -->
-                                            <exclude>commons-logging</exclude>
-                                            <!-- exclude log4j -->
-                                            <exclude>log4j</exclude>
-                                            <!-- exclude xml-apis -->
-                                            <!-- <exclude>xml-apis</exclude> -->
-                                        </excludes>
-                                    </bannedDependencies>
-                                </rules>
-                            </configuration>
-                        </execution>
-                    </executions>
-                </plugin>
+				<!-- environmental constraint checking configuraiton -->
+				<plugin>
+					<artifactId>maven-enforcer-plugin</artifactId>
+					<version>1.2</version>
+					<executions>
+						<!-- check that neither JCL nor log4j is used for logging - SLF4J and LOGBack should be used for logging (ignore in Eclipse!) -->
+						<execution>
+							<id>enforce-logging-dependecies</id>
+							<goals>
+								<goal>enforce</goal>
+							</goals>
+							<configuration>
+								<rules>
+									<bannedDependencies>
+										<excludes>
+											<!-- exclude JCL -->
+											<exclude>commons-logging</exclude>
+											<!-- exclude log4j -->
+											<exclude>log4j</exclude>
+											<!-- exclude xml-apis -->
+											<!-- <exclude>xml-apis</exclude> -->
+										</excludes>
+									</bannedDependencies>
+								</rules>
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
 				<plugin>
 					<groupId>com.google.code.sortpom</groupId>
 					<artifactId>maven-sortpom-plugin</artifactId>
@@ -938,18 +944,18 @@
 					<artifactId>gwt-maven-plugin</artifactId>
 					<version>2.5.1</version>
 				</plugin>
-                <!-- attach sources -->
-                <plugin>
-                    <artifactId>maven-source-plugin</artifactId>
-                    <version>2.2.1</version>
-                    <executions>
-                        <execution>
-                            <goals>
-                                <goal>jar-no-fork</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                </plugin>
+				<!-- attach sources -->
+				<plugin>
+					<artifactId>maven-source-plugin</artifactId>
+					<version>2.2.1</version>
+					<executions>
+						<execution>
+							<goals>
+								<goal>jar-no-fork</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
 				<plugin>
 					<artifactId>maven-clean-plugin</artifactId>
 					<version>2.5</version>
@@ -985,16 +991,16 @@
 				</plugin>
 			</plugins>
 		</pluginManagement>
-        <plugins>
-            <!-- enforce environmental constraints -->
-            <plugin>
-                <artifactId>maven-enforcer-plugin</artifactId>
-            </plugin>
-            <!-- attach sources -->
-            <plugin>
-                <artifactId>maven-source-plugin</artifactId>
-            </plugin>
-        </plugins>
+		<plugins>
+			<!-- enforce environmental constraints -->
+			<plugin>
+				<artifactId>maven-enforcer-plugin</artifactId>
+			</plugin>
+			<!-- attach sources -->
+			<plugin>
+				<artifactId>maven-source-plugin</artifactId>
+			</plugin>
+		</plugins>
 	</build>
 	<profiles>
 		<profile>
