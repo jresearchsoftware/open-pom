@@ -66,21 +66,30 @@
 		<!-- See http://docs.codehaus.org/display/MAVENUSER/POM+Element+for+Source+File+Encoding -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<struts.ver>1.3.10</struts.ver>
-		<spring.ver>3.2.4.RELEASE</spring.ver>
+		<spring.version>3.2.4.RELEASE</spring.version>
 		<junit.ver>4.11</junit.ver>
 		<xfire.ver>1.2.6</xfire.ver>
-		<maven.ver>3.0.5</maven.ver>
-		<gxt.ver>3.0.6</gxt.ver>
-		<gwt.ver>2.5.1</gwt.ver>
+		<gxt.version>3.0.6</gxt.version>
+		<gwt.version>2.5.1</gwt.version>
 		<jetty.ver>6.1.1</jetty.ver>
 		<tomcat.ver>5.5.20</tomcat.ver>
-		<slf4j.ver>1.7.5</slf4j.ver>
 		<xerces.ver>2.11.0</xerces.ver>
 		<asm.ver>3.3.1</asm.ver>
-		<hibernate.ver>4.1.9.Final</hibernate.ver>
-		<guava.ver>14.0.1</guava.ver>
-		<orika.ver>1.4.4</orika.ver>
-		<aspectj.ver>1.7.3</aspectj.ver>
+		<hibernate.version>4.1.9.Final</hibernate.version>
+		<guava.version>16.0.1</guava.version>
+		<orika.version>1.4.4</orika.version>
+		<logback.version>1.1.1</logback.version>
+		<jsr305.version>2.0.3</jsr305.version>
+		<commons-fileupload.version>1.3.1</commons-fileupload.version>
+		<commons-beanutils.version>1.9.1</commons-beanutils.version>
+		<ant.version>1.9.3</ant.version>
+		<commons-lang3.version>3.2.1</commons-lang3.version>
+		<httpclient.version>4.3.3</httpclient.version>
+		<maven.version>3.2.1</maven.version>
+		<aspectj.version>1.7.4</aspectj.version>
+		<hsqldb.version>2.3.2</hsqldb.version>
+		<slf4j.version>1.7.6</slf4j.version>
+		<hibernate-validator.version>5.0.3.Final</hibernate-validator.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -155,34 +164,34 @@
 			<dependency>
 				<groupId>com.sencha.gxt</groupId>
 				<artifactId>gxt</artifactId>
-				<version>${gxt.ver}</version>
+				<version>${gxt.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.google.guava</groupId>
 				<artifactId>guava</artifactId>
-				<version>${guava.ver}</version>
+				<version>${guava.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.google.guava</groupId>
 				<artifactId>guava-gwt</artifactId>
-				<version>${guava.ver}</version>
+				<version>${guava.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.google.gwt</groupId>
 				<artifactId>gwt-servlet</artifactId>
-				<version>${gwt.ver}</version>
+				<version>${gwt.version}</version>
 				<scope>runtime</scope>
 			</dependency>
 			<dependency>
 				<groupId>com.google.gwt</groupId>
 				<artifactId>gwt-user</artifactId>
-				<version>${gwt.ver}</version>
+				<version>${gwt.version}</version>
 				<scope>provided</scope>
 			</dependency>
 			<dependency>
 				<groupId>com.google.gwt</groupId>
 				<artifactId>gwt-dev</artifactId>
-				<version>${gwt.ver}</version>
+				<version>${gwt.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.google.gwt.inject</groupId>
@@ -203,7 +212,7 @@
 			<dependency>
 				<groupId>commons-beanutils</groupId>
 				<artifactId>commons-beanutils</artifactId>
-				<version>1.8.3</version>
+				<version>${commons-beanutils.version}</version>
 				<exclusions>
 					<exclusion>
 						<artifactId>commons-logging</artifactId>
@@ -244,7 +253,7 @@
 			<dependency>
 				<groupId>commons-fileupload</groupId>
 				<artifactId>commons-fileupload</artifactId>
-				<version>1.3</version>
+				<version>${commons-fileupload.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>commons-httpclient</groupId>
@@ -331,12 +340,12 @@
 			<dependency>
 				<groupId>ma.glasnost.orika</groupId>
 				<artifactId>orika-core</artifactId>
-				<version>${orika.ver}</version>
+				<version>${orika.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>ma.glasnost.orika</groupId>
 				<artifactId>orika-eclipse-tools</artifactId>
-				<version>${orika.ver}</version>
+				<version>${orika.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>myfaces</groupId>
@@ -361,12 +370,12 @@
 			<dependency>
 				<groupId>org.apache.ant</groupId>
 				<artifactId>ant</artifactId>
-				<version>1.9.2</version>
+				<version>${ant.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-lang3</artifactId>
-				<version>3.1</version>
+				<version>${commons-lang3.version}</version>
 			</dependency>
 			<!-- derby -->
 			<dependency>
@@ -377,18 +386,18 @@
 			<dependency>
 				<groupId>org.apache.maven</groupId>
 				<artifactId>maven-model</artifactId>
-				<version>${maven.ver}</version>
+				<version>${maven.version}</version>
 			</dependency>
 			<!-- Maven -->
 			<dependency>
 				<groupId>org.apache.maven</groupId>
 				<artifactId>maven-plugin-api</artifactId>
-				<version>${maven.ver}</version>
+				<version>${maven.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.maven</groupId>
 				<artifactId>maven-core</artifactId>
-				<version>${maven.ver}</version>
+				<version>${maven.version}</version>
 			</dependency>
 			<!-- J2EE -->
 			<dependency>
@@ -476,12 +485,12 @@
 			<dependency>
 				<groupId>org.hibernate</groupId>
 				<artifactId>hibernate-core</artifactId>
-				<version>${hibernate.ver}</version>
+				<version>${hibernate.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.hibernate</groupId>
 				<artifactId>hibernate-entitymanager</artifactId>
-				<version>${hibernate.ver}</version>
+				<version>${hibernate.version}</version>
 				<scope>runtime</scope>
 			</dependency>
 			<dependency>
@@ -492,7 +501,7 @@
 			<dependency>
 				<groupId>org.hibernate</groupId>
 				<artifactId>hibernate-validator</artifactId>
-				<version>4.3.1.Final</version>
+				<version>${hibernate-validator.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jresearch.lib-patches</groupId>
@@ -524,38 +533,38 @@
 			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>jcl-over-slf4j</artifactId>
-				<version>${slf4j.ver}</version>
+				<version>${slf4j.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-api</artifactId>
-				<version>${slf4j.ver}</version>
+				<version>${slf4j.version}</version>
 			</dependency>
 			<!-- Spring, see spring.ver property, exception spring-webmvc -->
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-aop</artifactId>
-				<version>${spring.ver}</version>
+				<version>${spring.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-beans</artifactId>
-				<version>${spring.ver}</version>
+				<version>${spring.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-context</artifactId>
-				<version>${spring.ver}</version>
+				<version>${spring.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-context-support</artifactId>
-				<version>${spring.ver}</version>
+				<version>${spring.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-core</artifactId>
-				<version>${spring.ver}</version>
+				<version>${spring.version}</version>
 				<exclusions>
 					<exclusion>
 						<artifactId>commons-logging</artifactId>
@@ -566,7 +575,7 @@
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-jdbc</artifactId>
-				<version>${spring.ver}</version>
+				<version>${spring.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework</groupId>
@@ -576,43 +585,43 @@
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-orm</artifactId>
-				<version>${spring.ver}</version>
+				<version>${spring.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-struts</artifactId>
-				<version>${spring.ver}</version>
+				<version>${spring.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-support</artifactId>
-				<version>${spring.ver}</version>
+				<version>${spring.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-test</artifactId>
-				<version>${spring.ver}</version>
+				<version>${spring.version}</version>
 				<scope>test</scope>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-tx</artifactId>
-				<version>${spring.ver}</version>
+				<version>${spring.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-web</artifactId>
-				<version>${spring.ver}</version>
+				<version>${spring.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-webmvc</artifactId>
-				<version>${spring.ver}</version>
+				<version>${spring.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-expression</artifactId>
-				<version>${spring.ver}</version>
+				<version>${spring.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springmodules</groupId>
@@ -704,12 +713,12 @@
 			<dependency>
 				<groupId>com.google.code.findbugs</groupId>
 				<artifactId>jsr305</artifactId>
-				<version>2.0.1</version>
+				<version>${jsr305.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>ch.qos.logback</groupId>
 				<artifactId>logback-classic</artifactId>
-				<version>1.0.13</version>
+				<version>${logback.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>javassist</groupId>
@@ -719,7 +728,7 @@
 			<dependency>
 				<groupId>org.hsqldb</groupId>
 				<artifactId>hsqldb</artifactId>
-				<version>2.3.0</version>
+				<version>${hsqldb.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>dumbster</groupId>
@@ -744,12 +753,12 @@
 			<dependency>
 				<groupId>org.aspectj</groupId>
 				<artifactId>aspectjrt</artifactId>
-				<version>${aspectj.ver}</version>
+				<version>${aspectj.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.aspectj</groupId>
 				<artifactId>aspectjweaver</artifactId>
-				<version>${aspectj.ver}</version>
+				<version>${aspectj.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>uk.org.lidalia</groupId>
@@ -790,7 +799,7 @@
 			<dependency>
 				<groupId>org.apache.httpcomponents</groupId>
 				<artifactId>httpclient</artifactId>
-				<version>4.2.5</version>
+				<version>${httpclient.version}</version>
 				<exclusions>
 					<exclusion>
 						<artifactId>commons-logging</artifactId>
