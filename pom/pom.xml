@@ -89,8 +89,11 @@
 		<aspectj.version>1.7.4</aspectj.version>
 		<hsqldb.version>2.3.2</hsqldb.version>
 		<slf4j.version>1.7.6</slf4j.version>
-		<hibernate-validator.version>5.0.3.Final</hibernate-validator.version>
-		<validation-api.version>1.1.0.Final</validation-api.version>
+		<!-- Due to GWT contains API 1.0.0 -->
+		<hibernate-validator.version>4.3.1.Final</hibernate-validator.version>
+		<validation-api.version>1.0.0.GA</validation-api.version>
+		<!-- <hibernate-validator.version>5.0.3.Final</hibernate-validator.version>
+		<validation-api.version>1.1.0.Final</validation-api.version> -->
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -1081,17 +1084,7 @@
 					<name>m2e.version</name>
 				</property>
 			</activation>
-			<!-- <build>
-				<plugins>
-					<plugin>
-						<groupId>org.codehaus.mojo</groupId>
-						<artifactId>gwt-maven-plugin</artifactId>
-						<configuration>
-							<skip>true</skip>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build> -->
+			<!-- <build> <plugins> <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>gwt-maven-plugin</artifactId> <configuration> <skip>true</skip> </configuration> </plugin> </plugins> </build> -->
 			<dependencies>
 				<dependency>
 					<groupId>org.mortbay.jetty</groupId>
