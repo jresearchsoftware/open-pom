@@ -69,28 +69,28 @@
 		<spring.version>4.1.0.RELEASE</spring.version>
 		<junit.ver>4.11</junit.ver>
 		<xfire.ver>1.2.6</xfire.ver>
-		<gxt.version>3.1.0</gxt.version>
+		<gxt.version>3.1.1</gxt.version>
 		<gwt.version>2.6.1</gwt.version>
 		<jetty.ver>8.1.12.v20130726</jetty.ver>
 		<tomcat.ver>5.5.20</tomcat.ver>
 		<xerces.ver>2.11.0</xerces.ver>
 		<asm.ver>3.3.1</asm.ver>
-		<hibernate.version>4.3.3.Final</hibernate.version>
-		<guava.version>16.0.1</guava.version>
-		<orika.version>1.4.4</orika.version>
-		<logback.version>1.1.1</logback.version>
+		<hibernate.version>4.3.6.Final</hibernate.version>
+		<guava.version>18.0</guava.version>
+		<orika.version>1.4.5</orika.version>
+		<logback.version>1.1.2</logback.version>
 		<jsr305.version>2.0.3</jsr305.version>
 		<commons-fileupload.version>1.3.1</commons-fileupload.version>
-		<commons-beanutils.version>1.9.1</commons-beanutils.version>
+		<commons-beanutils.version>1.9.2</commons-beanutils.version>
 		<ant.version>1.9.3</ant.version>
-		<commons-lang3.version>3.2.1</commons-lang3.version>
-		<httpclient.version>4.3.3</httpclient.version>
-		<maven.version>3.2.1</maven.version>
+		<commons-lang3.version>3.3.2</commons-lang3.version>
+		<httpclient.version>4.3.5</httpclient.version>
+		<maven.version>3.2.3</maven.version>
 		<aspectj.version>1.7.4</aspectj.version>
 		<hsqldb.version>2.3.2</hsqldb.version>
-		<slf4j.version>1.7.6</slf4j.version>
+		<slf4j.version>1.7.7</slf4j.version>
 		<!-- Due to GWT contains API 1.0.0 -->
-		<hibernate-validator.version>4.3.1.Final</hibernate-validator.version>
+		<hibernate-validator.version>4.3.2.Final</hibernate-validator.version>
 		<validation-api.version>1.0.0.GA</validation-api.version>
 		<!-- <hibernate-validator.version>5.0.3.Final</hibernate-validator.version> <validation-api.version>1.1.0.Final</validation-api.version> -->
 		<javassist.version>3.18.1-GA</javassist.version>
@@ -573,88 +573,11 @@
 					</exclusion>
 				</exclusions>
 			</dependency>
-			<!-- <dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-aop</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-beans</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-context</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-context-support</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-core</artifactId>
-				<version>${spring.version}</version>
-				<exclusions>
-					<exclusion>
-						<artifactId>commons-logging</artifactId>
-						<groupId>commons-logging</groupId>
-					</exclusion>
-				</exclusions>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-jdbc</artifactId>
-				<version>${spring.version}</version>
-			</dependency> -->
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-ldap</artifactId>
 				<version>1.2.1</version>
 			</dependency>
-			<!-- <dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-orm</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-struts</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-support</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-test</artifactId>
-				<version>${spring.version}</version>
-				<scope>test</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-tx</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-web</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-webmvc</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-expression</artifactId>
-				<version>${spring.version}</version>
-			</dependency> -->
 			<dependency>
 				<groupId>org.springmodules</groupId>
 				<artifactId>spring-modules-validation</artifactId>
