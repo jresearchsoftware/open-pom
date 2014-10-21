@@ -99,6 +99,7 @@
 		<gin.version>2.1.2</gin.version>
 		<gwt-maven.version>2.6.1</gwt-maven.version>
 		<guice.version>3.0</guice.version>
+		<ehcache-spring-annotations.version>1.2.0</ehcache-spring-annotations.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -116,7 +117,7 @@
 			<dependency>
 				<groupId>com.googlecode.ehcache-spring-annotations</groupId>
 				<artifactId>ehcache-spring-annotations</artifactId>
-				<version>1.2.0</version>
+				<version>${ehcache-spring-annotations.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.sun.media.jai</groupId>
