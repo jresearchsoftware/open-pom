@@ -780,6 +780,11 @@
 				<artifactId>gwt-maps-api</artifactId>
 				<version>${gwt-maps-api.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>com.github.branflake2267</groupId>
+				<artifactId>gwt-maps-utility-markerclustererplus</artifactId>
+				<version>${gwt-maps-api.version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	<repositories>
