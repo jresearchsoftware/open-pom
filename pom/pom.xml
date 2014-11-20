@@ -93,7 +93,7 @@
 		<hibernate-validator.version>4.3.2.Final</hibernate-validator.version>
 		<validation-api.version>1.0.0.GA</validation-api.version>
 		<!-- <hibernate-validator.version>5.0.3.Final</hibernate-validator.version> <validation-api.version>1.1.0.Final</validation-api.version> -->
-		<javassist.version>3.18.1-GA</javassist.version>
+		<javassist.version>3.18.2-GA</javassist.version>
 		<jpa.version>1.0.0.Final</jpa.version>
 		<servlet-api>3.0.1</servlet-api>
 		<gin.version>2.1.2</gin.version>
@@ -585,7 +585,7 @@
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-oxm</artifactId>
 				<version>${spring.version}</version>
-			</dependency>			
+			</dependency>
 			<dependency>
 				<groupId>org.springmodules</groupId>
 				<artifactId>spring-modules-validation</artifactId>
@@ -779,6 +779,12 @@
 				<groupId>com.github.branflake2267</groupId>
 				<artifactId>gwt-maps-api</artifactId>
 				<version>${gwt-maps-api.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>com.google.gwt</groupId>
+						<artifactId>gwt-dev</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>com.github.branflake2267</groupId>
@@ -1046,36 +1052,6 @@
 				</plugins>
 			</build>
 		</profile>
-		<!-- <profile>
-			<id>hosted</id>
-			<activation>
-				<property>
-					<name>m2e.version</name>
-				</property>
-			</activation>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.codehaus.mojo</groupId>
-						<artifactId>gwt-maven-plugin</artifactId>
-						<configuration>
-							<skip>true</skip>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-			<dependencies>
-				<dependency>
-					<groupId>org.eclipse.jetty</groupId>
-					<artifactId>jetty-jndi</artifactId>
-					<scope>runtime</scope>
-				</dependency>
-				<dependency>
-					<groupId>org.eclipse.jetty</groupId>
-					<artifactId>jetty-plus</artifactId>
-					<scope>runtime</scope>
-				</dependency>
-			</dependencies>
-		</profile> -->
+		<!-- <profile> <id>hosted</id> <activation> <property> <name>m2e.version</name> </property> </activation> <build> <plugins> <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>gwt-maven-plugin</artifactId> <configuration> <skip>true</skip> </configuration> </plugin> </plugins> </build> <dependencies> <dependency> <groupId>org.eclipse.jetty</groupId> <artifactId>jetty-jndi</artifactId> <scope>runtime</scope> </dependency> <dependency> <groupId>org.eclipse.jetty</groupId> <artifactId>jetty-plus</artifactId> <scope>runtime</scope> </dependency> </dependencies> </profile> -->
 	</profiles>
 </project>
