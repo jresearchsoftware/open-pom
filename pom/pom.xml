@@ -86,7 +86,7 @@
 		<commons-lang3.version>3.3.2</commons-lang3.version>
 		<httpclient.version>4.3.5</httpclient.version>
 		<maven.version>3.2.3</maven.version>
-		<aspectj.version>1.7.4</aspectj.version>
+		<aspectj.version>1.8.4</aspectj.version>
 		<hsqldb.version>2.3.2</hsqldb.version>
 		<slf4j.version>1.7.7</slf4j.version>
 		<!-- Due to GWT contains API 1.0.0 -->
@@ -722,6 +722,12 @@
 				<groupId>org.aspectj</groupId>
 				<artifactId>aspectjweaver</artifactId>
 				<version>${aspectj.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.aspectj</groupId>
+				<artifactId>aspectjtools</artifactId>
+				<version>${aspectj.version}</version>
+				<scope>runtime</scope>
 			</dependency>
 			<dependency>
 				<groupId>uk.org.lidalia</groupId>
