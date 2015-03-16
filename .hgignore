@@ -3,3 +3,5 @@ glob:**/.project
 glob:**/.classpath
 glob:**/.settings/**
 glob:**/.spring*
+syntax: glob
+pom/build.cmd
