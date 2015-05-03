@@ -102,9 +102,15 @@
 		<ehcache-spring-annotations.version>1.2.0</ehcache-spring-annotations.version>
 		<gwt-maps-api.version>3.10.0-alpha-7</gwt-maps-api.version>
 		<xalan.version>2.7.2</xalan.version>
+		<streamex.version>0.2.1</streamex.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>io.github.amaembo</groupId>
+				<artifactId>streamex</artifactId>
+				<version>${streamex.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>javax.validation</groupId>
 				<artifactId>validation-api</artifactId>
