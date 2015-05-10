@@ -5,3 +5,4 @@ glob:**/.settings/**
 glob:**/.spring*
 syntax: glob
 pom/build.cmd
+**/rebel.xml
