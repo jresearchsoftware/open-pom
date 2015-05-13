@@ -70,7 +70,8 @@
 		<junit.ver>4.11</junit.ver>
 		<xfire.ver>1.2.6</xfire.ver>
 		<gxt.version>3.1.1</gxt.version>
-		<gwt.version>2.6.1</gwt.version>
+		<gwt.version>2.7.0</gwt.version>
+		<gwt-maven.version>2.7.0</gwt-maven.version>
 		<jetty.ver>8.1.12.v20130726</jetty.ver>
 		<tomcat.ver>5.5.20</tomcat.ver>
 		<xerces.ver>2.11.0.SP1</xerces.ver>
@@ -97,15 +98,20 @@
 		<jpa.version>1.0.0.Final</jpa.version>
 		<servlet-api>3.0.1</servlet-api>
 		<gin.version>2.1.2</gin.version>
-		<gwt-maven.version>2.6.1</gwt-maven.version>
 		<guice.version>3.0</guice.version>
 		<ehcache-spring-annotations.version>1.2.0</ehcache-spring-annotations.version>
 		<gwt-maps-api.version>3.10.0-alpha-7</gwt-maps-api.version>
 		<xalan.version>2.7.2</xalan.version>
 		<streamex.version>0.2.1</streamex.version>
+		<json.version>20141113</json.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>org.json</groupId>
+				<artifactId>json</artifactId>
+				<version>${json.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>io.github.amaembo</groupId>
 				<artifactId>streamex</artifactId>
