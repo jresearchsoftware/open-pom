@@ -104,6 +104,7 @@
 		<xalan.version>2.7.2</xalan.version>
 		<streamex.version>0.2.1</streamex.version>
 		<json.version>20141113</json.version>
+		<gwtquery.version>1.4.2</gwtquery.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -814,6 +815,11 @@
 				<groupId>com.github.branflake2267</groupId>
 				<artifactId>gwt-maps-utility-markerclustererplus</artifactId>
 				<version>${gwt-maps-api.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.googlecode.gwtquery</groupId>
+				<artifactId>gwtquery</artifactId>
+				<version>${gwtquery.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
