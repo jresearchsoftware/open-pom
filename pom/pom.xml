@@ -54,12 +54,12 @@
 		<repository>
 			<id>jopen</id>
 			<name>Jresearch open repository</name>
-			<url>http://corp.chnch.us:8081/content/repositories/releases/</url>
+			<url>http://maven.chnch.us/content/repositories/releases/</url>
 		</repository>
 		<snapshotRepository>
 			<id>jopen-sn</id>
 			<name>Jresearch open snapshot repository</name>
-			<url>http://corp.chnch.us:8081/content/repositories/snapshots/</url>
+			<url>http://maven.chnch.us/content/repositories/snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
 	<properties>
@@ -833,7 +833,7 @@
 			</snapshots>
 			<id>jopen</id>
 			<name>Jresearch Software Repository (Open Source)</name>
-			<url>http://corp.chnch.us:8081/content/repositories/releases</url>
+			<url>http://maven.chnch.us/content/repositories/releases</url>
 		</repository>
 		<repository>
 			<releases>
@@ -844,7 +844,7 @@
 			</snapshots>
 			<id>jopen-sn</id>
 			<name>Jresearch Software Snapshot Repository (Open Source)</name>
-			<url>http://corp.chnch.us:8081/content/repositories/snapshots</url>
+			<url>http://maven.chnch.us/content/repositories/snapshots</url>
 		</repository>
 	</repositories>
 	<pluginRepositories>
@@ -857,7 +857,7 @@
 			</snapshots>
 			<id>jopen</id>
 			<name>Jresearch Software Repository (Open Source)</name>
-			<url>http://corp.chnch.us:8081/content/repositories/releases</url>
+			<url>http://maven.chnch.us/content/repositories/releases</url>
 		</pluginRepository>
 		<pluginRepository>
 			<releases>
@@ -868,7 +868,7 @@
 			</snapshots>
 			<id>jopen-sn</id>
 			<name>Jresearch Software Snapshot Repository (Open Source)</name>
-			<url>http://corp.chnch.us:8081/content/repositories/snapshots</url>
+			<url>http://maven.chnch.us/content/repositories/snapshots</url>
 		</pluginRepository>
 	</pluginRepositories>
 	<build>
