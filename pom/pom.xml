@@ -74,7 +74,7 @@
         <gwt-maven.version>2.7.0</gwt-maven.version>
         <jetty.ver>8.1.12.v20130726</jetty.ver>
         <tomcat.ver>5.5.23</tomcat.ver>
-        <xerces.ver>2.11.0.SP1</xerces.ver>
+        <xerces.ver>2.11.0.SP4</xerces.ver>
         <asm.ver>5.0.4</asm.ver>
         <hibernate.version>4.3.6.Final</hibernate.version>
         <guava.version>18.0</guava.version>
@@ -118,6 +118,7 @@
         <bouncycastle.ver>1.53</bouncycastle.ver>
         <selenium.ver>2.48.2</selenium.ver>
         <spring-modules-validation.ver>0.8a</spring-modules-validation.ver>
+        <postgresql.ver>9.3-1102.jdbc41</postgresql.ver>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -645,7 +646,7 @@
             <dependency>
                 <groupId>postgresql</groupId>
                 <artifactId>postgresql</artifactId>
-                <version>9.2-1002.jdbc4</version>
+                <version>${postgresql.ver}</version>
             </dependency>
             <dependency>
                 <groupId>regexp</groupId>
@@ -883,6 +884,16 @@
                 <groupId>net.kencochrane.raven</groupId>
                 <artifactId>raven-logback</artifactId>
                 <version>6.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.squareup.okhttp</groupId>
+                <artifactId>okhttp</artifactId>
+                <version>2.5.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.dfabulich</groupId>
+                <artifactId>sitemapgen4j</artifactId>
+                <version>1.0.4</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
