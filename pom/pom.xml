@@ -965,6 +965,12 @@
         </resources>
         <pluginManagement>
             <plugins>
+                <!-- Fix sonar plugin version due to https://jira.sonarsource.com/browse/MSONAR-125 -->
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>sonar-maven-plugin</artifactId>
+                    <version>2.6.1</version>
+                </plugin>
                 <!-- environmental constraint checking configuraiton -->
                 <plugin>
                     <artifactId>maven-enforcer-plugin</artifactId>
