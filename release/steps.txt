@@ -1,11 +1,11 @@
 #update snap to rel
 
-mvn versions:update-parent versions:use-releases versions:update-properties
+mvn versions:update-parent versions:use-releases versions:update-properties --builder singlethreaded
 
 #commit
 hg commit -m "SNAPSHOTS to releases"
 
-mvn release:prepare -Darguments="-DskipTests" release:clean
+mvn release:prepare -Darguments="-DskipTests" release:clean --builder singlethreaded
 #hg push
 hg update -r -2
 mvn deploy -DskipTests
@@ -14,15 +14,19 @@ hg update
 
 #update rel to next snapshot
 
-mvn -U versions:update-parent versions:use-next-snapshots versions:update-properties -DallowSnapshots -Dincludes=org.jresearch:*
+#with parent
+#mvn -U versions:update-parent versions:use-next-snapshots versions:update-properties -DallowSnapshots -Dincludes=org.jresearch:* --builder singlethreaded
+mvn -U versions:use-next-snapshots versions:update-properties -DallowSnapshots -Dincludes=org.jresearch:* --builder singlethreaded
 
 hg commit -m "releases to SNAPSHOTS"
 hg push
 
 
 cd C:\Development\work\repo\JRS\open\pom.general\pom
-cd C:\Development\work\repo\JRS\open\base\pom
+cd C:\Development\work\repo\JRS\open\base\util
+cd C:\Development\work\repo\JRS\open\base\doamin\pom
 cd C:\Development\work\repo\JRS\open\base\resources\pom
+cd C:\Development\work\repo\JRS\open\base\managers\pom
 cd C:\Development\work\repo\JRS\open\flexess.oss\pom
 cd C:\Development\work\repo\JRS\open\base\manager\pom
 cd C:\Development\work\repo\JRS\open\gwt\pom
