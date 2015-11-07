@@ -3,13 +3,13 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.jresearch</groupId>
     <artifactId>org.jresearch.pom</artifactId>
-    <version>12-SNAPSHOT</version>
+    <version>12</version>
     <packaging>pom</packaging>
     <name>Jresearch general POM</name>
     <description>Jresearch root pom</description>
     <scm>
         <developerConnection>scm:hg:ssh://hg@bitbucket.org/JRS/open-pom.general</developerConnection>
-        <tag>HEAD</tag>
+        <tag>tag 12</tag>
     </scm>
     <organization>
         <name>Jresearch Software s.r.o.</name>
@@ -140,7 +140,7 @@
             <dependency>
                 <artifactId>org.jresearch.pom</artifactId>
                 <groupId>org.jresearch</groupId>
-                <version>12-SNAPSHOT</version>
+                <version>12</version>
                 <type>pom</type>
             </dependency>
             <dependency>
