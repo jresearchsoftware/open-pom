@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.jresearch</groupId>
     <artifactId>org.jresearch.pom</artifactId>
-    <version>15</version>
+    <version>16</version>
     <packaging>pom</packaging>
     <name>Jresearch general POM</name>
     <description>Jresearch root pom</description>
@@ -969,7 +969,7 @@
     </pluginRepositories>
     <build>
         <defaultGoal>clean deploy</defaultGoal>
-        <resources>
++        <resources>
             <resource>
                 <filtering>true</filtering>
                 <directory>src/main/resources</directory>
@@ -1022,9 +1022,9 @@
                     </executions>
                 </plugin>
                 <plugin>
-                    <groupId>com.google.code.sortpom</groupId>
-                    <artifactId>maven-sortpom-plugin</artifactId>
-                    <version>2.3.2</version>
+			<groupId>com.github.ekryd.sortpom</groupId>
+          		<artifactId>sortpom-maven-plugin</artifactId>
+          		<version>2.4.0</version>
                     <executions>
                         <execution>
                             <phase>verify</phase>
