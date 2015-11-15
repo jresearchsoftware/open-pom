@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.jresearch</groupId>
     <artifactId>org.jresearch.pom</artifactId>
-    <version>16</version>
+    <version>17</version>
     <packaging>pom</packaging>
     <name>Jresearch general POM</name>
     <description>Jresearch root pom</description>
@@ -120,7 +120,7 @@
         <selenium.ver>2.48.2</selenium.ver>
         <spring-modules-validation.ver>0.8a</spring-modules-validation.ver>
         <postgresql.ver>9.3-1102.jdbc41</postgresql.ver>
-        <jackson-databind.ver>2.6.3</jackson-databind.ver>
+        <jackson-databind.ver>2.5.0</jackson-databind.ver>
     </properties>
     <dependencyManagement>
         <dependencies>
