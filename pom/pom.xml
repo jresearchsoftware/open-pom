@@ -7,14 +7,19 @@
     <packaging>pom</packaging>
     <name>Jresearch general POM</name>
     <description>Jresearch root pom</description>
+    <url>https://bitbucket.org/JRS/open-pom.general</url>
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
     <scm>
+        <connection>scm:hg:ssh://hg@bitbucket.org/JRS/open-pom.general</connection>
         <developerConnection>scm:hg:ssh://hg@bitbucket.org/JRS/open-pom.general</developerConnection>
+        <url>https://bitbucket.org/JRS/open-pom.general</url>
         <tag>HEAD</tag>
     </scm>
-    <organization>
-        <name>Jresearch Software s.r.o.</name>
-        <url>http://www.jresearchsoft.com</url>
-    </organization>
     <developers>
         <developer>
             <id>stas</id>
@@ -1022,9 +1027,9 @@
                     </executions>
                 </plugin>
                 <plugin>
-            <groupId>com.github.ekryd.sortpom</groupId>
-                  <artifactId>sortpom-maven-plugin</artifactId>
-                  <version>2.4.0</version>
+                    <groupId>com.github.ekryd.sortpom</groupId>
+                    <artifactId>sortpom-maven-plugin</artifactId>
+                    <version>2.4.0</version>
                     <executions>
                         <execution>
                             <phase>verify</phase>
@@ -1126,12 +1131,34 @@
                 <plugin>
                     <artifactId>maven-javadoc-plugin</artifactId>
                     <version>2.10.3</version>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>jar</goal>
+                            </goals>
+                        </execution>
+                    </executions>
                 </plugin>
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>findbugs-maven-plugin</artifactId>
                     <version>3.0.3</version>
                 </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-gpg-plugin</artifactId>
+                    <version>1.6</version>
+                    <executions>
+                        <execution>
+                            <id>sign-artifacts</id>
+                            <phase>verify</phase>
+                            <goals>
+                                <goal>sign</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+                <!-- <plugin> <groupId>org.sonatype.plugins</groupId> <artifactId>nexus-staging-maven-plugin</artifactId> <version>1.6.6</version> <extensions>true</extensions> <configuration> <serverId>ossrh</serverId> <nexusUrl>https://oss.sonatype.org/</nexusUrl> <autoReleaseAfterClose>true</autoReleaseAfterClose> </configuration> </plugin> -->
             </plugins>
         </pluginManagement>
         <plugins>
@@ -1143,48 +1170,25 @@
             <plugin>
                 <artifactId>maven-source-plugin</artifactId>
             </plugin>
+            <!-- attach javadoc -->
+            <plugin>
+                <artifactId>maven-javadoc-plugin</artifactId>
+            </plugin>
         </plugins>
     </build>
     <profiles>
         <profile>
-            <id>src</id>
+            <!-- Enable on CI server -->
+            <id>ci</id>
             <build>
                 <plugins>
+                    <!-- Add GPG sign -->
                     <plugin>
-                        <artifactId>maven-source-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <id>attach-sources</id>
-                                <phase>validate</phase>
-                                <goals>
-                                    <goal>jar</goal>
-                                </goals>
-                            </execution>
-                        </executions>
+                        <artifactId>maven-gpg-plugin</artifactId>
                     </plugin>
                 </plugins>
             </build>
         </profile>
-        <profile>
-            <id>release</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <artifactId>maven-source-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <id>attach-sources</id>
-                                <phase>validate</phase>
-                                <goals>
-                                    <goal>jar</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-        <!-- <profile> <id>hosted</id> <activation> <property> <name>m2e.version</name> </property> </activation> <build> <plugins> <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>gwt-maven-plugin</artifactId> <configuration> <skip>true</skip> </configuration> </plugin> </plugins> </build> <dependencies> <dependency> <groupId>org.eclipse.jetty</groupId> <artifactId>jetty-jndi</artifactId> <scope>runtime</scope> </dependency> <dependency> <groupId>org.eclipse.jetty</groupId> <artifactId>jetty-plus</artifactId> <scope>runtime</scope> </dependency> </dependencies> </profile> -->
     </profiles>
 </project>
 
