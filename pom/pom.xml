@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.jresearch</groupId>
     <artifactId>org.jresearch.pom</artifactId>
-    <version>17</version>
+    <version>18</version>
     <packaging>pom</packaging>
     <name>Jresearch general POM</name>
     <description>Jresearch root pom</description>
@@ -43,18 +43,6 @@
     <prerequisites>
         <maven>3.0.5</maven>
     </prerequisites>
-    <ciManagement>
-        <system>hudson</system>
-        <url>https://www.jresearchsoft.com/hudson</url>
-        <notifiers>
-            <notifier>
-                <type>mail</type>
-                <configuration>
-                    <address>stas@jresearch.org</address>
-                </configuration>
-            </notifier>
-        </notifiers>
-    </ciManagement>
     <distributionManagement>
         <repository>
             <id>jopen</id>
