@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.jresearch</groupId>
     <artifactId>org.jresearch.pom</artifactId>
-    <version>18</version>
+    <version>19</version>
     <packaging>pom</packaging>
     <name>Jresearch general POM</name>
     <description>Jresearch root pom</description>
@@ -43,18 +43,6 @@
     <prerequisites>
         <maven>3.0.5</maven>
     </prerequisites>
-    <distributionManagement>
-        <repository>
-            <id>jopen</id>
-            <name>Jresearch open repository</name>
-            <url>http://m.chnch.us:8081/content/repositories/releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>jopen-sn</id>
-            <name>Jresearch open snapshot repository</name>
-            <url>http://m.chnch.us:8081/content/repositories/snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
     <properties>
         <!-- See http://docs.codehaus.org/display/MAVENUSER/POM+Element+for+Source+File+Encoding -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -912,54 +900,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-    <repositories>
-        <repository>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <id>jopen</id>
-            <name>Jresearch Software Repository (Open Source)</name>
-            <url>http://m.chnch.us:8081/content/repositories/releases</url>
-        </repository>
-        <repository>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <id>jopen-sn</id>
-            <name>Jresearch Software Snapshot Repository (Open Source)</name>
-            <url>http://m.chnch.us:8081/content/repositories/snapshots</url>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <id>jopen</id>
-            <name>Jresearch Software Repository (Open Source)</name>
-            <url>http://m.chnch.us:8081/content/repositories/releases</url>
-        </pluginRepository>
-        <pluginRepository>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <id>jopen-sn</id>
-            <name>Jresearch Software Snapshot Repository (Open Source)</name>
-            <url>http://m.chnch.us:8081/content/repositories/snapshots</url>
-        </pluginRepository>
-    </pluginRepositories>
     <build>
         <defaultGoal>clean deploy</defaultGoal>
         <resources>
@@ -1146,7 +1086,17 @@
                         </execution>
                     </executions>
                 </plugin>
-                <!-- <plugin> <groupId>org.sonatype.plugins</groupId> <artifactId>nexus-staging-maven-plugin</artifactId> <version>1.6.6</version> <extensions>true</extensions> <configuration> <serverId>ossrh</serverId> <nexusUrl>https://oss.sonatype.org/</nexusUrl> <autoReleaseAfterClose>true</autoReleaseAfterClose> </configuration> </plugin> -->
+                <plugin>
+                    <groupId>org.sonatype.plugins</groupId>
+                    <artifactId>nexus-staging-maven-plugin</artifactId>
+                    <version>1.6.6</version>
+                    <extensions>true</extensions>
+                    <configuration>
+                        <serverId>ossrh</serverId>
+                        <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                        <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                    </configuration>
+                </plugin>
             </plugins>
         </pluginManagement>
         <plugins>
@@ -1161,6 +1111,10 @@
             <!-- attach javadoc -->
             <plugin>
                 <artifactId>maven-javadoc-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </build>
