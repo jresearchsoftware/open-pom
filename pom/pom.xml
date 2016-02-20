@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.jresearch</groupId>
     <artifactId>org.jresearch.pom</artifactId>
-    <version>21</version>
+    <version>22</version>
     <packaging>pom</packaging>
     <name>Jresearch general POM</name>
     <description>Jresearch root pom</description>
@@ -47,7 +47,7 @@
         <!-- See http://docs.codehaus.org/display/MAVENUSER/POM+Element+for+Source+File+Encoding -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <struts.ver>1.3.10</struts.ver>
-        <spring.version>4.2.3.RELEASE</spring.version>
+        <spring.version>4.2.4.RELEASE</spring.version>
         <junit.ver>4.12</junit.ver>
         <xfire.ver>1.2.6</xfire.ver>
         <gxt.version>3.1.1</gxt.version>
@@ -58,9 +58,9 @@
         <xerces.ver>2.11.0.SP4</xerces.ver>
         <asm.ver>5.0.4</asm.ver>
         <hibernate.version>4.3.6.Final</hibernate.version>
-        <guava.version>18.0</guava.version>
+        <guava.version>19.0</guava.version>
         <orika.version>1.4.5</orika.version>
-        <logback.version>1.1.3</logback.version>
+        <logback.version>1.1.5</logback.version>
         <jsr305.version>3.0.1</jsr305.version>
         <commons-fileupload.version>1.3.1</commons-fileupload.version>
         <commons-beanutils.version>1.9.2</commons-beanutils.version>
@@ -70,7 +70,7 @@
         <maven.version>3.3.9</maven.version>
         <aspectj.version>1.8.7</aspectj.version>
         <hsqldb.version>2.3.3</hsqldb.version>
-        <slf4j.version>1.7.13</slf4j.version>
+        <slf4j.version>1.7.17</slf4j.version>
         <!-- Due to GWT contains API 1.0.0 -->
         <hibernate-validator.version>4.3.2.Final</hibernate-validator.version>
         <validation-api.version>1.0.0.GA</validation-api.version>
@@ -84,25 +84,29 @@
         <ehcache-spring-annotations.version>1.2.0</ehcache-spring-annotations.version>
         <gwt-maps-api.version>3.10.0-alpha-7</gwt-maps-api.version>
         <xalan.version>2.7.2</xalan.version>
-        <streamex.version>0.4.1</streamex.version>
+        <streamex.version>0.5.4</streamex.version>
         <json.version>20150729</json.version>
         <gwtquery.version>1.4.3</gwtquery.version>
         <tomcat-dbcp.ver>8.0.28</tomcat-dbcp.ver>
-        <spring-ws.ver>2.2.3.RELEASE</spring-ws.ver>
+        <spring-ws.ver>2.2.4.RELEASE</spring-ws.ver>
         <commons-net.ver>3.3</commons-net.ver>
         <logback-ext-loggly.ver>0.1.4</logback-ext-loggly.ver>
         <urlrewritefilter.ver>4.0.4</urlrewritefilter.ver>
         <berkeleydb.ver>4.0.103</berkeleydb.ver>
         <commons-codec.ver>1.10</commons-codec.ver>
-        <joda-time.ver>2.9.1</joda-time.ver>
+        <joda-time.ver>2.9.2</joda-time.ver>
         <joda-time-hibernate.ver>1.4</joda-time-hibernate.ver>
         <derby.ver>10.12.1.1</derby.ver>
         <bouncycastle.ver>1.53</bouncycastle.ver>
-        <selenium.ver>2.48.2</selenium.ver>
+        <selenium.ver>2.52.0</selenium.ver>
         <spring-modules-validation.ver>0.8a</spring-modules-validation.ver>
         <postgresql.ver>9.3-1102.jdbc41</postgresql.ver>
         <jackson-databind.ver>2.6.3</jackson-databind.ver>
         <gwtchosen.ver>3.0.1</gwtchosen.ver>
+        <okhttp.ver>2.7.4</okhttp.ver>
+        <commons-collections.ver>4.1</commons-collections.ver>
+        <commons-validator.ver>1.5.0</commons-validator.ver>
+        <restygwt.ver>2.1.1</restygwt.ver>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -112,7 +116,7 @@
                 <version>${json.version}</version>
             </dependency>
             <dependency>
-                <groupId>io.github.amaembo</groupId>
+                <groupId>one.util</groupId>
                 <artifactId>streamex</artifactId>
                 <version>${streamex.version}</version>
             </dependency>
@@ -255,7 +259,7 @@
             <dependency>
                 <groupId>commons-collections</groupId>
                 <artifactId>commons-collections</artifactId>
-                <version>3.2.1</version>
+                <version>${commons-collections.ver}</version>
             </dependency>
             <dependency>
                 <groupId>commons-dbcp</groupId>
@@ -295,7 +299,7 @@
             <dependency>
                 <groupId>commons-validator</groupId>
                 <artifactId>commons-validator</artifactId>
-                <version>1.4.1</version>
+                <version>${commons-validator.ver}</version>
                 <exclusions>
                     <exclusion>
                         <artifactId>commons-logging</artifactId>
@@ -866,7 +870,7 @@
             <dependency>
                 <groupId>com.squareup.okhttp</groupId>
                 <artifactId>okhttp</artifactId>
-                <version>2.5.0</version>
+                <version>${okhttp.ver}</version>
             </dependency>
             <dependency>
                 <groupId>com.github.dfabulich</groupId>
@@ -886,7 +890,7 @@
             <dependency>
                 <groupId>org.fusesource.restygwt</groupId>
                 <artifactId>restygwt</artifactId>
-                <version>2.0.3</version>
+                <version>${restygwt.ver}</version>
             </dependency>
             <dependency>
                 <groupId>javax.ws.rs</groupId>
@@ -1125,7 +1129,7 @@
                     <plugin>
                         <artifactId>maven-gpg-plugin</artifactId>
                     </plugin>
-            	    <!-- attach javadoc -->
+                    <!-- attach javadoc -->
                     <plugin>
                         <artifactId>maven-javadoc-plugin</artifactId>
                     </plugin>
