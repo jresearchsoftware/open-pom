@@ -4,7 +4,7 @@
 	<ignoreVersions>
     		<ignoreVersion type="regex">.*-does-not-exist</ignoreVersion>
     		<ignoreVersion type="regex">.*[Aa]lpha.*</ignoreVersion>
-    		<ignoreVersion type="regex">.*[Bb]eta.*</ignoreVersion>
+    		<ignoreVersion type="regex">.*(?i)beta.*</ignoreVersion>
     		<ignoreVersion type="regex">.*pre.*</ignoreVersion>
     		<ignoreVersion type="regex">.*[Dd]raft.*</ignoreVersion>
     		<ignoreVersion type="regex">.*-rc.*</ignoreVersion>
@@ -12,5 +12,10 @@
     		<ignoreVersion type="regex">.*jbossorg.*</ignoreVersion>
     		<ignoreVersion type="regex">.*dev.*</ignoreVersion>
     		<ignoreVersion type="regex">\d+\.\d+</ignoreVersion>
+    		<ignoreVersion type="regex">.*(19|20)\d\d(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01]).*</ignoreVersion>
+    		<ignoreVersion type="regex">.*jboss.*</ignoreVersion>
+    		<ignoreVersion type="regex">.*atlassian.*</ignoreVersion>
+    		<ignoreVersion type="regex">.*xwiki.*</ignoreVersion>
+    		<ignoreVersion type="regex">.*b\d\d</ignoreVersion>
 	</ignoreVersions>
 </ruleset>
