@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.jresearch</groupId>
     <artifactId>org.jresearch.pom</artifactId>
-    <version>24</version>
+    <version>25</version>
     <packaging>pom</packaging>
     <name>Jresearch general POM</name>
     <description>Jresearch root pom</description>
@@ -112,9 +112,22 @@
         <gwtmaterialdesign.ver>1.4.1</gwtmaterialdesign.ver>
         <mail.ver>1.4.7</mail.ver>
         <groovy.ver>2.4.6</groovy.ver>
+        <raven-logback.ver>7.0.0</raven-logback.ver>
+        <logback-gelf.ver>0.3</logback-gelf.ver>
     </properties>
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>me.moocar</groupId>
+                <artifactId>logback-gelf</artifactId>
+                <version>${logback-gelf.ver}</version>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>logback-core</artifactId>
+                        <groupId>ch.qos.logback</groupId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
             <dependency>
                 <groupId>org.flywaydb</groupId>
                 <artifactId>flyway-core</artifactId>
@@ -868,9 +881,19 @@
                 <version>${groovy.ver}</version>
             </dependency>
             <dependency>
-                <groupId>net.kencochrane.raven</groupId>
+                <groupId>com.getsentry.raven</groupId>
                 <artifactId>raven-logback</artifactId>
-                <version>6.0.1-SNAPSHOT</version>
+                <version>${raven-logback.ver}</version>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>jackson-core</artifactId>
+                        <groupId>com.fasterxml.jackson.core</groupId>
+                    </exclusion>
+                    <exclusion>
+                        <artifactId>logback-core</artifactId>
+                        <groupId>ch.qos.logback</groupId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>com.squareup.okhttp</groupId>
@@ -1139,6 +1162,11 @@
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
+            </plugin>
+            <!-- flat the POM before install/deploy -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>flatten-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </build>
