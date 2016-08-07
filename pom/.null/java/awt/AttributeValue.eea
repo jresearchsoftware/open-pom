@@ -1,0 +1,4 @@
+class java/awt/AttributeValue
+toString
+ ()Ljava/lang/String;
+ ()L0java/lang/String;

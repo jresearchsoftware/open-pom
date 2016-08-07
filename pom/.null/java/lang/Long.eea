@@ -1,0 +1,7 @@
+class java/lang/Long
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
+valueOf
+ (J)Ljava/lang/Long;
+ (J)L1java/lang/Long;
