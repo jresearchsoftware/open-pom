@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.jresearch</groupId>
     <artifactId>org.jresearch.pom</artifactId>
-    <version>26</version>
+    <version>27</version>
     <packaging>pom</packaging>
     <name>Jresearch general POM</name>
     <description>Jresearch root pom</description>
@@ -46,8 +46,9 @@
     <properties>
         <!-- See http://docs.codehaus.org/display/MAVENUSER/POM+Element+for+Source+File+Encoding -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <sitemapgen4j.ver>1.0.6</sitemapgen4j.ver>
         <struts.ver>1.3.10</struts.ver>
-        <spring.version>4.3.0.RELEASE</spring.version>
+        <spring.version>4.3.2.RELEASE</spring.version>
         <junit.ver>4.12</junit.ver>
         <xfire.ver>1.2.6</xfire.ver>
         <gxt.version>3.1.1</gxt.version>
@@ -55,7 +56,7 @@
         <gwt-maven.version>2.7.0</gwt-maven.version>
         <tomcat.ver>5.5.23</tomcat.ver>
         <xerces.ver>2.11.0.SP4</xerces.ver>
-        <asm.ver>5.0.4</asm.ver>
+        <asm.ver>5.1</asm.ver>
         <hibernate.version>4.3.11.Final</hibernate.version>
         <guava.version>19.0</guava.version>
         <orika.version>1.4.5</orika.version>
@@ -65,7 +66,8 @@
         <commons-beanutils.version>1.9.2</commons-beanutils.version>
         <ant.version>1.9.7</ant.version>
         <commons-lang3.version>3.4</commons-lang3.version>
-        <httpclient.version>4.5.2</httpclient.version>
+        <httpclient.ver>4.5.2</httpclient.ver>
+        <httpcore.ver>4.4.5</httpcore.ver>
         <maven.version>3.3.9</maven.version>
         <aspectj.version>1.8.9</aspectj.version>
         <hsqldb.ver>2.3.4</hsqldb.ver>
@@ -86,7 +88,7 @@
         <streamex.version>0.6.1</streamex.version>
         <json.version>20160212</json.version>
         <gwtquery.version>1.4.3</gwtquery.version>
-        <tomcat-dbcp.ver>8.0.35</tomcat-dbcp.ver>
+        <tomcat-dbcp.ver>8.0.36</tomcat-dbcp.ver>
         <spring-ws.ver>2.3.0.RELEASE</spring-ws.ver>
         <commons-net.ver>3.3</commons-net.ver>
         <logback-ext-loggly.ver>0.1.4</logback-ext-loggly.ver>
@@ -100,22 +102,23 @@
         <joda-time-hibernate.ver>1.4</joda-time-hibernate.ver>
         <derby.ver>10.12.1.1</derby.ver>
         <bouncycastle.ver>1.53</bouncycastle.ver>
-        <selenium.ver>2.53.0</selenium.ver>
+        <selenium.ver>2.53.1</selenium.ver>
         <spring-modules-validation.ver>0.8a</spring-modules-validation.ver>
         <postgresql.ver>9.3-1102.jdbc41</postgresql.ver>
-        <jackson-databind.ver>2.6.3</jackson-databind.ver>
-        <jackson-annotations.ver>2.6.0</jackson-annotations.ver>
+        <jackson-databind.ver>2.8.1</jackson-databind.ver>
+        <jackson-core.ver>2.8.1</jackson-core.ver>
+        <jackson-annotations.ver>2.8.1</jackson-annotations.ver>
         <gwtchosen.ver>3.0.1</gwtchosen.ver>
         <okhttp.ver>2.7.5</okhttp.ver>
         <commons-collections.ver>4.1</commons-collections.ver>
-        <commons-validator.ver>1.5.1</commons-validator.ver>
-        <restygwt.ver>2.1.1</restygwt.ver>
-        <cglib.ver>3.2.3</cglib.ver>
+        <commons-validator.ver>1.5.3</commons-validator.ver>
+        <restygwt.ver>2.2.0</restygwt.ver>
+        <cglib.ver>3.2.4</cglib.ver>
         <flyway.ver>3.2.1</flyway.ver>
-        <gwtmaterialdesign.ver>1.5.1</gwtmaterialdesign.ver>
+        <gwtmaterialdesign.ver>1.5.3</gwtmaterialdesign.ver>
         <mail.ver>1.4.7</mail.ver>
         <groovy.ver>2.4.7</groovy.ver>
-        <raven-logback.ver>7.3.0</raven-logback.ver>
+        <raven-logback.ver>7.6.0</raven-logback.ver>
         <logback-gelf.ver>0.3</logback-gelf.ver>
         <selenium-client-factory.ver>2.14</selenium-client-factory.ver>
     </properties>
@@ -784,7 +787,18 @@
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpclient</artifactId>
-                <version>${httpclient.version}</version>
+                <version>${httpclient.ver}</version>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>commons-logging</artifactId>
+                        <groupId>commons-logging</groupId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpcore</artifactId>
+                <version>${httpcore.ver}</version>
                 <exclusions>
                     <exclusion>
                         <artifactId>commons-logging</artifactId>
@@ -898,7 +912,7 @@
             <dependency>
                 <groupId>com.github.dfabulich</groupId>
                 <artifactId>sitemapgen4j</artifactId>
-                <version>1.0.4</version>
+                <version>${sitemapgen4j.ver}</version>
             </dependency>
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
@@ -909,6 +923,11 @@
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-annotations</artifactId>
                 <version>${jackson-annotations.ver}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>${jackson-core.ver}</version>
             </dependency>
             <dependency>
                 <groupId>com.github.gwtmaterialdesign</groupId>
@@ -957,6 +976,21 @@
         </resources>
         <pluginManagement>
             <plugins>
+                <plugin>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <version>2.10</version>
+                    <executions>
+                        <execution>
+                            <id>analyze</id>
+                            <goals>
+                                <goal>analyze-only</goal>
+                            </goals>
+                            <configuration>
+                                <failOnWarning>false</failOnWarning>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
                 <!-- Fix sonar plugin version due to https://jira.sonarsource.com/browse/MSONAR-125 -->
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
@@ -1015,7 +1049,7 @@
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>versions-maven-plugin</artifactId>
-                    <version>2.2</version>
+                    <version>2.3</version>
                     <configuration>
                         <rulesUri>file://${user.dir}/rules.xml</rulesUri>
                         <generateBackupPoms>false</generateBackupPoms>
@@ -1045,10 +1079,6 @@
                     <version>2.8.2</version>
                 </plugin>
                 <plugin>
-                    <artifactId>maven-dependency-plugin</artifactId>
-                    <version>2.10</version>
-                </plugin>
-                <plugin>
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>2.19.1</version>
                 </plugin>
@@ -1064,7 +1094,7 @@
                 <!-- attach sources -->
                 <plugin>
                     <artifactId>maven-source-plugin</artifactId>
-                    <version>3.0.0</version>
+                    <version>3.0.1</version>
                     <executions>
                         <execution>
                             <goals>
@@ -1087,7 +1117,7 @@
                 </plugin>
                 <plugin>
                     <artifactId>maven-jar-plugin</artifactId>
-                    <version>3.0.1</version>
+                    <version>3.0.2</version>
                 </plugin>
                 <plugin>
                     <artifactId>maven-resources-plugin</artifactId>
@@ -1114,7 +1144,7 @@
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>findbugs-maven-plugin</artifactId>
-                    <version>3.0.3</version>
+                    <version>3.0.4</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
