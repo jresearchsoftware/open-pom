@@ -1,0 +1,4 @@
+class com/google/common/collect/ImmutableList
+of
+ <E:Ljava/lang/Object;>()Lcom/google/common/collect/ImmutableList<TE;>;
+ <E:Ljava/lang/Object;>()L1com/google/common/collect/ImmutableList<TE;>;

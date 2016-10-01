@@ -1,4 +1,7 @@
 class java/lang/Boolean
+FALSE
+ Ljava/lang/Boolean;
+ L1java/lang/Boolean;
 valueOf
  (Z)Ljava/lang/Boolean;
  (Z)L1java/lang/Boolean;

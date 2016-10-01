@@ -1,0 +1,10 @@
+class ma/glasnost/orika/MapperFacade
+map
+ <S:Ljava/lang/Object;D:Ljava/lang/Object;>(TS;Ljava/lang/Class<TD;>;)TD;
+ <S:Ljava/lang/Object;D:Ljava/lang/Object;>(T1S;Ljava/lang/Class<TD;>;)T1D;
+mapAsList
+ <S:Ljava/lang/Object;D:Ljava/lang/Object;>(Ljava/lang/Iterable<TS;>;Ljava/lang/Class<TD;>;)Ljava/util/List<TD;>;
+ <S:Ljava/lang/Object;D:Ljava/lang/Object;>(Ljava/lang/Iterable<TS;>;Ljava/lang/Class<TD;>;)L1java/util/List<TD;>;
+mapAsSet
+ <S:Ljava/lang/Object;D:Ljava/lang/Object;>(Ljava/lang/Iterable<TS;>;Ljava/lang/Class<TD;>;)Ljava/util/Set<TD;>;
+ <S:Ljava/lang/Object;D:Ljava/lang/Object;>(Ljava/lang/Iterable<TS;>;Ljava/lang/Class<TD;>;)L1java/util/Set<TD;>;

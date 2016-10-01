@@ -1,0 +1,16 @@
+class one/util/streamex/StreamEx
+headTail
+ <R:Ljava/lang/Object;>(Ljava/util/function/BiFunction<-TT;-Lone/util/streamex/StreamEx<TT;>;+Ljava/util/stream/Stream<TR;>;>;)Lone/util/streamex/StreamEx<TR;>;
+ <R:Ljava/lang/Object;>(Ljava/util/function/BiFunction<-TT;-Lone/util/streamex/StreamEx<TT;>;+Ljava/util/stream/Stream<TR;>;>;)L1one/util/streamex/StreamEx<TR;>;
+of
+ <T:Ljava/lang/Object;>(Ljava/util/Collection<+TT;>;)Lone/util/streamex/StreamEx<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/util/Collection<+TT;>;)L1one/util/streamex/StreamEx<TT;>;
+of
+ <T:Ljava/lang/Object;>(Ljava/util/Optional<+TT;>;)Lone/util/streamex/StreamEx<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/util/Optional<+TT;>;)L1one/util/streamex/StreamEx<TT;>;
+of
+ <T:Ljava/lang/Object;>(TT;)Lone/util/streamex/StreamEx<TT;>;
+ <T:Ljava/lang/Object;>(TT;)L1one/util/streamex/StreamEx<TT;>;
+prepend
+ (TT;)Lone/util/streamex/StreamEx<TT;>;
+ (TT;)L1one/util/streamex/StreamEx<TT;>;

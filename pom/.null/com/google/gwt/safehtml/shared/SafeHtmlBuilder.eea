@@ -1,0 +1,4 @@
+class com/google/gwt/safehtml/shared/SafeHtmlBuilder
+toSafeHtml
+ ()Lcom/google/gwt/safehtml/shared/SafeHtml;
+ ()L1com/google/gwt/safehtml/shared/SafeHtml;
