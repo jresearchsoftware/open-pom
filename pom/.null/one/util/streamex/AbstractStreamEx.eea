@@ -1,4 +1,19 @@
 class one/util/streamex/AbstractStreamEx
+append
+ (Ljava/util/stream/Stream<+TT;>;)TS;
+ (Ljava/util/stream/Stream<+TT;>;)T1S;
+findAny
+ (Ljava/util/function/Predicate<-TT;>;)Ljava/util/Optional<TT;>;
+ (Ljava/util/function/Predicate<-TT;>;)L1java/util/Optional<TT;>;
+map
+ <R:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TR;>;)Lone/util/streamex/StreamEx<TR;>;
+ <R:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TR;>;)L1one/util/streamex/StreamEx<TR;>;
+prepend
+ (Ljava/util/stream/Stream<+TT;>;)TS;
+ (Ljava/util/stream/Stream<+TT;>;)T1S;
 toList
  ()Ljava/util/List<TT;>;
  ()L1java/util/List<TT;>;
+toListAndThen
+ <R:Ljava/lang/Object;>(Ljava/util/function/Function<-Ljava/util/List<TT;>;TR;>;)TR;
+ <R:Ljava/lang/Object;>(Ljava/util/function/Function<-Ljava/util/List<TT;>;TR;>;)T1R;

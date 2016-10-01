@@ -1,0 +1,4 @@
+class com/google/gwt/i18n/shared/DateTimeFormat
+format
+ (Ljava/util/Date;)Ljava/lang/String;
+ (Ljava/util/Date;)L1java/lang/String;
