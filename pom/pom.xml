@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.jresearch</groupId>
     <artifactId>org.jresearch.pom</artifactId>
-    <version>27</version>
+    <version>28</version>
     <packaging>pom</packaging>
     <name>Jresearch general POM</name>
     <description>Jresearch root pom</description>
@@ -48,22 +48,22 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <sitemapgen4j.ver>1.0.6</sitemapgen4j.ver>
         <struts.ver>1.3.10</struts.ver>
-        <spring.version>4.3.2.RELEASE</spring.version>
+        <spring.version>4.3.3.RELEASE</spring.version>
         <junit.ver>4.12</junit.ver>
         <xfire.ver>1.2.6</xfire.ver>
-        <gxt.version>3.1.1</gxt.version>
-        <gwt.version>2.7.0</gwt.version>
-        <gwt-maven.version>2.7.0</gwt-maven.version>
+        <gxt.version>4.0.0</gxt.version>
+        <gwt.version>2.8.0-rc3</gwt.version>
+        <gwt-maven.version>2.8.0-rc3</gwt-maven.version>
         <tomcat.ver>5.5.23</tomcat.ver>
-        <xerces.ver>2.11.0.SP4</xerces.ver>
+        <xerces.ver>2.11.0.SP5</xerces.ver>
         <asm.ver>5.1</asm.ver>
         <hibernate.version>4.3.11.Final</hibernate.version>
-        <guava.version>19.0</guava.version>
+        <guava.version>20.0-gwt_rc3</guava.version>
         <orika.version>1.4.5</orika.version>
         <logback.version>1.1.7</logback.version>
         <jsr305.version>3.0.1</jsr305.version>
         <commons-fileupload.version>1.3.2</commons-fileupload.version>
-        <commons-beanutils.version>1.9.2</commons-beanutils.version>
+        <commons-beanutils.version>1.9.3</commons-beanutils.version>
         <ant.version>1.9.7</ant.version>
         <commons-lang3.version>3.4</commons-lang3.version>
         <httpclient.ver>4.5.2</httpclient.ver>
@@ -85,11 +85,11 @@
         <ehcache-spring-annotations.version>1.2.0</ehcache-spring-annotations.version>
         <gwt-maps-api.version>3.10.0-alpha-7</gwt-maps-api.version>
         <xalan.version>2.7.2</xalan.version>
-        <streamex.version>0.6.1</streamex.version>
+        <streamex.version>0.6.2</streamex.version>
         <json.version>20160212</json.version>
-        <gwtquery.version>1.4.3</gwtquery.version>
+        <gwtquery.version>1.5-beta1</gwtquery.version>
         <tomcat-dbcp.ver>8.0.36</tomcat-dbcp.ver>
-        <spring-ws.ver>2.3.0.RELEASE</spring-ws.ver>
+        <spring-ws.ver>2.4.0.RELEASE</spring-ws.ver>
         <commons-net.ver>3.3</commons-net.ver>
         <logback-ext-loggly.ver>0.1.4</logback-ext-loggly.ver>
         <urlrewritefilter.ver>4.0.4</urlrewritefilter.ver>
@@ -105,9 +105,9 @@
         <selenium.ver>2.53.1</selenium.ver>
         <spring-modules-validation.ver>0.8a</spring-modules-validation.ver>
         <postgresql.ver>9.3-1102.jdbc41</postgresql.ver>
-        <jackson-databind.ver>2.8.1</jackson-databind.ver>
-        <jackson-core.ver>2.8.1</jackson-core.ver>
-        <jackson-annotations.ver>2.8.1</jackson-annotations.ver>
+        <jackson-databind.ver>2.8.3</jackson-databind.ver>
+        <jackson-core.ver>2.8.3</jackson-core.ver>
+        <jackson-annotations.ver>2.8.3</jackson-annotations.ver>
         <gwtchosen.ver>3.0.1</gwtchosen.ver>
         <okhttp.ver>2.7.5</okhttp.ver>
         <commons-collections.ver>4.1</commons-collections.ver>
@@ -115,10 +115,10 @@
         <restygwt.ver>2.2.0</restygwt.ver>
         <cglib.ver>3.2.4</cglib.ver>
         <flyway.ver>3.2.1</flyway.ver>
-        <gwtmaterialdesign.ver>1.5.3</gwtmaterialdesign.ver>
+        <gwtmaterialdesign.ver>1.6.2</gwtmaterialdesign.ver>
         <mail.ver>1.4.7</mail.ver>
         <groovy.ver>2.4.7</groovy.ver>
-        <raven-logback.ver>7.6.0</raven-logback.ver>
+        <raven-logback.ver>7.7.0</raven-logback.ver>
         <logback-gelf.ver>0.3</logback-gelf.ver>
         <selenium-client-factory.ver>2.14</selenium-client-factory.ver>
     </properties>
@@ -1084,7 +1084,7 @@
                 </plugin>
                 <plugin>
                     <artifactId>maven-war-plugin</artifactId>
-                    <version>2.6</version>
+                    <version>3.0.0</version>
                 </plugin>
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
