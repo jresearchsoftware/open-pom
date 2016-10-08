@@ -1,0 +1,4 @@
+class com/google/gwt/user/client/ui/RootLayoutPanel
+get
+ ()Lcom/google/gwt/user/client/ui/RootLayoutPanel;
+ ()L1com/google/gwt/user/client/ui/RootLayoutPanel;

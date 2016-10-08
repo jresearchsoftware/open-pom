@@ -1,0 +1,4 @@
+class com/google/gwt/core/client/GWT
+create
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<*>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<*>;)T1T;
