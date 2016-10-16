@@ -1,0 +1,4 @@
+class com/google/gwt/canvas/client/Canvas
+getContext2d
+ ()Lcom/google/gwt/canvas/dom/client/Context2d;
+ ()L1com/google/gwt/canvas/dom/client/Context2d;
