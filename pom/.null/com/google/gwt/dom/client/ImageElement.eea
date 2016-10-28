@@ -1,0 +1,4 @@
+class com/google/gwt/dom/client/ImageElement
+as
+ (Lcom/google/gwt/dom/client/Element;)Lcom/google/gwt/dom/client/ImageElement;
+ (Lcom/google/gwt/dom/client/Element;)L1com/google/gwt/dom/client/ImageElement;
