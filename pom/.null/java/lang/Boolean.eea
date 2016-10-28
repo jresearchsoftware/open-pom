@@ -2,6 +2,12 @@ class java/lang/Boolean
 FALSE
  Ljava/lang/Boolean;
  L1java/lang/Boolean;
+TRUE
+ Ljava/lang/Boolean;
+ L1java/lang/Boolean;
+TYPE
+ Ljava/lang/Class<Ljava/lang/Boolean;>;
+ L1java/lang/Class<Ljava/lang/Boolean;>;
 valueOf
  (Z)Ljava/lang/Boolean;
  (Z)L1java/lang/Boolean;
