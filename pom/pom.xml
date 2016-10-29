@@ -984,6 +984,25 @@
         <pluginManagement>
             <plugins>
                 <plugin>
+                    <groupId>com.google.code.maven-replacer-plugin</groupId>
+                    <artifactId>replacer</artifactId>
+                    <version>1.5.3</version>
+                    <executions>
+                        <execution>
+                            <id>snapshot</id>
+                            <configuration>
+                                <file>pom.xml</file>
+                                <replacements>
+                                    <replacement>
+                                        <token>-\d{8}\.\d{6}-\d+</token>
+                                        <value>-SNAPSHOT</value>
+                                    </replacement>
+                                </replacements>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
                     <artifactId>maven-dependency-plugin</artifactId>
                     <version>2.10</version>
                     <executions>
@@ -1075,7 +1094,7 @@
                     <version>2.5.3</version>
                     <configuration>
                         <!-- version management -->
-                        <completionGoals>clean versions:update-properties versions:unlock-snapshots install</completionGoals>
+                        <completionGoals>clean versions:update-properties versions:unlock-snapshots com.google.code.maven-replacer-plugin:replacer:replace@snapshot install</completionGoals>
                         <arguments>-DskipTests -Dincludes=com.jresearchsoft*:*,org.jresearch*:* -DallowSnapshots -DprocessParent</arguments>
                         <checkModificationExcludeList>pom.xml</checkModificationExcludeList>
                         <allowTimestampedSnapshots>true</allowTimestampedSnapshots>
