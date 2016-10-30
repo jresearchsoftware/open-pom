@@ -1095,7 +1095,7 @@
                     <configuration>
                         <!-- version management -->
                         <completionGoals>clean versions:update-properties versions:unlock-snapshots com.google.code.maven-replacer-plugin:replacer:replace@snapshot install</completionGoals>
-                        <arguments>-DskipTests -Dincludes=com.jresearchsoft*:*,org.jresearch*:* -DallowSnapshots -DprocessParent --builder singlethreaded</arguments>
+                        <arguments>-DskipTests -Dincludes=com.jresearchsoft*:*,org.jresearch*:* -DallowSnapshots -DprocessParent</arguments>
                         <checkModificationExcludeList>pom.xml</checkModificationExcludeList>
                         <allowTimestampedSnapshots>true</allowTimestampedSnapshots>
                         <!-- All projects use the mercurial -->
