@@ -13,7 +13,7 @@ prepend
  (Ljava/util/stream/Stream<+TT;>;)T1S;
 toList
  ()Ljava/util/List<TT;>;
- ()L1java/util/List<TT;>;
+ ()L1java/util/List<T1T;>;
 toListAndThen
  <R:Ljava/lang/Object;>(Ljava/util/function/Function<-Ljava/util/List<TT;>;TR;>;)TR;
  <R:Ljava/lang/Object;>(Ljava/util/function/Function<-Ljava/util/List<TT;>;TR;>;)T1R;
