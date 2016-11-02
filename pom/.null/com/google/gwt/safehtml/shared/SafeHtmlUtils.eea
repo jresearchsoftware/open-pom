@@ -1,0 +1,4 @@
+class com/google/gwt/safehtml/shared/SafeHtmlUtils
+fromTrustedString
+ (Ljava/lang/String;)Lcom/google/gwt/safehtml/shared/SafeHtml;
+ (Ljava/lang/String;)L1com/google/gwt/safehtml/shared/SafeHtml;

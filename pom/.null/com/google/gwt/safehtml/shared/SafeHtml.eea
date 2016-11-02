@@ -1,0 +1,4 @@
+class com/google/gwt/safehtml/shared/SafeHtml
+asString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
