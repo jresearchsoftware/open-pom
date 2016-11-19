@@ -1,4 +1,10 @@
 class com/google/gwt/safehtml/shared/SafeHtmlUtils
+fromSafeConstant
+ (Ljava/lang/String;)Lcom/google/gwt/safehtml/shared/SafeHtml;
+ (Ljava/lang/String;)L1com/google/gwt/safehtml/shared/SafeHtml;
+fromString
+ (Ljava/lang/String;)Lcom/google/gwt/safehtml/shared/SafeHtml;
+ (Ljava/lang/String;)L1com/google/gwt/safehtml/shared/SafeHtml;
 fromTrustedString
  (Ljava/lang/String;)Lcom/google/gwt/safehtml/shared/SafeHtml;
  (Ljava/lang/String;)L1com/google/gwt/safehtml/shared/SafeHtml;
