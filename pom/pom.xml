@@ -51,7 +51,6 @@
 		<spring.version>4.3.4.RELEASE</spring.version>
 		<junit.ver>4.12</junit.ver>
 		<xfire.ver>1.2.6</xfire.ver>
-		<gxt.version>4.0.0</gxt.version>
 		<gwt.version>2.8.0</gwt.version>
 		<gwt-maven.version>2.8.0</gwt-maven.version>
 		<tomcat.ver>5.5.23</tomcat.ver>
@@ -217,11 +216,6 @@
 				<version>${cglib.ver}</version>
 			</dependency>
 			<!-- GWT related -->
-			<dependency>
-				<groupId>com.sencha.gxt</groupId>
-				<artifactId>gxt</artifactId>
-				<version>${gxt.version}</version>
-			</dependency>
 			<dependency>
 				<groupId>com.google.guava</groupId>
 				<artifactId>guava</artifactId>
