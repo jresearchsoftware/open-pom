@@ -1,0 +1,4 @@
+class one/util/streamex/EntryStream
+toMap
+ ()Ljava/util/Map<TK;TV;>;
+ ()L1java/util/Map<TK;TV;>;
