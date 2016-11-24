@@ -120,9 +120,15 @@
 		<raven-logback.ver>7.7.0</raven-logback.ver>
 		<logback-gelf.ver>0.3</logback-gelf.ver>
 		<selenium-client-factory.ver>2.14</selenium-client-factory.ver>
+		<gwt-jackson.ver>0.14.1</gwt-jackson.ver>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>com.github.nmorel.gwtjackson</groupId>
+				<artifactId>gwt-jackson</artifactId>
+				<version>${gwt-jackson.ver}</version>
+			</dependency>
 			<dependency>
 				<groupId>me.moocar</groupId>
 				<artifactId>logback-gelf</artifactId>
