@@ -84,7 +84,7 @@
 		<ehcache-spring-annotations.version>1.2.0</ehcache-spring-annotations.version>
 		<gwt-maps-api.version>3.10.0-alpha-7</gwt-maps-api.version>
 		<xalan.version>2.7.2</xalan.version>
-		<streamex.version>0.6.2</streamex.version>
+		<streamex.version>0.6.3</streamex.version>
 		<json.version>20160212</json.version>
 		<gwtquery.version>1.5-beta1</gwtquery.version>
 		<tomcat-dbcp.ver>8.0.36</tomcat-dbcp.ver>
@@ -97,16 +97,16 @@
 		<commons-dbcp.ver>2.1.1</commons-dbcp.ver>
 		<commons-digester.ver>3.2</commons-digester.ver>
 		<commons-io.ver>2.5</commons-io.ver>
-		<joda-time.ver>2.9.5</joda-time.ver>
+		<joda-time.ver>2.9.6</joda-time.ver>
 		<joda-time-hibernate.ver>1.4</joda-time-hibernate.ver>
 		<derby.ver>10.13.1.1</derby.ver>
 		<bouncycastle.ver>1.53</bouncycastle.ver>
 		<selenium.ver>3.0.1</selenium.ver>
 		<spring-modules-validation.ver>0.8a</spring-modules-validation.ver>
 		<postgresql.ver>9.3-1102.jdbc41</postgresql.ver>
-		<jackson-databind.ver>2.8.4</jackson-databind.ver>
-		<jackson-core.ver>2.8.4</jackson-core.ver>
-		<jackson-annotations.ver>2.8.4</jackson-annotations.ver>
+		<jackson-databind.ver>2.8.5</jackson-databind.ver>
+		<jackson-core.ver>2.8.5</jackson-core.ver>
+		<jackson-annotations.ver>2.8.5</jackson-annotations.ver>
 		<gwtchosen.ver>3.0.1</gwtchosen.ver>
 		<okhttp.ver>2.7.5</okhttp.ver>
 		<commons-collections.ver>4.1</commons-collections.ver>
@@ -117,13 +117,31 @@
 		<gwtmaterialdesign.ver>1.6.2</gwtmaterialdesign.ver>
 		<mail.ver>1.4.7</mail.ver>
 		<groovy.ver>2.4.7</groovy.ver>
-		<raven-logback.ver>7.7.0</raven-logback.ver>
+		<raven-logback.ver>7.8.1</raven-logback.ver>
 		<logback-gelf.ver>0.3</logback-gelf.ver>
 		<selenium-client-factory.ver>2.14</selenium-client-factory.ver>
 		<gwt-jackson.ver>0.14.1</gwt-jackson.ver>
+		<mockito.ver>2.2.28</mockito.ver>
+		<gwt-traction.ver>1.6.0.1</gwt-traction.ver>
+		<tooltip.ver>1.1</tooltip.ver>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>com.arcbees.gquery</groupId>
+				<artifactId>tooltip</artifactId>
+				<version>${tooltip.ver}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.tractionsoftware</groupId>
+				<artifactId>gwt-traction</artifactId>
+				<version>${gwt-traction.ver}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.mockito</groupId>
+				<artifactId>mockito-core</artifactId>
+				<version>${mockito.ver}</version>
+			</dependency>
 			<dependency>
 				<groupId>com.github.nmorel.gwtjackson</groupId>
 				<artifactId>gwt-jackson</artifactId>
@@ -1162,7 +1180,7 @@
 				</plugin>
 				<plugin>
 					<artifactId>maven-assembly-plugin</artifactId>
-					<version>2.6</version>
+					<version>3.0.0</version>
 				</plugin>
 				<plugin>
 					<artifactId>maven-javadoc-plugin</artifactId>
