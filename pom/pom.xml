@@ -1259,6 +1259,10 @@
 			<plugin>
 				<artifactId>maven-enforcer-plugin</artifactId>
 			</plugin>
+			<!-- analyze dependencies and warn/fail the build if something wrong -->
+			<plugin>
+				<artifactId>maven-dependency-plugin</artifactId>
+			</plugin>
 			<!-- attach sources -->
 			<plugin>
 				<artifactId>maven-source-plugin</artifactId>
