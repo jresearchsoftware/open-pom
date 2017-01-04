@@ -1043,6 +1043,7 @@
 							<configuration>
 								<failOnWarning>true</failOnWarning>
 								<ignoreNonCompile>true</ignoreNonCompile>
+								<outputXML>true</outputXML>
 							</configuration>
 						</execution>
 					</executions>
