@@ -14,3 +14,6 @@ of
 ofNullable
  <T:Ljava/lang/Object;>(TT;)Ljava/util/Optional<TT;>;
  <T:Ljava/lang/Object;>(TT;)L1java/util/Optional<TT;>;
+orElse
+ (TT;)TT;
+ (TT;)T1T;
