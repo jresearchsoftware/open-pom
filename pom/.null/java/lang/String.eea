@@ -1,0 +1,4 @@
+class java/lang/String
+toUpperCase
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
