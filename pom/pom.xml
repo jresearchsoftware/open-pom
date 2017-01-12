@@ -1041,7 +1041,7 @@
 								<goal>analyze-only</goal>
 							</goals>
 							<configuration>
-								<failOnWarning>false</failOnWarning>
+								<failOnWarning>true</failOnWarning>
 								<ignoreNonCompile>true</ignoreNonCompile>
 								<outputXML>true</outputXML>
 							</configuration>
