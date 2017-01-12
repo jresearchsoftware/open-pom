@@ -1,0 +1,4 @@
+class com/fasterxml/jackson/databind/type/TypeFactory
+constructType
+ (Ljava/lang/reflect/Type;)Lcom/fasterxml/jackson/databind/JavaType;
+ (Ljava/lang/reflect/Type;)L1com/fasterxml/jackson/databind/JavaType;
