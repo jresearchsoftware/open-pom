@@ -1164,32 +1164,6 @@
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>gwt-maven-plugin</artifactId>
 					<version>${gwt-maven.version}</version>
-					<dependencies>
-						<dependency>
-							<groupId>com.google.gwt</groupId>
-							<artifactId>gwt-user</artifactId>
-							<version>${gwt.version}</version>
-							<scope>provided</scope>
-						</dependency>
-						<dependency>
-							<groupId>com.google.gwt</groupId>
-							<artifactId>gwt-dev</artifactId>
-							<version>${gwt.version}</version>
-							<scope>provided</scope>
-						</dependency>
-						<dependency>
-							<groupId>com.google.gwt</groupId>
-							<artifactId>gwt-codeserver</artifactId>
-							<version>${gwt.version}</version>
-							<scope>provided</scope>
-						</dependency>
-						<dependency>
-							<groupId>commons-io</groupId>
-							<artifactId>commons-io</artifactId>
-							<version>${commons-io.ver}</version>
-							<scope>provided</scope>
-						</dependency>
-					</dependencies>
 				</plugin>
 				<!-- attach sources -->
 				<plugin>
