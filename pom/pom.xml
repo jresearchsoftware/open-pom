@@ -126,6 +126,7 @@
 		<tooltip.ver>1.1</tooltip.ver>
 		<gwt-ajaxloader.ver>1.1.0</gwt-ajaxloader.ver>
 		<guice-assistedinject.ver>3.0</guice-assistedinject.ver>
+		<jsinterop.ver>1.0.1</jsinterop.ver>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -1001,6 +1002,11 @@
 				<groupId>com.saucelabs.selenium</groupId>
 				<artifactId>selenium-client-factory</artifactId>
 				<version>${selenium-client-factory.ver}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.jsinterop</groupId>
+				<artifactId>jsinterop-annotations</artifactId>
+				<version>${jsinterop.ver}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
