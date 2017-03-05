@@ -128,6 +128,7 @@
 		<guice-assistedinject.ver>3.0</guice-assistedinject.ver>
 		<jsinterop.ver>1.0.1</jsinterop.ver>
 		<reflections.ver>0.9.10</reflections.ver>
+		<jasperreports.ver>6.4.0</jasperreports.ver>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -1018,6 +1019,17 @@
 				<groupId>org.reflections</groupId>
 				<artifactId>reflections</artifactId>
 				<version>${reflections.ver}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.sf.jasperreports</groupId>
+				<artifactId>jasperreports</artifactId>
+				<version>${jasperreports.ver}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>commons-logging</groupId>
+						<artifactId>commons-logging</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
