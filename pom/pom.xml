@@ -47,10 +47,8 @@
 		<!-- See http://docs.codehaus.org/display/MAVENUSER/POM+Element+for+Source+File+Encoding -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<sitemapgen4j.ver>1.0.6</sitemapgen4j.ver>
-		<struts.ver>1.3.10</struts.ver>
-		<spring.version>4.3.6.RELEASE</spring.version>
+		<spring.version>4.3.8.RELEASE</spring.version>
 		<junit.ver>4.12</junit.ver>
-		<xfire.ver>1.2.6</xfire.ver>
 		<gwt.version>2.8.0</gwt.version>
 		<gwt-maven.version>2.8.0</gwt-maven.version>
 		<tomcat.ver>5.5.23</tomcat.ver>
@@ -58,19 +56,17 @@
 		<asm.ver>5.1</asm.ver>
 		<hibernate.version>4.3.11.Final</hibernate.version>
 		<guava.version>21.0</guava.version>
-		<orika.version>1.5.0</orika.version>
-		<logback.version>1.1.9</logback.version>
-		<jsr305.version>3.0.1</jsr305.version>
+		<orika.version>1.5.1</orika.version>
+		<logback.version>1.2.3</logback.version>
+		<jsr305.version>3.0.2</jsr305.version>
 		<commons-fileupload.version>1.3.2</commons-fileupload.version>
-		<commons-beanutils.version>1.9.3</commons-beanutils.version>
-		<ant.version>1.10.0</ant.version>
 		<commons-lang3.version>3.4</commons-lang3.version>
 		<httpclient.ver>4.5.3</httpclient.ver>
 		<httpcore.ver>4.4.6</httpcore.ver>
-		<maven.version>3.3.9</maven.version>
+		<maven.version>3.5.0</maven.version>
 		<aspectj.version>1.8.10</aspectj.version>
-		<hsqldb.ver>2.3.4</hsqldb.ver>
-		<slf4j.version>1.7.22</slf4j.version>
+		<hsqldb.ver>2.4.0</hsqldb.ver>
+		<slf4j.version>1.7.25</slf4j.version>
 		<!-- Due to GWT contains API 1.0.0 -->
 		<hibernate-validator.version>4.3.2.Final</hibernate-validator.version>
 		<validation-api.version>1.0.0.GA</validation-api.version>
@@ -93,41 +89,36 @@
 		<logback-ext-loggly.ver>0.1.4</logback-ext-loggly.ver>
 		<urlrewritefilter.ver>4.0.4</urlrewritefilter.ver>
 		<berkeleydb.ver>4.0.103</berkeleydb.ver>
-		<commons-codec.ver>1.10</commons-codec.ver>
-		<commons-dbcp.ver>2.1.1</commons-dbcp.ver>
-		<commons-digester.ver>3.2</commons-digester.ver>
 		<commons-io.ver>2.5</commons-io.ver>
-		<joda-time.ver>2.9.7</joda-time.ver>
+		<joda-time.ver>2.9.9</joda-time.ver>
 		<joda-time-hibernate.ver>1.4</joda-time-hibernate.ver>
 		<derby.ver>10.13.1.1</derby.ver>
 		<bouncycastle.ver>1.53</bouncycastle.ver>
-		<selenium.ver>3.0.1</selenium.ver>
+		<selenium.ver>3.4.0</selenium.ver>
 		<spring-modules-validation.ver>0.8a</spring-modules-validation.ver>
-		<postgresql.ver>9.3-1102.jdbc41</postgresql.ver>
-		<jackson-databind.ver>2.8.6</jackson-databind.ver>
-		<jackson-core.ver>2.8.6</jackson-core.ver>
-		<jackson-annotations.ver>2.8.6</jackson-annotations.ver>
+		<postgresql.ver>42.0.0</postgresql.ver>
+		<jackson-databind.ver>2.8.8</jackson-databind.ver>
+		<jackson-core.ver>2.8.8</jackson-core.ver>
+		<jackson-annotations.ver>2.8.8</jackson-annotations.ver>
 		<gwtchosen.ver>3.0.1</gwtchosen.ver>
 		<okhttp.ver>2.7.5</okhttp.ver>
-		<commons-collections.ver>4.1</commons-collections.ver>
-		<commons-validator.ver>1.5.3</commons-validator.ver>
 		<restygwt.ver>2.2.0</restygwt.ver>
 		<cglib.ver>3.2.4</cglib.ver>
 		<flyway.ver>3.2.1</flyway.ver>
 		<gwtmaterialdesign.ver>1.6.2</gwtmaterialdesign.ver>
 		<mail.ver>1.4.7</mail.ver>
-		<groovy.ver>2.4.8</groovy.ver>
-		<raven-logback.ver>7.8.1</raven-logback.ver>
+		<groovy.ver>2.4.10</groovy.ver>
+		<raven-logback.ver>8.0.2</raven-logback.ver>
 		<logback-gelf.ver>0.3</logback-gelf.ver>
 		<selenium-client-factory.ver>2.14</selenium-client-factory.ver>
-		<gwt-jackson.ver>0.14.1</gwt-jackson.ver>
-		<mockito.ver>2.7.0</mockito.ver>
+		<gwt-jackson.ver>0.14.2</gwt-jackson.ver>
+		<mockito.ver>2.7.22</mockito.ver>
 		<gwt-traction.ver>1.6.0.1</gwt-traction.ver>
 		<tooltip.ver>1.1</tooltip.ver>
 		<gwt-ajaxloader.ver>1.1.0</gwt-ajaxloader.ver>
 		<guice-assistedinject.ver>3.0</guice-assistedinject.ver>
 		<jsinterop.ver>1.0.1</jsinterop.ver>
-		<reflections.ver>0.9.10</reflections.ver>
+		<reflections.ver>0.9.11</reflections.ver>
 		<jasperreports.ver>6.4.0</jasperreports.ver>
 	</properties>
 	<dependencyManagement>
@@ -204,60 +195,9 @@
 				<version>${ehcache-spring-annotations.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.sun.media.jai</groupId>
-				<artifactId>codec</artifactId>
-				<version>1.1.3</version>
-			</dependency>
-			<dependency>
-				<groupId>com.sun.media.jai</groupId>
-				<artifactId>core</artifactId>
-				<version>1.1.3</version>
-			</dependency>
-			<dependency>
 				<groupId>aopalliance</groupId>
 				<artifactId>aopalliance</artifactId>
 				<version>1.0</version>
-			</dependency>
-			<dependency>
-				<groupId>org.ow2.asm</groupId>
-				<artifactId>asm</artifactId>
-				<version>${asm.ver}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.ow2.asm</groupId>
-				<artifactId>asm-analysis</artifactId>
-				<version>${asm.ver}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.ow2.asm</groupId>
-				<artifactId>asm-commons</artifactId>
-				<version>${asm.ver}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.ow2.asm</groupId>
-				<artifactId>asm-util</artifactId>
-				<version>${asm.ver}</version>
-			</dependency>
-			<dependency>
-				<groupId>axis</groupId>
-				<artifactId>axis</artifactId>
-				<version>1.4</version>
-			</dependency>
-			<dependency>
-				<groupId>bcel</groupId>
-				<artifactId>bcel</artifactId>
-				<version>5.3-beta-526238</version>
-			</dependency>
-			<!--Others -->
-			<dependency>
-				<groupId>berkeleydb</groupId>
-				<artifactId>je</artifactId>
-				<version>${berkeleydb.ver}</version>
-			</dependency>
-			<dependency>
-				<groupId>cglib</groupId>
-				<artifactId>cglib-nodep</artifactId>
-				<version>${cglib.ver}</version>
 			</dependency>
 			<!-- GWT related -->
 			<dependency>
@@ -299,67 +239,11 @@
 				<artifactId>gin</artifactId>
 				<version>${gin.version}</version>
 			</dependency>
-			<dependency>
-				<groupId>com.megginson.sax</groupId>
-				<artifactId>xml-writer</artifactId>
-				<version>0.2</version>
-			</dependency>
-			<dependency>
-				<groupId>com.sun</groupId>
-				<artifactId>ldapbp</artifactId>
-				<version>1.0</version>
-			</dependency>
 			<!-- Jakarta Commons -->
-			<dependency>
-				<groupId>commons-beanutils</groupId>
-				<artifactId>commons-beanutils</artifactId>
-				<version>${commons-beanutils.version}</version>
-				<exclusions>
-					<exclusion>
-						<artifactId>commons-logging</artifactId>
-						<groupId>commons-logging</groupId>
-					</exclusion>
-				</exclusions>
-			</dependency>
-			<dependency>
-				<groupId>commons-chain</groupId>
-				<artifactId>commons-chain</artifactId>
-				<version>1.2</version>
-			</dependency>
-			<dependency>
-				<groupId>commons-codec</groupId>
-				<artifactId>commons-codec</artifactId>
-				<version>${commons-codec.ver}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.commons</groupId>
-				<artifactId>commons-collections4</artifactId>
-				<version>${commons-collections.ver}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.commons</groupId>
-				<artifactId>commons-dbcp2</artifactId>
-				<version>${commons-dbcp.ver}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.commons</groupId>
-				<artifactId>commons-digester3</artifactId>
-				<version>${commons-digester.ver}</version>
-			</dependency>
-			<dependency>
-				<groupId>commons-el</groupId>
-				<artifactId>commons-el</artifactId>
-				<version>1.0</version>
-			</dependency>
 			<dependency>
 				<groupId>commons-fileupload</groupId>
 				<artifactId>commons-fileupload</artifactId>
 				<version>${commons-fileupload.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>commons-httpclient</groupId>
-				<artifactId>commons-httpclient</artifactId>
-				<version>3.1</version>
 			</dependency>
 			<dependency>
 				<groupId>commons-io</groupId>
@@ -370,22 +254,6 @@
 				<groupId>commons-lang</groupId>
 				<artifactId>commons-lang</artifactId>
 				<version>2.6</version>
-			</dependency>
-			<dependency>
-				<groupId>commons-validator</groupId>
-				<artifactId>commons-validator</artifactId>
-				<version>${commons-validator.ver}</version>
-				<exclusions>
-					<exclusion>
-						<artifactId>commons-logging</artifactId>
-						<groupId>commons-logging</groupId>
-					</exclusion>
-				</exclusions>
-			</dependency>
-			<dependency>
-				<groupId>geronimo-spec</groupId>
-				<artifactId>geronimo-spec-jta</artifactId>
-				<version>1.0.1B-rc4</version>
 			</dependency>
 			<dependency>
 				<groupId>javax.activation</groupId>
@@ -420,17 +288,6 @@
 				<artifactId>jaxrpc-api</artifactId>
 				<version>1.1.3</version>
 			</dependency>
-			<dependency>
-				<groupId>javax.xml.crypto</groupId>
-				<artifactId>xmldsig</artifactId>
-				<version>1.0</version>
-			</dependency>
-			<dependency>
-				<groupId>jboss</groupId>
-				<artifactId>jboss-j2ee</artifactId>
-				<version>4.2.3.GA</version>
-				<scope>provided</scope>
-			</dependency>
 			<!-- JUnit -->
 			<dependency>
 				<groupId>junit</groupId>
@@ -447,31 +304,6 @@
 				<groupId>ma.glasnost.orika</groupId>
 				<artifactId>orika-eclipse-tools</artifactId>
 				<version>${orika.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>myfaces</groupId>
-				<artifactId>myfaces-all</artifactId>
-				<version>1.1.1</version>
-			</dependency>
-			<dependency>
-				<groupId>myfaces</groupId>
-				<artifactId>myfaces-api</artifactId>
-				<version>1.1.1</version>
-			</dependency>
-			<dependency>
-				<groupId>org.acegisecurity</groupId>
-				<artifactId>acegi-security</artifactId>
-				<version>1.0.7</version>
-			</dependency>
-			<dependency>
-				<groupId>org.ajaxanywhere</groupId>
-				<artifactId>ajaxanywhere</artifactId>
-				<version>1.2.1</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.ant</groupId>
-				<artifactId>ant</artifactId>
-				<version>${ant.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.commons</groupId>
@@ -502,59 +334,9 @@
 			</dependency>
 			<!-- J2EE -->
 			<dependency>
-				<groupId>org.apache.struts</groupId>
-				<artifactId>struts-core</artifactId>
-				<version>${struts.ver}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.struts</groupId>
-				<artifactId>struts-extras</artifactId>
-				<version>${struts.ver}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.struts</groupId>
-				<artifactId>struts-taglib</artifactId>
-				<version>${struts.ver}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.struts</groupId>
-				<artifactId>struts-tiles</artifactId>
-				<version>${struts.ver}</version>
-			</dependency>
-			<dependency>
 				<groupId>org.bouncycastle</groupId>
 				<artifactId>bcprov-jdk15on</artifactId>
 				<version>${bouncycastle.ver}</version>
-			</dependency>
-			<!-- XFire -->
-			<dependency>
-				<groupId>org.codehaus.xfire</groupId>
-				<artifactId>xfire-aegis</artifactId>
-				<version>${xfire.ver}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.codehaus.xfire</groupId>
-				<artifactId>xfire-core</artifactId>
-				<version>${xfire.ver}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.codehaus.xfire</groupId>
-				<artifactId>xfire-spring</artifactId>
-				<version>${xfire.ver}</version>
-				<exclusions>
-					<exclusion>
-						<artifactId>spring</artifactId>
-						<groupId>org.springframework</groupId>
-					</exclusion>
-					<exclusion>
-						<artifactId>httpunit</artifactId>
-						<groupId>httpunit</groupId>
-					</exclusion>
-					<exclusion>
-						<groupId>org.mortbay.jetty</groupId>
-						<artifactId>project</artifactId>
-					</exclusion>
-				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.eclipse.emf</groupId>
@@ -646,41 +428,7 @@
 				</exclusions>
 			</dependency>
 			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-ldap</artifactId>
-				<version>1.2.1</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-oxm</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springmodules</groupId>
-				<artifactId>spring-modules-validation</artifactId>
-				<version>${spring-modules-validation.ver}</version>
-				<exclusions>
-					<exclusion>
-						<artifactId>hibernate-annotations</artifactId>
-						<groupId>org.hibernate</groupId>
-					</exclusion>
-					<exclusion>
-						<artifactId>spring</artifactId>
-						<groupId>org.springframework</groupId>
-					</exclusion>
-					<exclusion>
-						<artifactId>antlr</artifactId>
-						<groupId>antlr</groupId>
-					</exclusion>
-				</exclusions>
-			</dependency>
-			<dependency>
-				<groupId>oro</groupId>
-				<artifactId>oro</artifactId>
-				<version>2.0.8</version>
-			</dependency>
-			<dependency>
-				<groupId>postgresql</groupId>
+				<groupId>org.postgresql</groupId>
 				<artifactId>postgresql</artifactId>
 				<version>${postgresql.ver}</version>
 			</dependency>
@@ -817,17 +565,6 @@
 				<groupId>org.jadira.usertype</groupId>
 				<artifactId>usertype.jodatime</artifactId>
 				<version>2.0.1</version>
-			</dependency>
-			<dependency>
-				<groupId>com.ecwid</groupId>
-				<artifactId>ecwid-mailchimp</artifactId>
-				<version>2.0.1.0</version>
-				<exclusions>
-					<exclusion>
-						<artifactId>commons-logging</artifactId>
-						<groupId>commons-logging</groupId>
-					</exclusion>
-				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>com.google.api</groupId>
