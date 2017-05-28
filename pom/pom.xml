@@ -18,7 +18,6 @@
 		<connection>scm:hg:ssh://hg@bitbucket.org/JRS/open-pom.general</connection>
 		<developerConnection>scm:hg:ssh://hg@bitbucket.org/JRS/open-pom.general</developerConnection>
 		<url>https://bitbucket.org/JRS/open-pom.general</url>
-		<tag>HEAD</tag>
 	</scm>
 	<developers>
 		<developer>
@@ -49,8 +48,8 @@
 		<sitemapgen4j.ver>1.0.6</sitemapgen4j.ver>
 		<spring.version>4.3.8.RELEASE</spring.version>
 		<junit.ver>4.12</junit.ver>
-		<gwt.version>2.8.0</gwt.version>
-		<gwt-maven.version>2.8.0</gwt-maven.version>
+		<gwt.version>2.8.1</gwt.version>
+		<gwt-maven.version>2.8.1</gwt-maven.version>
 		<tomcat.ver>5.5.23</tomcat.ver>
 		<xerces.ver>2.11.0.SP5</xerces.ver>
 		<asm.ver>5.1</asm.ver>
@@ -83,7 +82,7 @@
 		<streamex.version>0.6.5</streamex.version>
 		<json.version>20160212</json.version>
 		<gwtquery.version>1.5-beta1</gwtquery.version>
-		<tomcat-dbcp.ver>8.0.36</tomcat-dbcp.ver>
+		<tomcat-dbcp.ver>8.5.15</tomcat-dbcp.ver>
 		<spring-ws.ver>2.4.0.RELEASE</spring-ws.ver>
 		<commons-net.ver>3.3</commons-net.ver>
 		<logback-ext-loggly.ver>0.1.4</logback-ext-loggly.ver>
@@ -96,8 +95,8 @@
 		<bouncycastle.ver>1.53</bouncycastle.ver>
 		<selenium.ver>3.4.0</selenium.ver>
 		<spring-modules-validation.ver>0.8a</spring-modules-validation.ver>
-		<postgresql.ver>42.0.0</postgresql.ver>
-		<jackson-databind.ver>2.8.8</jackson-databind.ver>
+		<postgresql.ver>42.1.1</postgresql.ver>
+		<jackson-databind.ver>2.8.8.1</jackson-databind.ver>
 		<jackson-core.ver>2.8.8</jackson-core.ver>
 		<jackson-annotations.ver>2.8.8</jackson-annotations.ver>
 		<gwtchosen.ver>3.0.1</gwtchosen.ver>
@@ -107,12 +106,12 @@
 		<flyway.ver>3.2.1</flyway.ver>
 		<gwtmaterialdesign.ver>1.6.2</gwtmaterialdesign.ver>
 		<mail.ver>1.4.7</mail.ver>
-		<groovy.ver>2.4.10</groovy.ver>
-		<raven-logback.ver>8.0.2</raven-logback.ver>
+		<groovy.ver>2.4.11</groovy.ver>
+		<raven-logback.ver>8.0.3</raven-logback.ver>
 		<logback-gelf.ver>0.3</logback-gelf.ver>
 		<selenium-client-factory.ver>2.14</selenium-client-factory.ver>
 		<gwt-jackson.ver>0.14.2</gwt-jackson.ver>
-		<mockito.ver>2.7.22</mockito.ver>
+		<mockito.ver>2.8.9</mockito.ver>
 		<gwt-traction.ver>1.6.0.1</gwt-traction.ver>
 		<tooltip.ver>1.1</tooltip.ver>
 		<gwt-ajaxloader.ver>1.1.0</gwt-ajaxloader.ver>
@@ -811,7 +810,7 @@
 				</plugin>
 				<plugin>
 					<artifactId>maven-dependency-plugin</artifactId>
-					<version>3.0.0</version>
+					<version>3.0.1</version>
 					<executions>
 						<execution>
 							<id>analyze</id>
@@ -830,7 +829,7 @@
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>sonar-maven-plugin</artifactId>
-					<version>3.2</version>
+					<version>3.3.0.603</version>
 				</plugin>
 				<!-- environmental constraint checking configuraiton -->
 				<plugin>
@@ -863,7 +862,7 @@
 				<plugin>
 					<groupId>com.github.ekryd.sortpom</groupId>
 					<artifactId>sortpom-maven-plugin</artifactId>
-					<version>2.5.0</version>
+					<version>2.8.0</version>
 					<executions>
 						<execution>
 							<phase>verify</phase>
@@ -924,7 +923,7 @@
 				</plugin>
 				<plugin>
 					<artifactId>maven-war-plugin</artifactId>
-					<version>3.0.0</version>
+					<version>3.1.0</version>
 				</plugin>
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
@@ -1003,7 +1002,7 @@
 				<plugin>
 					<groupId>org.sonatype.plugins</groupId>
 					<artifactId>nexus-staging-maven-plugin</artifactId>
-					<version>1.6.7</version>
+					<version>1.6.8</version>
 					<extensions>true</extensions>
 					<configuration>
 						<serverId>ossrh</serverId>
