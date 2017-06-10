@@ -43,6 +43,8 @@
 		<maven>3.3.9</maven>
 	</prerequisites>
 	<properties>
+		<!-- last NPE property  -->
+		<m2e.jdt.annotationpath>C:\Development\work\repo\JRS\open\pom.general\pom\.null</m2e.jdt.annotationpath>
 		<!-- See http://docs.codehaus.org/display/MAVENUSER/POM+Element+for+Source+File+Encoding -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<sitemapgen4j.ver>1.0.6</sitemapgen4j.ver>
