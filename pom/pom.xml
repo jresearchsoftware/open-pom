@@ -43,7 +43,7 @@
 		<maven>3.3.9</maven>
 	</prerequisites>
 	<properties>
-		<!-- last NPE property  -->
+		<!-- last NPE property -->
 		<m2e.jdt.annotationpath>C:\Development\work\repo\JRS\open\pom.general\pom\.null</m2e.jdt.annotationpath>
 		<!-- See http://docs.codehaus.org/display/MAVENUSER/POM+Element+for+Source+File+Encoding -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -109,7 +109,6 @@
 		<gwtmaterialdesign.ver>1.6.2</gwtmaterialdesign.ver>
 		<mail.ver>1.4.7</mail.ver>
 		<groovy.ver>2.4.11</groovy.ver>
-		<raven-logback.ver>8.0.3</raven-logback.ver>
 		<logback-gelf.ver>0.3</logback-gelf.ver>
 		<selenium-client-factory.ver>2.14</selenium-client-factory.ver>
 		<gwt-jackson.ver>0.14.2</gwt-jackson.ver>
@@ -121,9 +120,25 @@
 		<jsinterop.ver>1.0.1</jsinterop.ver>
 		<reflections.ver>0.9.11</reflections.ver>
 		<jasperreports.ver>6.4.0</jasperreports.ver>
+		<sentry-logback.ver>1.4.0</sentry-logback.ver>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>io.sentry</groupId>
+				<artifactId>sentry-logback</artifactId>
+				<version>${sentry-logback.ver}</version>
+				<exclusions>
+					<exclusion>
+						<artifactId>jackson-core</artifactId>
+						<groupId>com.fasterxml.jackson.core</groupId>
+					</exclusion>
+					<exclusion>
+						<artifactId>logback-core</artifactId>
+						<groupId>ch.qos.logback</groupId>
+					</exclusion>
+				</exclusions>
+			</dependency>
 			<dependency>
 				<groupId>com.google.gwt</groupId>
 				<artifactId>gwt-elemental</artifactId>
@@ -676,21 +691,6 @@
 				<groupId>org.codehaus.groovy</groupId>
 				<artifactId>groovy-all</artifactId>
 				<version>${groovy.ver}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.getsentry.raven</groupId>
-				<artifactId>raven-logback</artifactId>
-				<version>${raven-logback.ver}</version>
-				<exclusions>
-					<exclusion>
-						<artifactId>jackson-core</artifactId>
-						<groupId>com.fasterxml.jackson.core</groupId>
-					</exclusion>
-					<exclusion>
-						<artifactId>logback-core</artifactId>
-						<groupId>ch.qos.logback</groupId>
-					</exclusion>
-				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>com.squareup.okhttp</groupId>
