@@ -105,7 +105,7 @@
 		<okhttp.ver>2.7.5</okhttp.ver>
 		<restygwt.ver>2.2.0</restygwt.ver>
 		<cglib.ver>3.2.4</cglib.ver>
-		<flyway.ver>3.2.1</flyway.ver>
+		<flyway.ver>4.2.0</flyway.ver>
 		<gwtmaterialdesign.ver>1.6.2</gwtmaterialdesign.ver>
 		<mail.ver>1.4.7</mail.ver>
 		<groovy.ver>2.4.11</groovy.ver>
