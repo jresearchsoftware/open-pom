@@ -120,6 +120,11 @@
 		<reflections.ver>0.9.11</reflections.ver>
 		<jasperreports.ver>6.4.1</jasperreports.ver>
 		<sentry-logback.ver>1.5.3</sentry-logback.ver>
+		<aws-java-sdk-dynamodb.ver>1.11.145</aws-java-sdk-dynamodb.ver>
+		<spring-data-dynamodb.ver>4.5.1</spring-data-dynamodb.ver>
+		<aws-serverless-java-container.ver>0.7</aws-serverless-java-container.ver>
+		<aws-lambda-java-core.ver>1.1.0</aws-lambda-java-core.ver>
+		<aws-lambda-java-events.ver>1.3.0</aws-lambda-java-events.ver>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -762,6 +767,37 @@
 						<artifactId>commons-logging</artifactId>
 					</exclusion>
 				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>com.amazonaws</groupId>
+				<artifactId>aws-java-sdk-dynamodb</artifactId>
+				<version>${aws-java-sdk-dynamodb.ver}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>commons-logging</groupId>
+						<artifactId>commons-logging</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>com.github.igor-g</groupId>
+				<artifactId>spring-data-dynamodb</artifactId>
+				<version>${spring-data-dynamodb.ver}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.amazonaws.serverless</groupId>
+				<artifactId>aws-serverless-java-container-spring</artifactId>
+				<version>${aws-serverless-java-container.ver}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.amazonaws</groupId>
+				<artifactId>aws-lambda-java-core</artifactId>
+				<version>${aws-lambda-java-core.ver}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.amazonaws</groupId>
+				<artifactId>aws-lambda-java-events</artifactId>
+				<version>${aws-lambda-java-events.ver}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
