@@ -121,6 +121,7 @@
 		<jasperreports.ver>6.4.1</jasperreports.ver>
 		<sentry-logback.ver>1.5.3</sentry-logback.ver>
 		<aws-java-sdk-dynamodb.ver>1.11.145</aws-java-sdk-dynamodb.ver>
+		<aws-java-sdk-core.ver>1.11.145</aws-java-sdk-core.ver>
 		<spring-data-dynamodb.ver>4.5.1</spring-data-dynamodb.ver>
 		<aws-serverless-java-container.ver>0.7</aws-serverless-java-container.ver>
 		<aws-lambda-java-core.ver>1.1.0</aws-lambda-java-core.ver>
@@ -798,6 +799,11 @@
 				<groupId>com.amazonaws</groupId>
 				<artifactId>aws-lambda-java-events</artifactId>
 				<version>${aws-lambda-java-events.ver}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.amazonaws</groupId>
+				<artifactId>aws-java-sdk-core</artifactId>
+				<version>${aws-java-sdk-core.ver}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
