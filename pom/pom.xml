@@ -887,7 +887,7 @@
 											<!-- exclude JCL -->
 											<exclude>commons-logging</exclude>
 											<!-- exclude log4j -->
-											<exclude>log4j</exclude>
+											<!-- <exclude>log4j</exclude> -->
 											<!-- exclude xml-apis -->
 											<!-- <exclude>xml-apis</exclude> -->
 										</excludes>
