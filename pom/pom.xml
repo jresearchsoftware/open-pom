@@ -126,6 +126,7 @@
 		<aws-serverless-java-container.ver>0.7</aws-serverless-java-container.ver>
 		<aws-lambda-java-core.ver>1.1.0</aws-lambda-java-core.ver>
 		<aws-lambda-java-events.ver>1.3.0</aws-lambda-java-events.ver>
+		<spring-data.ver>1.13.0.RELEASE</spring-data.ver>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -810,6 +811,11 @@
 						<artifactId>commons-logging</artifactId>
 					</exclusion>
 				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.data</groupId>
+				<artifactId>spring-data-commons</artifactId>
+				<version>${spring-data.ver}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
