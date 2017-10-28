@@ -131,6 +131,7 @@
 		<eclipselink.ver>2.5.2</eclipselink.ver>
 		<eclipselink-persistence.ver>2.1.0</eclipselink-persistence.ver>
 		<ehcache.ver>3.4.0</ehcache.ver>
+		<jboss-logging.ver>3.3.1.Final</jboss-logging.ver>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -432,6 +433,11 @@
 				<groupId>org.hibernate</groupId>
 				<artifactId>hibernate-validator</artifactId>
 				<version>${hibernate-validator.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.logging</groupId>
+				<artifactId>jboss-logging</artifactId>
+				<version>${jboss-logging.ver}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jresearch.lib-patches</groupId>
