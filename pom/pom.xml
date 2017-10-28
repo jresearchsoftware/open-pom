@@ -130,9 +130,15 @@
 		<aws-lambda-java-log4j.ver>1.0.0</aws-lambda-java-log4j.ver>
 		<eclipselink.ver>2.5.2</eclipselink.ver>
 		<eclipselink-persistence.ver>2.1.0</eclipselink-persistence.ver>
+		<ehcache.ver>3.4.0</ehcache.ver>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>org.ehcache</groupId>
+				<artifactId>ehcache</artifactId>
+				<version>${ehcache.ver}</version>
+			</dependency>
 			<dependency>
 				<groupId>org.eclipse.persistence</groupId>
 				<artifactId>eclipselink</artifactId>
