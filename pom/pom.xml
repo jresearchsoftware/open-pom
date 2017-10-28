@@ -50,8 +50,8 @@
 		<sitemapgen4j.ver>1.0.6</sitemapgen4j.ver>
 		<spring.version>4.3.12.RELEASE</spring.version>
 		<junit.ver>4.12</junit.ver>
-		<gwt.version>2.8.1</gwt.version>
-		<gwt-maven.version>2.8.1</gwt-maven.version>
+		<gwt.version>2.8.2</gwt.version>
+		<gwt-maven.version>2.8.2</gwt-maven.version>
 		<tomcat.ver>5.5.23</tomcat.ver>
 		<xerces.ver>2.11.0.SP5</xerces.ver>
 		<asm.ver>5.1</asm.ver>
@@ -81,7 +81,7 @@
 		<ehcache-spring-annotations.version>1.2.0</ehcache-spring-annotations.version>
 		<gwt-maps-api.version>3.10.0-alpha-7</gwt-maps-api.version>
 		<xalan.version>2.7.2</xalan.version>
-		<streamex.version>0.6.5</streamex.version>
+		<streamex.version>0.6.6</streamex.version>
 		<json.version>20160212</json.version>
 		<gwtquery.version>1.5-beta1</gwtquery.version>
 		<tomcat-dbcp.ver>8.5.20</tomcat-dbcp.ver>
@@ -116,7 +116,7 @@
 		<tooltip.ver>1.1</tooltip.ver>
 		<gwt-ajaxloader.ver>1.1.0</gwt-ajaxloader.ver>
 		<guice-assistedinject.ver>3.0</guice-assistedinject.ver>
-		<jsinterop.ver>1.0.1</jsinterop.ver>
+		<jsinterop.ver>1.0.2</jsinterop.ver>
 		<reflections.ver>0.9.11</reflections.ver>
 		<jasperreports.ver>6.4.3</jasperreports.ver>
 		<sentry-logback.ver>1.6.1</sentry-logback.ver>
