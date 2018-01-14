@@ -132,9 +132,42 @@
 		<eclipselink-persistence.ver>2.1.0</eclipselink-persistence.ver>
 		<ehcache.ver>3.4.0</ehcache.ver>
 		<jboss-logging.ver>3.3.1.Final</jboss-logging.ver>
+		<elemental.ver>1.0.0-beta-1</elemental.ver>
+		<elemento.ver>0.6.1-FIX</elemento.ver>
+		<jjwt.ver>0.9.0</jjwt.ver>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>io.jsonwebtoken</groupId>
+				<artifactId>jjwt</artifactId>
+				<version>${jjwt.ver}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.gwt.elemento</groupId>
+				<artifactId>elemento-core</artifactId>
+				<version>${elemento.ver}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.gwt.elemento</groupId>
+				<artifactId>elemento-template</artifactId>
+				<version>${elemento.ver}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.elemental2</groupId>
+				<artifactId>elemental2-core</artifactId>
+				<version>${elemental.ver}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.elemental2</groupId>
+				<artifactId>elemental2-dom</artifactId>
+				<version>${elemental.ver}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.elemental2</groupId>
+				<artifactId>elemental2-webstorage</artifactId>
+				<version>${elemental.ver}</version>
+			</dependency>
 			<dependency>
 				<groupId>org.ehcache</groupId>
 				<artifactId>ehcache</artifactId>
@@ -170,11 +203,6 @@
 						<groupId>ch.qos.logback</groupId>
 					</exclusion>
 				</exclusions>
-			</dependency>
-			<dependency>
-				<groupId>com.google.gwt</groupId>
-				<artifactId>gwt-elemental</artifactId>
-				<version>${gwt.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.google.gwt.google-apis</groupId>
@@ -257,6 +285,12 @@
 				<groupId>com.google.guava</groupId>
 				<artifactId>guava-gwt</artifactId>
 				<version>${guava.version}</version>
+			</dependency>
+			<!-- <dependency> <groupId>com.google.gwt</groupId> <artifactId>gwt</artifactId> <version>${gwt.version}</version> <type>pom</type> <scope>import</scope> </dependency> -->
+			<dependency>
+				<groupId>com.google.gwt</groupId>
+				<artifactId>gwt-elemental</artifactId>
+				<version>${gwt.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.google.gwt</groupId>
@@ -887,7 +921,7 @@
 				<plugin>
 					<groupId>net.ltgt.gwt.maven</groupId>
 					<artifactId>gwt-maven-plugin</artifactId>
-					<version>1.0-rc-7</version>
+					<version>1.0-rc-9</version>
 					<extensions>true</extensions>
 				</plugin>
 				<plugin>
