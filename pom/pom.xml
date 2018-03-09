@@ -55,7 +55,7 @@
 		<tomcat.ver>5.5.23</tomcat.ver>
 		<xerces.ver>2.11.0.SP5</xerces.ver>
 		<asm.ver>5.1</asm.ver>
-		<hibernate.version>4.3.11.Final</hibernate.version>
+		<hibernate.version>5.2.14.Final</hibernate.version>
 		<guava.version>24.0-jre</guava.version>
 		<orika.version>1.5.2</orika.version>
 		<logback.version>1.2.3</logback.version>
@@ -92,7 +92,6 @@
 		<berkeleydb.ver>4.0.103</berkeleydb.ver>
 		<commons-io.ver>2.5</commons-io.ver>
 		<joda-time.ver>2.9.9</joda-time.ver>
-		<joda-time-hibernate.ver>1.4</joda-time-hibernate.ver>
 		<derby.ver>10.14.1.0</derby.ver>
 		<selenium.ver>3.9.1</selenium.ver>
 		<spring-modules-validation.ver>0.8a</spring-modules-validation.ver>
@@ -135,6 +134,7 @@
 		<elemental.ver>1.0.0-beta-1</elemental.ver>
 		<elemento.ver>0.6.1-FIX</elemento.ver>
 		<jjwt.ver>0.9.0</jjwt.ver>
+		<jadira.ver>7.0.0.CR1</jadira.ver>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -638,14 +638,9 @@
 				<version>1.4.01</version>
 			</dependency>
 			<dependency>
-				<groupId>joda-time</groupId>
-				<artifactId>joda-time-hibernate</artifactId>
-				<version>${joda-time-hibernate.ver}</version>
-			</dependency>
-			<dependency>
 				<groupId>org.jadira.usertype</groupId>
-				<artifactId>usertype.jodatime</artifactId>
-				<version>2.0.1</version>
+				<artifactId>usertype.core</artifactId>
+				<version>${jadira.ver}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.google.api</groupId>
