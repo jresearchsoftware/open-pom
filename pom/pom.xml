@@ -1025,6 +1025,7 @@
 					<configuration>
 						<rulesUri>file://${user.dir}/rules.xml</rulesUri>
 						<generateBackupPoms>false</generateBackupPoms>
+						<allowDowngrade>true</allowDowngrade>
 					</configuration>
 				</plugin>
 				<plugin>
