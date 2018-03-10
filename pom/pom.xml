@@ -149,10 +149,6 @@
 						<artifactId>logback-core</artifactId>
 						<groupId>ch.qos.logback</groupId>
 					</exclusion>
-					<exclusion>
-						<groupId>org.graylog2</groupId>
-						<artifactId>gelfclient</artifactId>
-					</exclusion>
 				</exclusions>
 			</dependency>
 			<dependency>
