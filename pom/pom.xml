@@ -135,9 +135,31 @@
 		<elemento.ver>0.6.1-FIX</elemento.ver>
 		<jjwt.ver>0.9.0</jjwt.ver>
 		<jadira.ver>7.0.0.CR1</jadira.ver>
+		<logback-gelf-appender.ver>1.4</logback-gelf-appender.ver>
+		<gelfclient.ver>1.4.2.1</gelfclient.ver>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>de.appelgriepsch.logback</groupId>
+				<artifactId>logback-gelf-appender</artifactId>
+				<version>${logback-gelf-appender.ver}</version>
+				<exclusions>
+					<exclusion>
+						<artifactId>logback-core</artifactId>
+						<groupId>ch.qos.logback</groupId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.graylog2</groupId>
+						<artifactId>gelfclient</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.graylog2</groupId>
+				<artifactId>gelfclient</artifactId>
+				<version>${gelfclient.ver}</version>
+			</dependency>
 			<dependency>
 				<groupId>io.jsonwebtoken</groupId>
 				<artifactId>jjwt</artifactId>
@@ -233,17 +255,6 @@
 				<groupId>com.github.nmorel.gwtjackson</groupId>
 				<artifactId>gwt-jackson</artifactId>
 				<version>${gwt-jackson.ver}</version>
-			</dependency>
-			<dependency>
-				<groupId>me.moocar</groupId>
-				<artifactId>logback-gelf</artifactId>
-				<version>${logback-gelf.ver}</version>
-				<exclusions>
-					<exclusion>
-						<artifactId>logback-core</artifactId>
-						<groupId>ch.qos.logback</groupId>
-					</exclusion>
-				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.flywaydb</groupId>
