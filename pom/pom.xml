@@ -293,7 +293,6 @@
 				<artifactId>guava-gwt</artifactId>
 				<version>${guava.version}</version>
 			</dependency>
-			<!-- <dependency> <groupId>com.google.gwt</groupId> <artifactId>gwt</artifactId> <version>${gwt.version}</version> <type>pom</type> <scope>import</scope> </dependency> -->
 			<dependency>
 				<groupId>com.google.gwt</groupId>
 				<artifactId>gwt-elemental</artifactId>
@@ -638,11 +637,6 @@
 				<groupId>uk.org.lidalia</groupId>
 				<artifactId>sysout-over-slf4j</artifactId>
 				<version>1.0.2</version>
-			</dependency>
-			<dependency>
-				<groupId>xml-apis</groupId>
-				<artifactId>xml-apis</artifactId>
-				<version>1.4.01</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jadira.usertype</groupId>
