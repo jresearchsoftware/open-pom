@@ -76,8 +76,8 @@
 		<jpa.version>1.0.2</jpa.version>
 		<servlet-api.ver>3.1.0</servlet-api.ver>
 		<jsp-api.ver>2.3.1</jsp-api.ver>
-		<gin.version>2.1.2</gin.version>
-		<guice.version>3.0</guice.version>
+		<gin.version>3.0.0</gin.version>
+		<guice.version>4.2.0</guice.version>
 		<ehcache-spring-annotations.version>1.2.0</ehcache-spring-annotations.version>
 		<gwt-maps-api.version>3.10.0-alpha-7</gwt-maps-api.version>
 		<xalan.version>2.7.2</xalan.version>
@@ -85,7 +85,7 @@
 		<json.version>20160212</json.version>
 		<gwtquery.version>1.5-beta1</gwtquery.version>
 		<tomcat-dbcp.ver>8.5.20</tomcat-dbcp.ver>
-		<spring-ws.ver>3.0.0.RELEASE</spring-ws.ver>
+		<spring-ws.ver>3.0.1.RELEASE</spring-ws.ver>
 		<commons-net.ver>3.3</commons-net.ver>
 		<logback-ext-loggly.ver>0.1.5</logback-ext-loggly.ver>
 		<urlrewritefilter.ver>4.0.4</urlrewritefilter.ver>
@@ -114,7 +114,7 @@
 		<gwt-traction.ver>1.6.0.1</gwt-traction.ver>
 		<tooltip.ver>1.1</tooltip.ver>
 		<gwt-ajaxloader.ver>1.1.0</gwt-ajaxloader.ver>
-		<guice-assistedinject.ver>3.0</guice-assistedinject.ver>
+		<guice-assistedinject.ver>4.2.0</guice-assistedinject.ver>
 		<jsinterop.ver>1.0.2</jsinterop.ver>
 		<reflections.ver>0.9.11</reflections.ver>
 		<jasperreports.ver>6.5.1</jasperreports.ver>
@@ -125,7 +125,7 @@
 		<aws-serverless-java-container.ver>1.0.1</aws-serverless-java-container.ver>
 		<aws-lambda-java-core.ver>1.2.0</aws-lambda-java-core.ver>
 		<aws-lambda-java-events.ver>2.1.0</aws-lambda-java-events.ver>
-		<spring-data.ver>2.0.5.RELEASE</spring-data.ver>
+		<spring-data.ver>2.0.6.RELEASE</spring-data.ver>
 		<aws-lambda-java-log4j.ver>1.0.0</aws-lambda-java-log4j.ver>
 		<eclipselink.ver>2.7.1</eclipselink.ver>
 		<eclipselink-persistence.ver>2.2.0</eclipselink-persistence.ver>
@@ -323,7 +323,7 @@
 				</exclusions>
 			</dependency>
 			<dependency>
-				<groupId>com.google.gwt.inject</groupId>
+				<groupId>io.github.gwtplus.gin</groupId>
 				<artifactId>gin</artifactId>
 				<version>${gin.version}</version>
 			</dependency>
