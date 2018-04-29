@@ -48,15 +48,15 @@
 		<!-- See http://docs.codehaus.org/display/MAVENUSER/POM+Element+for+Source+File+Encoding -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<sitemapgen4j.ver>1.0.6</sitemapgen4j.ver>
-		<spring.version>5.0.4.RELEASE</spring.version>
+		<spring.version>5.0.5.RELEASE</spring.version>
 		<junit.ver>4.12</junit.ver>
 		<gwt.version>2.8.2</gwt.version>
 		<gwt-maven.version>2.8.2</gwt-maven.version>
 		<tomcat.ver>5.5.23</tomcat.ver>
 		<xerces.ver>2.11.0.SP5</xerces.ver>
 		<asm.ver>5.1</asm.ver>
-		<hibernate.version>5.2.15.Final</hibernate.version>
-		<guava.version>24.0-jre</guava.version>
+		<hibernate.version>5.2.17.Final</hibernate.version>
+		<guava.version>25.0-jre</guava.version>
 		<orika.version>1.5.2</orika.version>
 		<logback.version>1.2.3</logback.version>
 		<jsr305.version>3.0.2</jsr305.version>
@@ -65,7 +65,7 @@
 		<httpclient.ver>4.5.5</httpclient.ver>
 		<httpcore.ver>4.4.9</httpcore.ver>
 		<maven.version>3.5.3</maven.version>
-		<aspectj.version>1.8.13</aspectj.version>
+		<aspectj.version>1.9.1</aspectj.version>
 		<hsqldb.ver>2.4.0</hsqldb.ver>
 		<slf4j.version>1.7.25</slf4j.version>
 		<!-- Due to GWT contains API 1.0.0 -->
@@ -93,12 +93,12 @@
 		<commons-io.ver>2.5</commons-io.ver>
 		<joda-time.ver>2.9.9</joda-time.ver>
 		<derby.ver>10.14.1.0</derby.ver>
-		<selenium.ver>3.10.0</selenium.ver>
+		<selenium.ver>3.11.0</selenium.ver>
 		<spring-modules-validation.ver>0.8a</spring-modules-validation.ver>
-		<postgresql.ver>42.2.1</postgresql.ver>
-		<jackson-databind.ver>2.9.4</jackson-databind.ver>
-		<jackson-core.ver>2.9.4</jackson-core.ver>
-		<jackson-annotations.ver>2.9.4</jackson-annotations.ver>
+		<postgresql.ver>42.2.2</postgresql.ver>
+		<jackson-databind.ver>2.9.5</jackson-databind.ver>
+		<jackson-core.ver>2.9.5</jackson-core.ver>
+		<jackson-annotations.ver>2.9.5</jackson-annotations.ver>
 		<gwtchosen.ver>3.0.1</gwtchosen.ver>
 		<okhttp.ver>2.7.5</okhttp.ver>
 		<restygwt.ver>2.2.3</restygwt.ver>
@@ -106,11 +106,11 @@
 		<flyway.ver>5.0.7</flyway.ver>
 		<gwtmaterialdesign.ver>2.0.1</gwtmaterialdesign.ver>
 		<mail.ver>1.4.7</mail.ver>
-		<groovy.ver>2.4.14</groovy.ver>
+		<groovy.ver>2.4.15</groovy.ver>
 		<logback-gelf.ver>0.3</logback-gelf.ver>
 		<selenium-client-factory.ver>2.14</selenium-client-factory.ver>
 		<gwt-jackson.ver>0.15.0</gwt-jackson.ver>
-		<mockito.ver>2.15.0</mockito.ver>
+		<mockito.ver>2.18.3</mockito.ver>
 		<gwt-traction.ver>1.6.0.1</gwt-traction.ver>
 		<tooltip.ver>1.1</tooltip.ver>
 		<gwt-ajaxloader.ver>1.1.0</gwt-ajaxloader.ver>
@@ -118,18 +118,18 @@
 		<jsinterop.ver>1.0.2</jsinterop.ver>
 		<reflections.ver>0.9.11</reflections.ver>
 		<jasperreports.ver>6.5.1</jasperreports.ver>
-		<sentry-logback.ver>1.7.1</sentry-logback.ver>
-		<aws-java-sdk-dynamodb.ver>1.11.292</aws-java-sdk-dynamodb.ver>
-		<aws-java-sdk-core.ver>1.11.292</aws-java-sdk-core.ver>
+		<sentry-logback.ver>1.7.3</sentry-logback.ver>
+		<aws-java-sdk-dynamodb.ver>1.11.319</aws-java-sdk-dynamodb.ver>
+		<aws-java-sdk-core.ver>1.11.319</aws-java-sdk-core.ver>
 		<spring-data-dynamodb.ver>4.5.1</spring-data-dynamodb.ver>
-		<aws-serverless-java-container.ver>0.9.1</aws-serverless-java-container.ver>
+		<aws-serverless-java-container.ver>1.0.1</aws-serverless-java-container.ver>
 		<aws-lambda-java-core.ver>1.2.0</aws-lambda-java-core.ver>
 		<aws-lambda-java-events.ver>2.1.0</aws-lambda-java-events.ver>
 		<spring-data.ver>2.0.5.RELEASE</spring-data.ver>
 		<aws-lambda-java-log4j.ver>1.0.0</aws-lambda-java-log4j.ver>
 		<eclipselink.ver>2.7.1</eclipselink.ver>
 		<eclipselink-persistence.ver>2.2.0</eclipselink-persistence.ver>
-		<ehcache.ver>3.5.0</ehcache.ver>
+		<ehcache.ver>3.5.2</ehcache.ver>
 		<jboss-logging.ver>3.3.2.Final</jboss-logging.ver>
 		<elemental.ver>1.0.0-beta-1</elemental.ver>
 		<elemento.ver>0.6.1-FIX</elemento.ver>
