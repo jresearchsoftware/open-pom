@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.jresearch</groupId>
 	<artifactId>org.jresearch.pom</artifactId>
@@ -71,7 +72,8 @@
 		<!-- Due to GWT contains API 1.0.0 -->
 		<hibernate-validator.version>4.3.2.Final</hibernate-validator.version>
 		<validation-api.version>1.0.0.GA</validation-api.version>
-		<!-- <hibernate-validator.version>5.0.3.Final</hibernate-validator.version> <validation-api.version>1.1.0.Final</validation-api.version> -->
+		<!-- <hibernate-validator.version>5.0.3.Final</hibernate-validator.version> 
+			<validation-api.version>1.1.0.Final</validation-api.version> -->
 		<javassist.version>3.21.0-GA</javassist.version>
 		<jpa.version>1.0.2</jpa.version>
 		<servlet-api.ver>3.1.0</servlet-api.ver>
@@ -125,7 +127,7 @@
 		<aws-serverless-java-container.ver>1.0.1</aws-serverless-java-container.ver>
 		<aws-lambda-java-core.ver>1.2.0</aws-lambda-java-core.ver>
 		<aws-lambda-java-events.ver>2.1.0</aws-lambda-java-events.ver>
-		<spring-data.ver>2.0.6.RELEASE</spring-data.ver>
+		<spring-data.ver>2.0.7.RELEASE</spring-data.ver>
 		<aws-lambda-java-log4j.ver>1.0.0</aws-lambda-java-log4j.ver>
 		<eclipselink.ver>2.7.1</eclipselink.ver>
 		<eclipselink-persistence.ver>2.2.0</eclipselink-persistence.ver>
@@ -905,6 +907,11 @@
 				<version>${spring-data.ver}</version>
 			</dependency>
 			<dependency>
+				<groupId>org.springframework.data</groupId>
+				<artifactId>spring-data-jpa</artifactId>
+				<version>${spring-data.ver}</version>
+			</dependency>
+			<dependency>
 				<groupId>com.amazonaws.serverless</groupId>
 				<artifactId>aws-serverless-java-container-core</artifactId>
 				<version>${aws-serverless-java-container.ver}</version>
@@ -994,7 +1001,8 @@
 					<artifactId>maven-enforcer-plugin</artifactId>
 					<version>1.4.1</version>
 					<executions>
-						<!-- check that neither JCL nor log4j is used for logging - SLF4J and LOGBack should be used for logging (ignore in Eclipse!) -->
+						<!-- check that neither JCL nor log4j is used for logging - SLF4J and 
+							LOGBack should be used for logging (ignore in Eclipse!) -->
 						<execution>
 							<id>enforce-logging-dependecies</id>
 							<goals>
@@ -1062,8 +1070,13 @@
 					<version>2.5.3</version>
 					<configuration>
 						<!-- version management -->
-						<completionGoals>clean versions:update-properties versions:unlock-snapshots com.google.code.maven-replacer-plugin:replacer:replace@snapshot install</completionGoals>
-						<arguments>-DskipTests -Dincludes=com.jresearchsoft*:*,org.jresearch*:* -Dexcludes=org.jresearch.logui:* -DallowSnapshots -DprocessParent</arguments>
+						<completionGoals>clean versions:update-properties
+							versions:unlock-snapshots
+							com.google.code.maven-replacer-plugin:replacer:replace@snapshot
+							install</completionGoals>
+						<arguments>-DskipTests
+							-Dincludes=com.jresearchsoft*:*,org.jresearch*:*
+							-Dexcludes=org.jresearch.logui:* -DallowSnapshots -DprocessParent</arguments>
 						<checkModificationExcludeList>pom.xml</checkModificationExcludeList>
 						<allowTimestampedSnapshots>true</allowTimestampedSnapshots>
 						<!-- All projects use the mercurial -->
