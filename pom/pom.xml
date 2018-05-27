@@ -137,9 +137,15 @@
 		<jadira.ver>7.0.0.CR1</jadira.ver>
 		<logback-gelf-appender.ver>1.4</logback-gelf-appender.ver>
 		<gelfclient.ver>1.4.2.1</gelfclient.ver>
+		<springfox-swagger2.ver>2.9.0</springfox-swagger2.ver>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger2</artifactId>
+				<version>${springfox-swagger2.ver}</version>
+			</dependency>
 			<dependency>
 				<groupId>de.appelgriepsch.logback</groupId>
 				<artifactId>logback-gelf-appender</artifactId>
