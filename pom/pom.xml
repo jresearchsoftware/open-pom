@@ -138,9 +138,30 @@
 		<logback-gelf-appender.ver>1.4</logback-gelf-appender.ver>
 		<gelfclient.ver>1.4.2.1</gelfclient.ver>
 		<springfox-swagger2.ver>2.9.0</springfox-swagger2.ver>
+		<swagger-annotations.ver>1.5.18</swagger-annotations.ver>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>io.swagger</groupId>
+				<artifactId>swagger-annotations</artifactId>
+				<version>${swagger-annotations.ver}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-core</artifactId>
+				<version>${springfox-swagger2.ver}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-spi</artifactId>
+				<version>${springfox-swagger2.ver}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-spring-web</artifactId>
+				<version>${springfox-swagger2.ver}</version>
+			</dependency>
 			<dependency>
 				<groupId>io.springfox</groupId>
 				<artifactId>springfox-swagger2</artifactId>
