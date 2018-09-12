@@ -72,7 +72,7 @@
 		<!-- Due to GWT contains API 1.0.0 -->
 		<hibernate-validator.version>4.3.2.Final</hibernate-validator.version>
 		<validation-api.version>1.0.0.GA</validation-api.version>
-		<!-- <hibernate-validator.version>5.0.3.Final</hibernate-validator.version> 
+		<!-- <hibernate-validator.version>5.0.3.Final</hibernate-validator.version>
 			<validation-api.version>1.1.0.Final</validation-api.version> -->
 		<javassist.version>3.21.0-GA</javassist.version>
 		<jpa.version>1.0.2</jpa.version>
@@ -141,6 +141,7 @@
 		<gelfclient.ver>1.4.2.1</gelfclient.ver>
 		<springfox-swagger2.ver>2.9.0</springfox-swagger2.ver>
 		<swagger-annotations.ver>1.5.18</swagger-annotations.ver>
+		<javax.annotation-api.ver>1.3.2</javax.annotation-api.ver>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -926,6 +927,11 @@
 				<artifactId>aws-lambda-java-log4j</artifactId>
 				<version>${aws-lambda-java-log4j.ver}</version>
 			</dependency>
+			<dependency>
+				<groupId>javax.annotation</groupId>
+				<artifactId>javax.annotation-api</artifactId>
+				<version>${javax.annotation-api.ver}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	<build>
@@ -1001,7 +1007,7 @@
 					<artifactId>maven-enforcer-plugin</artifactId>
 					<version>1.4.1</version>
 					<executions>
-						<!-- check that neither JCL nor log4j is used for logging - SLF4J and 
+						<!-- check that neither JCL nor log4j is used for logging - SLF4J and
 							LOGBack should be used for logging (ignore in Eclipse!) -->
 						<execution>
 							<id>enforce-logging-dependecies</id>
