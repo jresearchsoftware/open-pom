@@ -106,7 +106,7 @@
 		<restygwt.ver>2.2.3</restygwt.ver>
 		<cglib.ver>3.2.4</cglib.ver>
 		<flyway.ver>5.0.7</flyway.ver>
-		<gwtmaterialdesign.ver>2.0.1</gwtmaterialdesign.ver>
+		<gwtmaterialdesign.ver>2.1</gwtmaterialdesign.ver>
 		<mail.ver>1.4.7</mail.ver>
 		<groovy.ver>2.4.15</groovy.ver>
 		<logback-gelf.ver>0.3</logback-gelf.ver>
@@ -957,7 +957,7 @@
 				<plugin>
 					<groupId>net.ltgt.gwt.maven</groupId>
 					<artifactId>gwt-maven-plugin</artifactId>
-					<version>1.0-rc-9</version>
+					<version>1.0-rc-10</version>
 					<extensions>true</extensions>
 				</plugin>
 				<plugin>
