@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.jresearch</groupId>
 	<artifactId>org.jresearch.pom</artifactId>
@@ -134,7 +133,7 @@
 		<ehcache.ver>3.5.2</ehcache.ver>
 		<jboss-logging.ver>3.3.2.Final</jboss-logging.ver>
 		<elemental.ver>1.0.0-RC1</elemental.ver>
-		<elemento.ver>0.8.7-gwt2</elemento.ver>
+		<elemento.ver>0.8.7</elemento.ver>
 		<jjwt.ver>0.9.0</jjwt.ver>
 		<jadira.ver>7.0.0.CR1</jadira.ver>
 		<logback-gelf-appender.ver>1.4</logback-gelf-appender.ver>
@@ -195,6 +194,12 @@
 				<groupId>org.jboss.gwt.elemento</groupId>
 				<artifactId>elemento-core</artifactId>
 				<version>${elemento.ver}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.gwtproject.safehtml</groupId>
+						<artifactId>gwt-safehtml</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.gwt.elemento</groupId>
@@ -205,6 +210,12 @@
 				<groupId>org.jboss.gwt.elemento</groupId>
 				<artifactId>elemento-template-api</artifactId>
 				<version>${elemento.ver}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.gwtproject.safehtml</groupId>
+						<artifactId>gwt-safehtml</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.gwt.elemento</groupId>
