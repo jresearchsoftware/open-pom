@@ -142,9 +142,15 @@
 		<springfox-swagger2.ver>2.9.0</springfox-swagger2.ver>
 		<swagger-annotations.ver>1.5.18</swagger-annotations.ver>
 		<javax.annotation-api.ver>1.3.2</javax.annotation-api.ver>
+		<javax.inject.ver>1</javax.inject.ver>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>javax.inject</groupId>
+				<artifactId>javax.inject</artifactId>
+				<version>${javax.inject.ver}</version>
+			</dependency>
 			<dependency>
 				<groupId>io.swagger</groupId>
 				<artifactId>swagger-annotations</artifactId>
