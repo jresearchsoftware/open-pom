@@ -143,7 +143,7 @@
 		<swagger-annotations.ver>1.5.18</swagger-annotations.ver>
 		<javax.annotation-api.ver>1.3.2</javax.annotation-api.ver>
 		<javax.inject.ver>1</javax.inject.ver>
-		<lombok.ver>1.16.18</lombok.ver>
+		<lombok.ver>1.18.4</lombok.ver>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -1110,7 +1110,7 @@
 				</plugin>
 				<plugin>
 					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.7.0</version>
+					<version>3.8.0</version>
 					<configuration>
 						<source>1.8</source>
 						<target>1.8</target>
