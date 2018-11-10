@@ -975,6 +975,7 @@
 			<dependency>
 				<groupId>org.projectlombok</groupId>
 				<artifactId>lombok</artifactId>
+				<scope>provided</scope>
 				<version>${lombok.ver}</version>
 			</dependency>
 		</dependencies>
