@@ -50,6 +50,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<sitemapgen4j.ver>1.1.1</sitemapgen4j.ver>
 		<spring.version>5.1.2.RELEASE</spring.version>
+		<spring.security.version>5.1.1.RELEASE</spring.security.version>
 		<junit.ver>4.12</junit.ver>
 		<gwt.version>2.8.2</gwt.version>
 		<gwt-maven.version>2.8.2</gwt-maven.version>
@@ -578,7 +579,7 @@
 			<dependency>
 				<groupId>org.springframework.security</groupId>
 				<artifactId>spring-security-core</artifactId>
-				<version>${spring.version}</version>
+				<version>${spring.security.version}</version>
 			</dependency>
 
 			<dependency>
