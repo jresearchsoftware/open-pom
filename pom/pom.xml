@@ -822,6 +822,7 @@
 				<groupId>org.codehaus.groovy</groupId>
 				<artifactId>groovy-all</artifactId>
 				<version>${groovy.ver}</version>
+				<type>pom</type>
 			</dependency>
 			<dependency>
 				<groupId>com.squareup.okhttp</groupId>
