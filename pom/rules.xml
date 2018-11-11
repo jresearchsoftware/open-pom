@@ -26,5 +26,7 @@
 		<ignoreVersion type="regex">.*android</ignoreVersion>
 		<ignoreVersion type="regex">.*m\d*</ignoreVersion>
 		<ignoreVersion type="regex">.*p\d*</ignoreVersion>
+		<ignoreVersion type="regex">.*-PFD.*</ignoreVersion>
+		<ignoreVersion type="regex">.*gwt2</ignoreVersion>
 	</ignoreVersions>
 </ruleset>
