@@ -72,10 +72,9 @@
 		<!-- Due to GWT contains API 1.0.0 -->
 		<hibernate-validator.version>4.3.2.Final</hibernate-validator.version>
 		<validation-api.version>1.0.0.GA</validation-api.version>
-		<!-- <hibernate-validator.version>5.0.3.Final</hibernate-validator.version>
-			<validation-api.version>1.1.0.Final</validation-api.version> -->
+		<!-- <hibernate-validator.version>5.0.3.Final</hibernate-validator.version> <validation-api.version>1.1.0.Final</validation-api.version> -->
 		<javassist.version>3.24.0-GA</javassist.version>
-		<jpa.version>1.0.2</jpa.version>
+		<jpa.version>2.2</jpa.version>
 		<servlet-api.ver>3.1.0</servlet-api.ver>
 		<jsp-api.ver>2.3.1</jsp-api.ver>
 		<gin.version>3.0.0</gin.version>
@@ -436,11 +435,7 @@
 				<version>${servlet-api.ver}</version>
 				<scope>provided</scope>
 			</dependency>
-			<!-- <dependency>
-				<groupId>javax.xml</groupId>
-				<artifactId>jaxrpc-api</artifactId>
-				<version>1.1.3</version>
-			</dependency> -->
+			<!-- <dependency> <groupId>javax.xml</groupId> <artifactId>jaxrpc-api</artifactId> <version>1.1.3</version> </dependency> -->
 			<!-- JUnit -->
 			<dependency>
 				<groupId>junit</groupId>
@@ -530,8 +525,8 @@
 				<scope>runtime</scope>
 			</dependency>
 			<dependency>
-				<groupId>org.hibernate.javax.persistence</groupId>
-				<artifactId>hibernate-jpa-2.1-api</artifactId>
+				<groupId>javax.persistence</groupId>
+				<artifactId>javax.persistence-api</artifactId>
 				<version>${jpa.version}</version>
 			</dependency>
 			<dependency>
@@ -643,11 +638,7 @@
 				<version>${xalan.version}</version>
 			</dependency>
 			<!-- XML -->
-			<!-- <dependency>
-				<groupId>xerces</groupId>
-				<artifactId>xercesImpl</artifactId>
-				<version>${xerces.ver}</version>
-			</dependency> -->
+			<!-- <dependency> <groupId>xerces</groupId> <artifactId>xercesImpl</artifactId> <version>${xerces.ver}</version> </dependency> -->
 			<dependency>
 				<groupId>com.google.code.findbugs</groupId>
 				<artifactId>jsr305</artifactId>
@@ -1053,8 +1044,7 @@
 					<artifactId>maven-enforcer-plugin</artifactId>
 					<version>3.0.0-M2</version>
 					<executions>
-						<!-- check that neither JCL nor log4j is used for logging - SLF4J and
-							LOGBack should be used for logging (ignore in Eclipse!) -->
+						<!-- check that neither JCL nor log4j is used for logging - SLF4J and LOGBack should be used for logging (ignore in Eclipse!) -->
 						<execution>
 							<id>enforce-logging-dependecies</id>
 							<goals>
