@@ -436,11 +436,11 @@
 				<version>${servlet-api.ver}</version>
 				<scope>provided</scope>
 			</dependency>
-			<dependency>
+			<!-- <dependency>
 				<groupId>javax.xml</groupId>
 				<artifactId>jaxrpc-api</artifactId>
 				<version>1.1.3</version>
-			</dependency>
+			</dependency> -->
 			<!-- JUnit -->
 			<dependency>
 				<groupId>junit</groupId>
@@ -643,11 +643,11 @@
 				<version>${xalan.version}</version>
 			</dependency>
 			<!-- XML -->
-			<dependency>
+			<!-- <dependency>
 				<groupId>xerces</groupId>
 				<artifactId>xercesImpl</artifactId>
 				<version>${xerces.ver}</version>
-			</dependency>
+			</dependency> -->
 			<dependency>
 				<groupId>com.google.code.findbugs</groupId>
 				<artifactId>jsr305</artifactId>
