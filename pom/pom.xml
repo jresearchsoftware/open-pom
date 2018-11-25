@@ -46,7 +46,7 @@
 	<properties>
 		<!-- For docker -->
 		<maven.build.timestamp.format>yyyyMMdd-HHmmssSSS</maven.build.timestamp.format>
-		<docker.image>${build.finalName}</docker.image>
+		<docker.image>${project.build.finalName}</docker.image>
 		<!-- last NPE property -->
 		<m2e.jdt.annotationpath>C:\Development\work\repo\JRS\open\pom.general\pom\.null</m2e.jdt.annotationpath>
 		<!-- See http://docs.codehaus.org/display/MAVENUSER/POM+Element+for+Source+File+Encoding -->
