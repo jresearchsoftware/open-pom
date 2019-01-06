@@ -151,9 +151,15 @@
 		<spring-boot.ver>2.1.0.RELEASE</spring-boot.ver>
 		<kafka-clients.ver>1.0.0</kafka-clients.ver>
 		<kafka-avro-serializer.ver>4.0.0</kafka-avro-serializer.ver>
+		<ical4j.ver>3.0.5</ical4j.ver>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>org.mnode.ical4j</groupId>
+				<artifactId>ical4j</artifactId>
+				<version>${ical4j.ver}</version>
+			</dependency>
 			<dependency>
 				<groupId>org.apache.kafka</groupId>
 				<artifactId>kafka-clients</artifactId>
@@ -389,11 +395,7 @@
 				<scope>import</scope>
 			</dependency>
 			<!-- GWT dependencies below are due to scope settings -->
-			<!-- <dependency>
-				<groupId>com.google.gwt</groupId>
-				<artifactId>gwt-elemental</artifactId>
-				<version>${gwt.version}</version>
-			</dependency> -->
+			<!-- <dependency> <groupId>com.google.gwt</groupId> <artifactId>gwt-elemental</artifactId> <version>${gwt.version}</version> </dependency> -->
 			<dependency>
 				<groupId>com.google.gwt</groupId>
 				<artifactId>gwt-servlet</artifactId>
@@ -1284,8 +1286,7 @@
 					<version>3.0.0</version>
 					<executions>
 						<execution>
-            				<!-- sets the only.when.is.snapshot.used property to true
-            				if SNAPSHOT was used, to the project version otherwise -->
+							<!-- sets the only.when.is.snapshot.used property to true if SNAPSHOT was used, to the project version otherwise -->
 							<id>build-helper-regex-is-snapshot-used</id>
 							<goals>
 								<goal>regex-property</goal>
@@ -1354,20 +1355,7 @@
 				<artifactId>flatten-maven-plugin</artifactId>
 			</plugin>
 			<!-- use the following snapshot to disable flatten-maven-plugin for selected projects -->
-<!-- <build>
-		<plugins>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>flatten-maven-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>flatten</id>
-						<phase>none</phase>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins>
-	</build> -->
+			<!-- <build> <plugins> <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>flatten-maven-plugin</artifactId> <executions> <execution> <id>flatten</id> <phase>none</phase> </execution> </executions> </plugin> </plugins> </build> -->
 		</plugins>
 	</build>
 	<distributionManagement>
