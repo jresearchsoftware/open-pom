@@ -51,16 +51,16 @@
 		<!-- See http://docs.codehaus.org/display/MAVENUSER/POM+Element+for+Source+File+Encoding -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<sitemapgen4j.ver>1.1.1</sitemapgen4j.ver>
-		<spring.version>5.1.2.RELEASE</spring.version>
-		<spring.security.version>5.1.1.RELEASE</spring.security.version>
+		<spring.version>5.1.4.RELEASE</spring.version>
+		<spring.security.version>5.1.3.RELEASE</spring.security.version>
 		<junit.ver>4.12</junit.ver>
 		<gwt.version>2.8.2</gwt.version>
 		<gwt-maven.version>2.8.2</gwt-maven.version>
 		<tomcat.ver>5.5.23</tomcat.ver>
 		<xerces.ver>2.11.0.SP5</xerces.ver>
-		<asm.ver>5.1</asm.ver>
+		<asm.ver>6.2.1</asm.ver>
 		<hibernate.version>5.3.7.Final</hibernate.version>
-		<guava.version>27.0-jre</guava.version>
+		<guava.version>27.0.1-jre</guava.version>
 		<orika.version>1.5.2</orika.version>
 		<logback.version>1.2.3</logback.version>
 		<jsr305.version>3.0.2</jsr305.version>
@@ -76,7 +76,7 @@
 		<hibernate-validator.version>4.3.2.Final</hibernate-validator.version>
 		<validation-api.version>1.0.0.GA</validation-api.version>
 		<!-- <hibernate-validator.version>5.0.3.Final</hibernate-validator.version> <validation-api.version>1.1.0.Final</validation-api.version> -->
-		<javassist.version>3.24.0-GA</javassist.version>
+		<javassist.version>3.24.1-GA</javassist.version>
 		<jpa.version>2.2</jpa.version>
 		<servlet-api.ver>3.1.0</servlet-api.ver>
 		<jsp-api.ver>2.3.1</jsp-api.ver>
@@ -85,11 +85,11 @@
 		<ehcache-spring-annotations.version>1.2.0</ehcache-spring-annotations.version>
 		<gwt-maps-api.version>3.10.0-alpha-7</gwt-maps-api.version>
 		<xalan.version>2.7.2</xalan.version>
-		<streamex.version>0.6.7</streamex.version>
+		<streamex.version>0.6.8</streamex.version>
 		<json.version>20160212</json.version>
 		<gwtquery.version>1.5-beta1</gwtquery.version>
 		<tomcat-dbcp.ver>8.5.20</tomcat-dbcp.ver>
-		<spring-ws.ver>3.0.4.RELEASE</spring-ws.ver>
+		<spring-ws.ver>3.0.6.RELEASE</spring-ws.ver>
 		<commons-net.ver>3.3</commons-net.ver>
 		<logback-ext-loggly.ver>0.1.5</logback-ext-loggly.ver>
 		<urlrewritefilter.ver>4.0.4</urlrewritefilter.ver>
@@ -97,24 +97,24 @@
 		<commons-io.ver>2.5</commons-io.ver>
 		<joda-time.ver>2.10.1</joda-time.ver>
 		<derby.ver>10.14.2.0</derby.ver>
-		<selenium.ver>3.141.5</selenium.ver>
+		<selenium.ver>3.141.59</selenium.ver>
 		<spring-modules-validation.ver>0.8a</spring-modules-validation.ver>
 		<postgresql.ver>42.2.5</postgresql.ver>
-		<jackson-databind.ver>2.9.7</jackson-databind.ver>
-		<jackson-core.ver>2.9.7</jackson-core.ver>
-		<jackson-annotations.ver>2.9.7</jackson-annotations.ver>
+		<jackson-databind.ver>2.9.8</jackson-databind.ver>
+		<jackson-core.ver>2.9.8</jackson-core.ver>
+		<jackson-annotations.ver>2.9.8</jackson-annotations.ver>
 		<gwtchosen.ver>3.0.1</gwtchosen.ver>
 		<okhttp.ver>2.7.5</okhttp.ver>
 		<restygwt.ver>2.2.3</restygwt.ver>
 		<cglib.ver>3.2.4</cglib.ver>
-		<flyway.ver>5.2.1</flyway.ver>
+		<flyway.ver>5.2.4</flyway.ver>
 		<gwtmaterialdesign.ver>2.1.1</gwtmaterialdesign.ver>
 		<mail.ver>1.4.7</mail.ver>
-		<groovy.ver>2.5.4</groovy.ver>
+		<groovy.ver>2.5.5</groovy.ver>
 		<logback-gelf.ver>0.3</logback-gelf.ver>
 		<selenium-client-factory.ver>2.14</selenium-client-factory.ver>
 		<gwt-jackson.ver>0.15.4</gwt-jackson.ver>
-		<mockito.ver>2.23.0</mockito.ver>
+		<mockito.ver>2.23.4</mockito.ver>
 		<gwt-traction.ver>1.6.0.1</gwt-traction.ver>
 		<tooltip.ver>1.1</tooltip.ver>
 		<gwt-ajaxloader.ver>1.1.0</gwt-ajaxloader.ver>
@@ -122,21 +122,21 @@
 		<jsinterop.ver>1.0.2</jsinterop.ver>
 		<reflections.ver>0.9.11</reflections.ver>
 		<jasperreports.ver>6.7.0</jasperreports.ver>
-		<sentry-logback.ver>1.7.14</sentry-logback.ver>
-		<aws-java-sdk-dynamodb.ver>1.11.447</aws-java-sdk-dynamodb.ver>
-		<aws-java-sdk-core.ver>1.11.447</aws-java-sdk-core.ver>
+		<sentry-logback.ver>1.7.16</sentry-logback.ver>
+		<aws-java-sdk-dynamodb.ver>1.11.482</aws-java-sdk-dynamodb.ver>
+		<aws-java-sdk-core.ver>1.11.482</aws-java-sdk-core.ver>
 		<spring-data-dynamodb.ver>4.5.1</spring-data-dynamodb.ver>
 		<aws-serverless-java-container.ver>1.1.4</aws-serverless-java-container.ver>
 		<aws-lambda-java-core.ver>1.2.0</aws-lambda-java-core.ver>
-		<aws-lambda-java-events.ver>2.2.3</aws-lambda-java-events.ver>
-		<spring-data.ver>2.1.2.RELEASE</spring-data.ver>
+		<aws-lambda-java-events.ver>2.2.5</aws-lambda-java-events.ver>
+		<spring-data.ver>2.1.4.RELEASE</spring-data.ver>
 		<aws-lambda-java-log4j.ver>1.0.0</aws-lambda-java-log4j.ver>
 		<eclipselink.ver>2.7.3</eclipselink.ver>
 		<eclipselink-persistence.ver>2.2.1</eclipselink-persistence.ver>
-		<ehcache.ver>3.6.2</ehcache.ver>
+		<ehcache.ver>3.6.3</ehcache.ver>
 		<jboss-logging.ver>3.3.2.Final</jboss-logging.ver>
 		<elemental.ver>1.0.0-RC1</elemental.ver>
-		<elemento.ver>0.8.7</elemento.ver>
+		<elemento.ver>0.9.0</elemento.ver>
 		<jjwt.ver>0.9.1</jjwt.ver>
 		<jadira.ver>7.0.0.CR1</jadira.ver>
 		<logback-gelf-appender.ver>1.4</logback-gelf-appender.ver>
@@ -147,7 +147,7 @@
 		<javax.inject.ver>1</javax.inject.ver>
 		<lombok.ver>1.18.4</lombok.ver>
 		<javax.ws.rs.ver>2.1.1</javax.ws.rs.ver>
-		<spring-boot.ver>2.1.0.RELEASE</spring-boot.ver>
+		<spring-boot.ver>2.1.2.RELEASE</spring-boot.ver>
 		<kafka-clients.ver>1.0.0</kafka-clients.ver>
 		<kafka-avro-serializer.ver>4.0.0</kafka-avro-serializer.ver>
 		<ical4j.ver>3.0.5</ical4j.ver>
