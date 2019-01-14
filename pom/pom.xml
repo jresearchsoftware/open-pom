@@ -136,7 +136,7 @@
 		<ehcache.ver>3.6.3</ehcache.ver>
 		<jboss-logging.ver>3.3.2.Final</jboss-logging.ver>
 		<elemental.ver>1.0.0-RC1</elemental.ver>
-		<elemento.ver>0.9.0</elemento.ver>
+		<elemento.ver>0.8.7</elemento.ver>
 		<jjwt.ver>0.9.1</jjwt.ver>
 		<jadira.ver>7.0.0.CR1</jadira.ver>
 		<logback-gelf-appender.ver>1.4</logback-gelf-appender.ver>
