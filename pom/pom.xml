@@ -1063,6 +1063,7 @@
 					<executions>
 						<execution>
 							<id>analyze</id>
+							<phase>test</phase>
 							<goals>
 								<goal>analyze-only</goal>
 							</goals>
