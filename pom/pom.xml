@@ -148,8 +148,8 @@
 		<lombok.ver>1.18.4</lombok.ver>
 		<javax.ws.rs.ver>2.1.1</javax.ws.rs.ver>
 		<spring-boot.ver>2.1.3.RELEASE</spring-boot.ver>
-		<kafka-clients.ver>1.0.0</kafka-clients.ver>
-		<kafka-avro-serializer.ver>4.0.0</kafka-avro-serializer.ver>
+		<kafka-clients.ver>2.0.0</kafka-clients.ver>
+		<kafka-avro-serializer.ver>5.0.0</kafka-avro-serializer.ver>
 		<ical4j.ver>3.0.5</ical4j.ver>
 		<error_prone_annotations.ver>2.2.0</error_prone_annotations.ver>
 		<javapoet.ver>1.11.1</javapoet.ver>
