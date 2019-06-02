@@ -1393,6 +1393,7 @@
 							<image>${docker.image}:${docker.tag}</image>
 							<tags>
 								<tag>${maven.build.timestamp}</tag>
+								<tag>${project.version}</tag>
 							</tags>
 						</to>
 						<container>
