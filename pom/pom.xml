@@ -58,9 +58,8 @@
 		<gwt-maven.version>2.8.2</gwt-maven.version>
 		<tomcat.ver>5.5.23</tomcat.ver>
 		<xerces.ver>2.11.0.SP5</xerces.ver>
-		<asm.ver>6.2.1</asm.ver>
 		<hibernate.version>5.4.2.Final</hibernate.version>
-		<guava.version>27.1-jre</guava.version>
+		<guava.version>28.1-jre</guava.version>
 		<orika.version>1.5.4</orika.version>
 		<logback.version>1.2.3</logback.version>
 		<jsr305.version>3.0.2</jsr305.version>
@@ -69,9 +68,9 @@
 		<httpclient.ver>4.5.8</httpclient.ver>
 		<httpcore.ver>4.4.11</httpcore.ver>
 		<maven.version>3.6.0</maven.version>
-		<aspectj.version>1.9.3</aspectj.version>
+		<aspectj.version>1.9.4</aspectj.version>
 		<hsqldb.ver>2.4.1</hsqldb.ver>
-		<slf4j.version>1.7.26</slf4j.version>
+		<slf4j.version>1.7.28</slf4j.version>
 		<!-- Due to GWT contains API 1.0.0 -->
 		<hibernate-validator.version>4.3.2.Final</hibernate-validator.version>
 		<validation-api.version>1.0.0.GA</validation-api.version>
@@ -99,10 +98,8 @@
 		<derby.ver>10.14.2.0</derby.ver>
 		<selenium.ver>3.141.59</selenium.ver>
 		<spring-modules-validation.ver>0.8a</spring-modules-validation.ver>
-		<postgresql.ver>42.2.5</postgresql.ver>
-		<jackson-databind.ver>2.9.8</jackson-databind.ver>
-		<jackson-core.ver>2.9.8</jackson-core.ver>
-		<jackson-annotations.ver>2.9.8</jackson-annotations.ver>
+		<postgresql.ver>42.2.8</postgresql.ver>
+		<jackson.ver>2.9.10</jackson.ver>
 		<gwtchosen.ver>3.0.1</gwtchosen.ver>
 		<okhttp.ver>2.7.5</okhttp.ver>
 		<restygwt.ver>2.2.4</restygwt.ver>
@@ -123,17 +120,17 @@
 		<reflections.ver>0.9.11</reflections.ver>
 		<jasperreports.ver>6.8.0</jasperreports.ver>
 		<sentry-logback.ver>1.7.22</sentry-logback.ver>
-		<aws-java-sdk-dynamodb.ver>1.11.541</aws-java-sdk-dynamodb.ver>
-		<aws-java-sdk-core.ver>1.11.541</aws-java-sdk-core.ver>
+		<aws-java-sdk-dynamodb.ver>1.11.642</aws-java-sdk-dynamodb.ver>
+		<aws-java-sdk-core.ver>1.11.642</aws-java-sdk-core.ver>
 		<spring-data-dynamodb.ver>4.5.1</spring-data-dynamodb.ver>
-		<aws-serverless-java-container.ver>1.3.1</aws-serverless-java-container.ver>
+		<aws-serverless-java-container.ver>1.3.2</aws-serverless-java-container.ver>
 		<aws-lambda-java-core.ver>1.2.0</aws-lambda-java-core.ver>
-		<aws-lambda-java-events.ver>2.2.6</aws-lambda-java-events.ver>
+		<aws-lambda-java-events.ver>2.2.7</aws-lambda-java-events.ver>
 		<spring-data.ver>2.1.6.RELEASE</spring-data.ver>
 		<aws-lambda-java-log4j.ver>1.0.0</aws-lambda-java-log4j.ver>
-		<eclipselink.ver>2.7.3</eclipselink.ver>
+		<eclipselink.ver>2.7.4</eclipselink.ver>
 		<eclipselink-persistence.ver>2.2.1</eclipselink-persistence.ver>
-		<ehcache.ver>3.7.1</ehcache.ver>
+		<ehcache.ver>3.8.1</ehcache.ver>
 		<jboss-logging.ver>3.4.0.Final</jboss-logging.ver>
 		<elemental.ver>1.0.0-RC1</elemental.ver>
 		<elemento.ver>0.8.7</elemento.ver>
@@ -145,7 +142,7 @@
 		<swagger-annotations.ver>1.5.22</swagger-annotations.ver>
 		<javax.annotation-api.ver>1.3.2</javax.annotation-api.ver>
 		<javax.inject.ver>1</javax.inject.ver>
-		<lombok.ver>1.18.4</lombok.ver>
+		<lombok.ver>1.18.10</lombok.ver>
 		<javax.ws.rs.ver>2.1.1</javax.ws.rs.ver>
 		<spring-boot.ver>2.1.4.RELEASE</spring-boot.ver>
 		<kafka-clients.ver>2.0.0</kafka-clients.ver>
@@ -159,7 +156,7 @@
 		<nitrite.ver>3.2.0</nitrite.ver>
 		<gwt-jackson-guava.ver>0.15.4</gwt-jackson-guava.ver>
 		<typesafe-config.ver>1.3.4</typesafe-config.ver>
-		<jooq.ver>3.11.11</jooq.ver>
+		<jooq.ver>3.12.1</jooq.ver>
 		<throwable-interfaces.ver>1.13</throwable-interfaces.ver>
 	</properties>
 	<dependencyManagement>
@@ -935,25 +932,11 @@
 				<version>${sitemapgen4j.ver}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.fasterxml.jackson.core</groupId>
-				<artifactId>jackson-databind</artifactId>
-				<version>${jackson-databind.ver}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.fasterxml.jackson.core</groupId>
-				<artifactId>jackson-annotations</artifactId>
-				<version>${jackson-annotations.ver}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.fasterxml.jackson.core</groupId>
-				<artifactId>jackson-annotations</artifactId>
-				<classifier>sources</classifier>
-				<version>${jackson-annotations.ver}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.fasterxml.jackson.core</groupId>
-				<artifactId>jackson-core</artifactId>
-				<version>${jackson-core.ver}</version>
+				<groupId>com.fasterxml.jackson</groupId>
+				<artifactId>jackson-bom</artifactId>
+				<version>${jackson.ver}</version>
+				<scope>import</scope>
+				<type>pom</type>
 			</dependency>
 			<dependency>
 				<groupId>com.github.gwtmaterialdesign</groupId>
