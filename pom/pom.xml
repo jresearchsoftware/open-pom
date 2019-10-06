@@ -1135,6 +1135,14 @@
 				<plugin>
 					<artifactId>maven-dependency-plugin</artifactId>
 					<version>3.1.1</version>
+					<!-- workaround for https://issues.apache.org/jira/browse/MDEP-613, remove after update to 3.1.2 -->
+					<dependencies>
+						<dependency>
+							<groupId>org.apache.maven.shared</groupId>
+							<artifactId>maven-dependency-analyzer</artifactId>
+							<version>1.11.1</version>
+						</dependency>
+					</dependencies>
 					<executions>
 						<execution>
 							<id>analyze</id>
