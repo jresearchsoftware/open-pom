@@ -159,21 +159,9 @@
 		<jooq.ver>3.12.1</jooq.ver>
 		<throwable-interfaces.ver>1.13</throwable-interfaces.ver>
 		<mapstruct.version>1.3.0.Final</mapstruct.version>
-		<sumologic-logback.version>1.3</sumologic-logback.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
-			<dependency>
-				<groupId>com.sumologic.plugins.logback</groupId>
-				<artifactId>sumologic-logback-appender</artifactId>
-				<version>${sumologic-logback.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>org.apache.logging.log4j</groupId>
-						<artifactId>log4j-core</artifactId>
-					</exclusion>
-				</exclusions>
-			</dependency>
 			<dependency>
 				<groupId>org.mapstruct</groupId>
 				<artifactId>mapstruct</artifactId>
