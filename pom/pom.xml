@@ -132,7 +132,7 @@
 		<eclipselink-persistence.ver>2.2.1</eclipselink-persistence.ver>
 		<ehcache.ver>3.8.1</ehcache.ver>
 		<jboss-logging.ver>3.4.1.Final</jboss-logging.ver>
-		<elemental.ver>1.0.0</elemental.ver>
+		<elemental.ver>1.0.0-RC1</elemental.ver>
 		<elemento.ver>0.9.6</elemento.ver>
 		<jjwt.ver>0.9.1</jjwt.ver>
 		<jadira.ver>7.0.0.CR1</jadira.ver>
