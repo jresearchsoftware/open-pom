@@ -1426,9 +1426,14 @@
 							</tags>
 						</to>
 						<container>
-							<useCurrentTimestamp>true</useCurrentTimestamp>
+							<creationTime>USE_CURRENT_TIMESTAMP</creationTime>
 						</container>
 					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>com.github.eirslett</groupId>
+					<artifactId>frontend-maven-plugin</artifactId>
+					<version>1.9.1</version>
 				</plugin>
 			</plugins>
 		</pluginManagement>
