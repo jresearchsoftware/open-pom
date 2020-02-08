@@ -133,6 +133,7 @@
 		<ehcache.ver>3.8.1</ehcache.ver>
 		<jboss-logging.ver>3.4.1.Final</jboss-logging.ver>
 		<elemental.ver>1.0.0-RC1</elemental.ver>
+		<elemento-new.ver>1.0.0-rc1</elemento-new.ver>
 		<elemento.ver>0.9.6</elemento.ver>
 		<jjwt.ver>0.9.1</jjwt.ver>
 		<jadira.ver>7.0.0.CR1</jadira.ver>
@@ -298,6 +299,17 @@
 				<groupId>io.jsonwebtoken</groupId>
 				<artifactId>jjwt</artifactId>
 				<version>${jjwt.ver}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.elemento</groupId>
+				<artifactId>elemento-core</artifactId>
+				<version>${elemento-new.ver}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.gwtproject.safehtml</groupId>
+						<artifactId>gwt-safehtml</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.gwt.elemento</groupId>
