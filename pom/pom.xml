@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.jresearch</groupId>
 	<artifactId>org.jresearch.pom</artifactId>
@@ -48,6 +46,8 @@
 		<!-- For docker -->
 		<maven.build.timestamp.format>yyyyMMdd-HHmmssSSS</maven.build.timestamp.format>
 		<docker.image>${project.build.finalName}</docker.image>
+		<helm.tag>${maven.build.timestamp}</helm.tag>
+		<helm.name>overide_projectId_in_project_POM</helm.name>
 		<!-- last NPE property -->
 		<m2e.jdt.annotationpath>C:\Development\work\repo\JRS\open\pom.general\pom\.null</m2e.jdt.annotationpath>
 		<!-- See http://docs.codehaus.org/display/MAVENUSER/POM+Element+for+Source+File+Encoding -->
@@ -1444,7 +1444,7 @@
 						<to>
 							<image>${docker.image}:${docker.tag}</image>
 							<tags>
-								<tag>${maven.build.timestamp}</tag>
+								<tag>${helm.tag}</tag>
 								<tag>${project.version}</tag>
 							</tags>
 						</to>
