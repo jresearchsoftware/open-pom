@@ -119,7 +119,8 @@
 		<tooltip.ver>1.1</tooltip.ver>
 		<gwt-ajaxloader.ver>1.1.0</gwt-ajaxloader.ver>
 		<guice-assistedinject.ver>4.2.2</guice-assistedinject.ver>
-		<jsinterop.ver>2.0.0</jsinterop.ver>
+		<jsinterop-annotations.ver>2.0.0</jsinterop-annotations.ver>
+		<jsinterop-base.ver>1.0.0</jsinterop-base.ver>
 		<reflections.ver>0.9.11</reflections.ver>
 		<jasperreports.ver>6.11.0</jasperreports.ver>
 		<sentry-logback.ver>1.7.29</sentry-logback.ver>
@@ -160,7 +161,7 @@
 		<nitrite.ver>3.3.0</nitrite.ver>
 		<gwt-jackson-guava.ver>0.15.4</gwt-jackson-guava.ver>
 		<typesafe-config.ver>1.4.0</typesafe-config.ver>
-		<jooq.ver>3.12.3</jooq.ver>
+		<jooq.ver>3.13.1</jooq.ver>
 		<throwable-interfaces.ver>1.13</throwable-interfaces.ver>
 		<mapstruct.version>1.3.1.Final</mapstruct.version>
 		<junit5.ver>5.6.0</junit5.ver>
@@ -386,6 +387,11 @@
 				<version>${elemental.ver}</version>
 			</dependency>
 			<dependency>
+				<groupId>com.google.elemental2</groupId>
+				<artifactId>elemental2-promise</artifactId>
+				<version>${elemental.ver}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.ehcache</groupId>
 				<artifactId>ehcache</artifactId>
 				<version>${ehcache.ver}</version>
@@ -495,8 +501,13 @@
 			<!-- GWT dependencies below are due to scope settings -->
 			<dependency>
 				<groupId>com.google.jsinterop</groupId>
+				<artifactId>base</artifactId>
+				<version>${jsinterop-base.ver}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.jsinterop</groupId>
 				<artifactId>jsinterop-annotations</artifactId>
-				<version>${jsinterop.ver}</version>
+				<version>${jsinterop-annotations.ver}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.google.gwt</groupId>
