@@ -156,6 +156,7 @@
 		<error_prone_annotations.ver>2.3.4</error_prone_annotations.ver>
 		<javapoet.ver>1.11.1</javapoet.ver>
 		<auto-service.ver>1.0-rc6</auto-service.ver>
+		<auto-common.ver>0.10</auto-common.ver>
 		<immutables.ver>2.8.3</immutables.ver>
 		<appdirs.ver>1.0.3</appdirs.ver>
 		<nitrite.ver>3.3.0</nitrite.ver>
@@ -168,6 +169,11 @@
 	</properties>
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>com.google.auto</groupId>
+				<artifactId>auto-common</artifactId>
+				<version>${auto-common.ver}</version>
+			</dependency>
 			<dependency>
 				<groupId>org.junit</groupId>
 				<artifactId>junit-bom</artifactId>
