@@ -120,7 +120,7 @@
 		<gwt-ajaxloader.ver>1.1.0</gwt-ajaxloader.ver>
 		<guice-assistedinject.ver>4.2.2</guice-assistedinject.ver>
 		<jsinterop-annotations.ver>2.0.0</jsinterop-annotations.ver>
-		<jsinterop-base.ver>1.0.0</jsinterop-base.ver>
+		<jsinterop-base.ver>1.0.0-RC1</jsinterop-base.ver>
 		<reflections.ver>0.9.11</reflections.ver>
 		<jasperreports.ver>6.11.0</jasperreports.ver>
 		<sentry-logback.ver>1.7.29</sentry-logback.ver>
