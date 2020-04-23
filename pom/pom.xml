@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.jresearch</groupId>
 	<artifactId>org.jresearch.pom</artifactId>
@@ -78,8 +76,7 @@
 		<!-- Due to GWT contains API 1.0.0 -->
 		<hibernate-validator.version>4.3.2.Final</hibernate-validator.version>
 		<validation-api.version>1.0.0.GA</validation-api.version>
-		<!-- <hibernate-validator.version>5.0.3.Final</hibernate-validator.version>
-			<validation-api.version>1.1.0.Final</validation-api.version> -->
+		<!-- <hibernate-validator.version>5.0.3.Final</hibernate-validator.version> <validation-api.version>1.1.0.Final</validation-api.version> -->
 		<javassist.version>3.26.0-GA</javassist.version>
 		<jpa.version>2.2</jpa.version>
 		<servlet-api.ver>3.1.0</servlet-api.ver>
@@ -169,9 +166,15 @@
 		<mapstruct.version>1.3.1.Final</mapstruct.version>
 		<junit5.ver>5.6.0</junit5.ver>
 		<jetty.ver>9.2.14.v20151106</jetty.ver>
+		<gson.ver>2.8.6</gson.ver>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>com.google.code.gson</groupId>
+				<artifactId>gson</artifactId>
+				<version>${gson.ver}</version>
+			</dependency>
 			<dependency>
 				<groupId>org.eclipse.jetty.websocket</groupId>
 				<artifactId>websocket-client</artifactId>
@@ -1226,8 +1229,7 @@
 				<plugin>
 					<artifactId>maven-dependency-plugin</artifactId>
 					<version>3.1.1</version>
-					<!-- workaround for https://issues.apache.org/jira/browse/MDEP-613,
-						remove after update to 3.1.2 -->
+					<!-- workaround for https://issues.apache.org/jira/browse/MDEP-613, remove after update to 3.1.2 -->
 					<dependencies>
 						<dependency>
 							<groupId>org.apache.maven.shared</groupId>
@@ -1260,8 +1262,7 @@
 					<artifactId>maven-enforcer-plugin</artifactId>
 					<version>3.0.0-M2</version>
 					<executions>
-						<!-- check that neither JCL nor log4j is used for logging - SLF4J and
-							LOGBack should be used for logging (ignore in Eclipse!) -->
+						<!-- check that neither JCL nor log4j is used for logging - SLF4J and LOGBack should be used for logging (ignore in Eclipse!) -->
 						<execution>
 							<id>enforce-logging-dependecies</id>
 							<goals>
@@ -1475,8 +1476,7 @@
 					<version>3.0.0</version>
 					<executions>
 						<execution>
-							<!-- sets the only.when.is.snapshot.used property to true if SNAPSHOT
-								was used, to the project version otherwise -->
+							<!-- sets the only.when.is.snapshot.used property to true if SNAPSHOT was used, to the project version otherwise -->
 							<id>build-helper-regex-is-snapshot-used</id>
 							<goals>
 								<goal>regex-property</goal>
@@ -1550,11 +1550,8 @@
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>flatten-maven-plugin</artifactId>
 			</plugin>
-			<!-- use the following snapshot to disable flatten-maven-plugin for selected
-				projects -->
-			<!-- <build> <plugins> <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>flatten-maven-plugin</artifactId>
-				<executions> <execution> <id>flatten</id> <phase>none</phase> </execution>
-				</executions> </plugin> </plugins> </build> -->
+			<!-- use the following snapshot to disable flatten-maven-plugin for selected projects -->
+			<!-- <build> <plugins> <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>flatten-maven-plugin</artifactId> <executions> <execution> <id>flatten</id> <phase>none</phase> </execution> </executions> </plugin> </plugins> </build> -->
 		</plugins>
 	</build>
 	<distributionManagement>
