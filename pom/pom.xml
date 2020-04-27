@@ -1335,7 +1335,7 @@
 							versions:unlock-snapshots
 							com.google.code.maven-replacer-plugin:replacer:replace@snapshot
 							install</completionGoals>
-						<arguments>-DskipTests
+						<arguments>-DskipTests=true -Dmaven.test.skip=true
 							-Dincludes=com.jresearchsoft*:*,org.jresearch*:*
 							-Dexcludes=org.jresearch.logui:* -DallowSnapshots -DprocessParent</arguments>
 						<checkModificationExcludeList>pom.xml</checkModificationExcludeList>
