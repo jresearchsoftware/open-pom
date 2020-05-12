@@ -1336,8 +1336,8 @@
 							com.google.code.maven-replacer-plugin:replacer:replace@snapshot
 							install</completionGoals>
 						<arguments>-DskipTests=true -Dmaven.test.skip=true
-							-Dincludes=com.jresearchsoft*:*,org.jresearch*:*
-							-Dexcludes=org.jresearch.logui:* -DallowSnapshots -DprocessParent</arguments>
+							-DincludesList=com.jresearchsoft*:*,org.jresearch*:*
+							-DexcludesList=org.jresearch.logui:*,*:domino-slf4j-logger,*:typedarrays,*:gwt-cldr,*:gwt-nio,*:gwt-xhr -DallowSnapshots -DprocessParent</arguments>
 						<checkModificationExcludeList>pom.xml</checkModificationExcludeList>
 						<allowTimestampedSnapshots>true</allowTimestampedSnapshots>
 						<!-- All projects use the mercurial -->
