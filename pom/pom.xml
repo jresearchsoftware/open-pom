@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.jresearch</groupId>
 	<artifactId>org.jresearch.pom</artifactId>
@@ -1328,7 +1330,7 @@
 				</plugin>
 				<plugin>
 					<artifactId>maven-release-plugin</artifactId>
-					<version>2.5.3</version>
+					<version>3.0.0-M1</version>
 					<configuration>
 						<!-- version management -->
 						<completionGoals>clean versions:update-properties
@@ -1336,7 +1338,9 @@
 							com.google.code.maven-replacer-plugin:replacer:replace@snapshot
 							install</completionGoals>
 						<arguments>-DskipTests=true -Dmaven.test.skip=true -Dincludes=com.jresearchsoft*:*,org.jresearch*:* -Dexcludes=org.jresearch.logui:*,*:domino-slf4j-logger,*:typedarrays,*:gwt-cldr,*:gwt-nio,*:gwt-xhr -DallowSnapshots -DprocessParent</arguments>
-						<checkModificationExcludeList>pom.xml</checkModificationExcludeList>
+						<checkModificationExcludes>
+							<checkModificationExclude>**/pom.xml</checkModificationExclude>
+						</checkModificationExcludes>
 						<allowTimestampedSnapshots>true</allowTimestampedSnapshots>
 						<!-- All projects use the mercurial -->
 						<localCheckout>false</localCheckout>
