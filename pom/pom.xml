@@ -156,7 +156,7 @@
 		<ical4j.ver>3.0.11</ical4j.ver>
 		<error_prone_annotations.ver>2.3.4</error_prone_annotations.ver>
 		<javapoet.ver>1.11.1</javapoet.ver>
-		<auto-service.ver>1.0-rc6</auto-service.ver>
+		<auto-service.ver>1.0-rc7</auto-service.ver>
 		<auto-common.ver>0.10</auto-common.ver>
 		<immutables.ver>2.8.3</immutables.ver>
 		<appdirs.ver>1.0.3</appdirs.ver>
@@ -1230,15 +1230,7 @@
 				</plugin>
 				<plugin>
 					<artifactId>maven-dependency-plugin</artifactId>
-					<version>3.1.1</version>
-					<!-- workaround for https://issues.apache.org/jira/browse/MDEP-613, remove after update to 3.1.2 -->
-					<dependencies>
-						<dependency>
-							<groupId>org.apache.maven.shared</groupId>
-							<artifactId>maven-dependency-analyzer</artifactId>
-							<version>1.11.1</version>
-						</dependency>
-					</dependencies>
+					<version>3.1.2</version>
 					<executions>
 						<execution>
 							<id>analyze</id>
@@ -1345,7 +1337,7 @@
 						<!-- All projects use the mercurial -->
 						<localCheckout>false</localCheckout>
 						<pushChanges>true</pushChanges>
-						<tagNameFormat>@{project.version}</tagNameFormat>
+						<tagNameFormat>v@{project.version}</tagNameFormat>
 						<autoVersionSubmodules>true</autoVersionSubmodules>
 					</configuration>
 				</plugin>
