@@ -169,9 +169,21 @@
 		<junit5.ver>5.6.0</junit5.ver>
 		<jetty.ver>9.2.14.v20151106</jetty.ver>
 		<gson.ver>2.8.6</gson.ver>
+		<lang-tag.ver>1.5</lang-tag.ver>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>com.nimbusds</groupId>
+				<artifactId>lang-tag</artifactId>
+				<version>${lang-tag.ver}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.nimbusds</groupId>
+				<artifactId>lang-tag</artifactId>
+				<classifier>sources</classifier>
+				<version>${lang-tag.ver}</version>
+			</dependency>
 			<dependency>
 				<groupId>com.google.code.gson</groupId>
 				<artifactId>gson</artifactId>
@@ -1329,7 +1341,10 @@
 							versions:unlock-snapshots
 							com.google.code.maven-replacer-plugin:replacer:replace@snapshot
 							install</completionGoals>
-						<arguments>-DskipTests=true -Dmaven.test.skip=true -Dincludes=com.jresearchsoft*:*,org.jresearch*:* -Dexcludes=org.jresearch.logui:*,*:domino-slf4j-logger,*:typedarrays,*:gwt-cldr,*:gwt-nio,*:gwt-xhr -DallowSnapshots -DprocessParent</arguments>
+						<arguments>-DskipTests=true -Dmaven.test.skip=true
+							-Dincludes=com.jresearchsoft*:*,org.jresearch*:*
+							-Dexcludes=org.jresearch.logui:*,*:domino-slf4j-logger,*:typedarrays,*:gwt-cldr,*:gwt-nio,*:gwt-xhr
+							-DallowSnapshots -DprocessParent</arguments>
 						<checkModificationExcludes>
 							<checkModificationExclude>**/pom.xml</checkModificationExclude>
 						</checkModificationExcludes>
