@@ -9,7 +9,7 @@
 	<packaging>pom</packaging>
 	<name>Jresearch general POM</name>
 	<description>Jresearch root pom</description>
-	<url>https://bitbucket.org/JRS/open-pom.general</url>
+	<url>https://helixteamhub.cloud/JRS/projects/open/repositories/mercurial/pom.general</url>
 	<licenses>
 		<license>
 			<name>The Apache License, Version 2.0</name>
@@ -17,9 +17,9 @@
 		</license>
 	</licenses>
 	<scm>
-		<connection>scm:hg:ssh://hg@bitbucket.org/JRS/open-pom.general</connection>
-		<developerConnection>scm:hg:ssh://hg@bitbucket.org/JRS/open-pom.general</developerConnection>
-		<url>https://bitbucket.org/JRS/open-pom.general</url>
+		<connection>scm:hg:ssh://hth@helixteamhub.cloud/JRS/projects/open/repositories/mercurial/pom.general</connection>
+		<developerConnection>scm:hg:ssh://hth@helixteamhub.cloud/JRS/projects/open/repositories/mercurial/pom.general</developerConnection>
+		<url>https://helixteamhub.cloud/JRS/projects/open/repositories/mercurial/pom.general</url>
 	</scm>
 	<developers>
 		<developer>
