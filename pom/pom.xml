@@ -903,7 +903,7 @@
 			<dependency>
 				<groupId>com.google.api</groupId>
 				<artifactId>gwt-oauth2</artifactId>
-				<version>${gwt-oauth2}</version>
+				<version>${gwt-oauth2.ver}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.httpcomponents</groupId>
