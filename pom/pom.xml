@@ -111,7 +111,7 @@
 		<flyway-core.ver>5.2.4.1</flyway-core.ver>
 		<gwtmaterialdesign.ver>2.1.1</gwtmaterialdesign.ver>
 		<mail.ver>1.4.7</mail.ver>
-		<groovy.ver>2.5.8</groovy.ver>
+		<groovy.ver>2.5.14</groovy.ver>
 		<logback-gelf.ver>0.3</logback-gelf.ver>
 		<selenium-client-factory.ver>2.14</selenium-client-factory.ver>
 		<gwt-jackson.ver>0.15.4</gwt-jackson.ver>
