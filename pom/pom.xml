@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.jresearch</groupId>
 	<artifactId>org.jresearch.pom</artifactId>
@@ -1314,8 +1312,7 @@
 										</excludes>
 									</bannedDependencies>
 									<!-- <requireUpperBoundDeps/> -->
-									<requireManagedDeps
-										implementation="org.commonjava.maven.enforcer.rule.EnforceManagedDepsRule">
+									<requireManagedDeps implementation="org.commonjava.maven.enforcer.rule.EnforceManagedDepsRule">
 										<checkProfiles>true</checkProfiles>
 										<failOnViolation>false</failOnViolation>
 									</requireManagedDeps>
@@ -1355,6 +1352,30 @@
 						<allowDowngrade>true</allowDowngrade>
 						<processDependencyManagementTransitive>false</processDependencyManagementTransitive>
 					</configuration>
+					<executions>
+						<execution>
+							<id>update-snapshot</id>
+							<goals>
+								<goal>update-properties</goal>
+								<goal>unlock-snapshots</goal>
+							</goals>
+							<configuration>
+								<includes>
+									<include>com.jresearchsoft*:*</include>
+									<include>org.jresearch*:*</include>
+								</includes>
+								<excludes>
+									<exclude>org.jresearch.logui:*</exclude>
+									<exclude>*:domino-slf4j-logger</exclude>
+									<exclude>*:typedarrays</exclude>
+									<exclude>*:gwt-cldr</exclude>
+									<exclude>*:gwt-nio</exclude>
+								</excludes>
+								<allowSnapshots>true</allowSnapshots>
+								<processParent>true</processParent>
+							</configuration>
+						</execution>
+					</executions>
 				</plugin>
 				<plugin>
 					<artifactId>maven-compiler-plugin</artifactId>
@@ -1369,14 +1390,11 @@
 					<version>3.0.0-M1</version>
 					<configuration>
 						<!-- version management -->
-						<completionGoals>clean versions:update-properties
-							versions:unlock-snapshots
+						<completionGoals>clean versions:update-properties@update-snapshot
+							versions:unlock-snapshots@update-snapshot
 							com.google.code.maven-replacer-plugin:replacer:replace@snapshot
 							install</completionGoals>
-						<arguments>-DskipTests=true -Dmaven.test.skip=true
-							-Dincludes=com.jresearchsoft*:*,org.jresearch*:*
-							-Dexcludes=org.jresearch.logui:*,*:domino-slf4j-logger,*:typedarrays,*:gwt-cldr,*:gwt-nio
-							-DallowSnapshots -DprocessParent</arguments>
+						<arguments>-DskipTests=true -Dmaven.test.skip=true</arguments>
 						<checkModificationExcludes>
 							<checkModificationExclude>**/pom.xml</checkModificationExclude>
 						</checkModificationExcludes>
