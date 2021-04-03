@@ -1394,7 +1394,7 @@
 							versions:unlock-snapshots@update-snapshot
 							com.google.code.maven-replacer-plugin:replacer:replace@snapshot
 							install</completionGoals>
-						<arguments>-DskipTests=true -Dmaven.test.skip=true</arguments>
+						<arguments>-DskipTests=true</arguments>
 						<checkModificationExcludes>
 							<checkModificationExclude>**/pom.xml</checkModificationExclude>
 						</checkModificationExcludes>
