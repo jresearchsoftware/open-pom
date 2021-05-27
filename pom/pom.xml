@@ -1465,7 +1465,7 @@
 					<configuration>
 						<doclint>none</doclint>
 						<sourceFileExcludes>
-							<sourceFileExclude>**/generated-sources/*.java</sourceFileExclude>
+							<sourceFileExclude>**/generated-sources/**/*.java</sourceFileExclude>
 						</sourceFileExcludes>
 					</configuration>
 					<executions>
