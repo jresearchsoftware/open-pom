@@ -1467,6 +1467,7 @@
 						<sourceFileExcludes>
 							<sourceFileExclude>**/generated-sources/**/*.java</sourceFileExclude>
 						</sourceFileExcludes>
+						<sourcepath>${basedir}/src/main/java</sourcepath>
 					</configuration>
 					<executions>
 						<execution>
