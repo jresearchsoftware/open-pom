@@ -146,7 +146,7 @@
 		<swagger-annotations.ver>1.6.2</swagger-annotations.ver>
 		<javax.annotation-api.ver>1.3.2</javax.annotation-api.ver>
 		<javax.inject.ver>1</javax.inject.ver>
-		<lombok.ver>1.18.16</lombok.ver>
+		<lombok.ver>1.18.22</lombok.ver>
 		<javax.ws.rs.ver>2.1.1</javax.ws.rs.ver>
 		<spring-boot.ver>2.4.2</spring-boot.ver>
 		<kafka-clients.ver>2.0.0</kafka-clients.ver>
@@ -183,6 +183,10 @@
 		<sysout-over-slf4j.ver>1.0.2</sysout-over-slf4j.ver>
 		<gwt-oauth2.ver>0.2</gwt-oauth2.ver>
 		<sauce_junit.ver>[1.0.0,)</sauce_junit.ver>
+
+        <!-- ⬇️⬇️⬇️Plugins version properties⬇️⬇️⬇️ -->
+		<git-commit-id-maven-plugin.version>5.0.0</git-commit-id-maven-plugin.version>
+		<owasp-dependency-check-maven.version>6.4.1</owasp-dependency-check-maven.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -1189,6 +1193,59 @@
 		<pluginManagement>
 			<plugins>
 				<plugin>
+					<groupId>io.github.git-commit-id</groupId>
+					<artifactId>git-commit-id-maven-plugin</artifactId>
+					<version>${git-commit-id-maven-plugin.version}</version>
+					<executions>
+						<execution>
+							<id>get-the-git-infos</id>
+							<goals>
+								<goal>revision</goal>
+							</goals>
+							<phase>initialize</phase>
+						</execution>
+					</executions>
+					<configuration>
+						<skipPoms>false</skipPoms>
+						<generateGitPropertiesFile>true</generateGitPropertiesFile>
+						<dateFormat>yyyyMMdd'T'HHmmss</dateFormat>
+						<dateFormatTimeZone>UTC</dateFormatTimeZone>
+						<includeOnlyProperties>
+							<includeOnlyProperty>^git.build.(time|version)$</includeOnlyProperty>
+							<includeOnlyProperty>^git.commit.id.(abbrev|full)$</includeOnlyProperty>
+						</includeOnlyProperties>
+						<commitIdGenerationMode>full</commitIdGenerationMode>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>com.github.volodya-lombrozo</groupId>
+					<artifactId>hg-revision-plugin</artifactId>
+					<version>0.11</version>
+					<executions>
+						<execution>
+							<phase>validate</phase>
+							<goals>
+								<goal>scan</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+				<plugin>
+					<groupId>org.owasp</groupId>
+					<artifactId>dependency-check-maven</artifactId>
+					<version>${owasp-dependency-check-maven.version}</version>
+					<configuration>
+						<failBuildOnCVSS>11</failBuildOnCVSS>
+					</configuration>
+					<executions>
+						<execution>
+							<goals>
+								<goal>check</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-shade-plugin</artifactId>
 					<version>3.2.4</version>
@@ -1584,6 +1641,11 @@
 			</plugins>
 		</pluginManagement>
 		<plugins>
+            <!-- Run owasp check on build -->
+			<plugin>
+				<groupId>org.owasp</groupId>
+				<artifactId>dependency-check-maven</artifactId>
+			</plugin>
 			<!-- set the dockerTag property to dev/latest -->
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
