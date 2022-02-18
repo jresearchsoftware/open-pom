@@ -163,7 +163,7 @@
 		<typesafe-config.ver>1.4.1</typesafe-config.ver>
 		<jooq.ver>3.13.1</jooq.ver>
 		<throwable-interfaces.ver>1.13</throwable-interfaces.ver>
-		<mapstruct.version>1.4.1.Final</mapstruct.version>
+		<mapstruct.version>1.4.2.Final</mapstruct.version>
 		<junit5.ver>5.7.0</junit5.ver>
 		<jetty.ver>9.2.14.v20151106</jetty.ver>
 		<gson.ver>2.8.6</gson.ver>
@@ -184,7 +184,7 @@
 		<gwt-oauth2.ver>0.2</gwt-oauth2.ver>
 		<sauce_junit.ver>[1.0.0,)</sauce_junit.ver>
 
-        <!-- ⬇️⬇️⬇️Plugins version properties⬇️⬇️⬇️ -->
+		<!-- ⬇️⬇️⬇️Plugins version properties⬇️⬇️⬇️ -->
 		<git-commit-id-maven-plugin.version>5.0.0</git-commit-id-maven-plugin.version>
 		<owasp-dependency-check-maven.version>6.4.1</owasp-dependency-check-maven.version>
 	</properties>
@@ -1641,7 +1641,7 @@
 			</plugins>
 		</pluginManagement>
 		<plugins>
-            <!-- Run owasp check on build -->
+			<!-- Run owasp check on build -->
 			<plugin>
 				<groupId>org.owasp</groupId>
 				<artifactId>dependency-check-maven</artifactId>
