@@ -15,7 +15,7 @@ jobs:
       uses: actions/setup-java@v2
       with:
         java-version: '17'
-        distribution: 'zulu'
+        distribution: 'temurin'
         cache: maven
     - uses: s4u/maven-settings-action@v2.5.0
       with:
@@ -27,6 +27,14 @@ jobs:
               "username": "${{ secrets.SONATYPE_USERNAME }}",
               "password": "${{ secrets.SONATYPE_PASSWORD }}"
           }]        
+    - name: Package and test
+      run: mvn -B package
+      working-directory: pom
+    - name: Publish Unit Test Results
+      uses: EnricoMi/publish-unit-test-result-action@v1
+      if: always()
+      with:
+        files: "**/target/surefire-reports/*.xml"
     - name: Deploy
-      run: mvn -B deploy
+      run: mvn -B deploy -Dmaven.test.skip
       working-directory: pom
