@@ -54,7 +54,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<sitemapgen4j.ver>1.1.2</sitemapgen4j.ver>
 		<spring.version>5.3.3</spring.version>
-		<spring.security.version>5.2.1.RELEASE</spring.security.version>
+		<spring.security.version>5.2.10.RELEASE</spring.security.version>
 		<junit.ver>4.13.1</junit.ver>
 		<gwt.version>2.8.2</gwt.version>
 		<gwt-maven.version>2.8.2</gwt-maven.version>
