@@ -19,7 +19,6 @@ jobs:
         cache: maven
     - uses: s4u/maven-settings-action@v2.5.0
       with:
-        override: false
         sonatypeSnapshots: true
         apacheSnapshots: true
         servers: |
