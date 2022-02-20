@@ -1457,7 +1457,7 @@
 						</checkModificationExcludes>
 						<allowTimestampedSnapshots>true</allowTimestampedSnapshots>
 						<!-- All projects use the mercurial -->
-						<localCheckout>false</localCheckout>
+						<localCheckout>true</localCheckout>
 						<!-- We will use GitHub action to push changes on success release -->  
 						<pushChanges>false</pushChanges>
 						<tagNameFormat>v@{project.version}</tagNameFormat>
@@ -1643,10 +1643,10 @@
 		</pluginManagement>
 		<plugins>
 			<!-- Run owasp check on build -->
-			<plugin>
+			<!-- <plugin>
 				<groupId>org.owasp</groupId>
 				<artifactId>dependency-check-maven</artifactId>
-			</plugin>
+			</plugin> -->
 			<!-- set the dockerTag property to dev/latest -->
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
