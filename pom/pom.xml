@@ -15,9 +15,8 @@
 		</license>
 	</licenses>
 	<scm>
-		<connection>scm:hg:ssh://hth@helixteamhub.cloud/JRS/projects/open/repositories/mercurial/pom.general</connection>
-		<developerConnection>scm:hg:ssh://hth@helixteamhub.cloud/JRS/projects/open/repositories/mercurial/pom.general</developerConnection>
-		<url>https://helixteamhub.cloud/JRS/projects/open/repositories/mercurial/pom.general</url>
+		<developerConnection>scm:git:https://github.com/jresearchsoftware/open-pom.git</developerConnection>
+		<url>https://github.com/jresearchsoftware/open-pom</url>
 	</scm>
 	<developers>
 		<developer>
@@ -43,6 +42,8 @@
 		<maven>3.3.9</maven>
 	</prerequisites>
 	<properties>
+		<!-- For sonar test coverage -->
+		<sonar.coverage.jacoco.xmlReportPaths>.**/target/site/jacoco-aggregate/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
 		<!-- For docker -->
 		<maven.build.timestamp.format>yyyyMMdd-HHmmssSSS</maven.build.timestamp.format>
 		<docker.image>${project.build.finalName}</docker.image>
@@ -187,6 +188,7 @@
 		<!-- ⬇️⬇️⬇️Plugins version properties⬇️⬇️⬇️ -->
 		<git-commit-id-maven-plugin.version>5.0.0</git-commit-id-maven-plugin.version>
 		<owasp-dependency-check-maven.version>6.4.1</owasp-dependency-check-maven.version>
+		<jacoco-maven-plugin.ver>0.8.7</jacoco-maven-plugin.ver>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -1458,7 +1460,7 @@
 						<allowTimestampedSnapshots>true</allowTimestampedSnapshots>
 						<!-- All projects use the mercurial -->
 						<localCheckout>true</localCheckout>
-						<!-- We will use GitHub action to push changes on success release -->  
+						<!-- We will use GitHub action to push changes on success release -->
 						<pushChanges>false</pushChanges>
 						<tagNameFormat>v@{project.version}</tagNameFormat>
 						<autoVersionSubmodules>true</autoVersionSubmodules>
@@ -1561,18 +1563,18 @@
 						<autoReleaseAfterClose>true</autoReleaseAfterClose>
 						<stagingProgressTimeoutMinutes>60</stagingProgressTimeoutMinutes>
 					</configuration>
-                    <dependencies>
-                        <!--
-                            TODO:
-                            Remove after OSSRH-66257, NEXUS-26993 are fixed,
-                            possibly via https://github.com/sonatype/nexus-maven-plugins/pull/91
-                        -->
-                        <dependency>
-                            <groupId>com.thoughtworks.xstream</groupId>
-                            <artifactId>xstream</artifactId>
-                            <version>1.4.15</version>
-                        </dependency>
-                    </dependencies>
+					<dependencies>
+						<!--
+							TODO:
+							Remove after OSSRH-66257, NEXUS-26993 are fixed,
+							possibly via https://github.com/sonatype/nexus-maven-plugins/pull/91
+						-->
+						<dependency>
+							<groupId>com.thoughtworks.xstream</groupId>
+							<artifactId>xstream</artifactId>
+							<version>1.4.15</version>
+						</dependency>
+					</dependencies>
 				</plugin>
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
@@ -1708,6 +1710,37 @@
 					<!-- attach javadoc -->
 					<plugin>
 						<artifactId>maven-javadoc-plugin</artifactId>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+			<id>coverage</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.jacoco</groupId>
+						<artifactId>jacoco-maven-plugin</artifactId>
+						<version>${jacoco-maven-plugin.ver}</version>
+						<executions>
+							<execution>
+								<id>prepare-agent</id>
+								<goals>
+									<goal>prepare-agent</goal>
+								</goals>
+							</execution>
+							<execution>
+								<id>report</id>
+								<goals>
+									<goal>report</goal>
+								</goals>
+								<configuration>
+									<formats>
+										<format>XML</format>
+									</formats>
+								</configuration>
+							</execution>
+						</executions>
 					</plugin>
 				</plugins>
 			</build>
