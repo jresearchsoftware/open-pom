@@ -7,7 +7,7 @@
 	<packaging>pom</packaging>
 	<name>Jresearch general POM</name>
 	<description>Jresearch root pom</description>
-	<url>https://helixteamhub.cloud/JRS/projects/open/repositories/mercurial/pom.general</url>
+	<url>https://github.com/jresearchsoftware/open-pom</url>
 	<licenses>
 		<license>
 			<name>The Apache License, Version 2.0</name>
@@ -43,7 +43,7 @@
 	</prerequisites>
 	<properties>
 		<!-- For sonar test coverage -->
-		<sonar.coverage.jacoco.xmlReportPaths>.**/target/site/jacoco-aggregate/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
+		<sonar.coverage.jacoco.xmlReportPaths>../**/target/**/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
 		<!-- For docker -->
 		<maven.build.timestamp.format>yyyyMMdd-HHmmssSSS</maven.build.timestamp.format>
 		<docker.image>${project.build.finalName}</docker.image>
