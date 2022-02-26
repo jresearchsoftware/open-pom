@@ -50,7 +50,7 @@
 		<sonar.coverage.jacoco.xmlReportPaths>../**/target/**/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
         <sonar.organization>foal</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar-maven-plugin.ver>3.9.1.2184</sonar-maven-plugin>
+        <sonar-maven-plugin.ver>3.9.1.2184</sonar-maven-plugin.ver>
 		<!-- For docker -->
 		<maven.build.timestamp.format>yyyyMMdd-HHmmssSSS</maven.build.timestamp.format>
 		<docker.image>${project.build.finalName}</docker.image>
