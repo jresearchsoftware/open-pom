@@ -74,7 +74,7 @@
 		<jsr305.version>3.0.2</jsr305.version>
 		<commons-fileupload.version>1.4</commons-fileupload.version>
 		<commons-lang3.version>3.11</commons-lang3.version>
-		<httpclient.ver>4.5.13</httpclient.ver>       D:\Development\work\repo\JRS.git\open\pom\pom\pom.xml
+		<httpclient.ver>4.5.13</httpclient.ver>       
 		<httpcore.ver>4.4.13</httpcore.ver>
 		<maven.version>3.6.3</maven.version>
 		<aspectj.version>1.9.6</aspectj.version>
