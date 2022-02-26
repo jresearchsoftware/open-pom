@@ -44,6 +44,9 @@
 	<properties>
 		<!-- For sonar test coverage -->
 		<sonar.coverage.jacoco.xmlReportPaths>../**/target/**/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
+        <sonar.organization>foal</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar-maven-plugin.ver>3.9.1.2184</sonar-maven-plugin>
 		<!-- For docker -->
 		<maven.build.timestamp.format>yyyyMMdd-HHmmssSSS</maven.build.timestamp.format>
 		<docker.image>${project.build.finalName}</docker.image>
@@ -68,7 +71,7 @@
 		<jsr305.version>3.0.2</jsr305.version>
 		<commons-fileupload.version>1.4</commons-fileupload.version>
 		<commons-lang3.version>3.11</commons-lang3.version>
-		<httpclient.ver>4.5.13</httpclient.ver>
+		<httpclient.ver>4.5.13</httpclient.ver>       D:\Development\work\repo\JRS.git\open\pom\pom\pom.xml
 		<httpcore.ver>4.4.13</httpcore.ver>
 		<maven.version>3.6.3</maven.version>
 		<aspectj.version>1.9.6</aspectj.version>
@@ -1336,9 +1339,9 @@
 					</executions>
 				</plugin>
 				<plugin>
-					<groupId>org.codehaus.mojo</groupId>
+					<groupId>org.sonarsource.scanner.maven</groupId>
 					<artifactId>sonar-maven-plugin</artifactId>
-					<version>3.7.0.1746</version>
+					<version>${sonar-maven-plugin.ver}</version>
 				</plugin>
 				<!-- environmental constraint checking configuraiton -->
 				<plugin>
