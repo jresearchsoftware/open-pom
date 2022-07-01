@@ -44,13 +44,13 @@
 	<properties>
 		<!-- See http://docs.codehaus.org/display/MAVENUSER/POM+Element+for+Source+File+Encoding -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>17</java.version>
+		<java.version>17</java.version>
 
 		<!-- For sonar test coverage -->
 		<sonar.coverage.jacoco.xmlReportPaths>../**/target/**/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
-        <sonar.organization>foal</sonar.organization>
-        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar-maven-plugin.ver>3.9.1.2184</sonar-maven-plugin.ver>
+		<sonar.organization>foal</sonar.organization>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+		<sonar-maven-plugin.ver>3.9.1.2184</sonar-maven-plugin.ver>
 		<!-- For docker -->
 		<maven.build.timestamp.format>yyyyMMdd-HHmmssSSS</maven.build.timestamp.format>
 		<docker.image>${project.build.finalName}</docker.image>
@@ -74,7 +74,7 @@
 		<jsr305.version>3.0.2</jsr305.version>
 		<commons-fileupload.version>1.4</commons-fileupload.version>
 		<commons-lang3.version>3.11</commons-lang3.version>
-		<httpclient.ver>4.5.13</httpclient.ver>       
+		<httpclient.ver>4.5.13</httpclient.ver>
 		<httpcore.ver>4.4.13</httpcore.ver>
 		<maven.version>3.6.3</maven.version>
 		<aspectj.version>1.9.6</aspectj.version>
@@ -195,7 +195,8 @@
 		<git-commit-id-maven-plugin.version>5.0.0</git-commit-id-maven-plugin.version>
 		<owasp-dependency-check-maven.version>6.4.1</owasp-dependency-check-maven.version>
 		<jacoco-maven-plugin.ver>0.8.7</jacoco-maven-plugin.ver>
-        <maven-compiler-plugin.ver>3.10.0</maven-compiler-plugin.ver>
+		<maven-compiler-plugin.ver>3.10.0</maven-compiler-plugin.ver>
+		<gwt-maven-plugin.ver>1.0.1</gwt-maven-plugin.ver>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -1302,7 +1303,7 @@
 				<plugin>
 					<groupId>net.ltgt.gwt.maven</groupId>
 					<artifactId>gwt-maven-plugin</artifactId>
-					<version>1.0.0</version>
+					<version>${gwt-maven-plugin.ver}</version>
 					<extensions>true</extensions>
 				</plugin>
 				<plugin>
