@@ -173,7 +173,7 @@
 		<mapstruct.version>1.4.2.Final</mapstruct.version>
 		<junit5.ver>5.7.0</junit5.ver>
 		<jetty.ver>9.2.14.v20151106</jetty.ver>
-		<gson.ver>2.8.6</gson.ver>
+		<gson.ver>2.8.9</gson.ver>
 		<lang-tag.ver>1.5</lang-tag.ver>
 		<aopalliance.ver>1.0</aopalliance.ver>
 		<activation.ver>1.1.1</activation.ver>
