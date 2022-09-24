@@ -107,7 +107,7 @@
 		<derby.ver>10.15.2.0</derby.ver>
 		<selenium.ver>3.141.59</selenium.ver>
 		<spring-modules-validation.ver>0.8a</spring-modules-validation.ver>
-		<postgresql.ver>42.3.3</postgresql.ver>
+		<postgresql.ver>42.3.7</postgresql.ver>
 		<jackson.ver>2.11.3</jackson.ver>
 		<gwtchosen.ver>3.0.1</gwtchosen.ver>
 		<okhttp.ver>2.7.5</okhttp.ver>
