@@ -78,7 +78,7 @@
 		<httpcore.ver>4.4.13</httpcore.ver>
 		<maven.version>3.6.3</maven.version>
 		<aspectj.version>1.9.6</aspectj.version>
-		<hsqldb.ver>2.5.1</hsqldb.ver>
+		<hsqldb.ver>2.7.1</hsqldb.ver>
 		<slf4j.version>1.7.30</slf4j.version>
 		<!-- Due to GWT contains API 1.0.0 -->
 		<hibernate-validator.version>4.3.2.Final</hibernate-validator.version>
