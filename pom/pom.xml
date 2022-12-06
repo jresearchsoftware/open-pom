@@ -98,7 +98,7 @@
 		<gwtquery.version>1.5-beta1</gwtquery.version>
 		<tomcat-dbcp.ver>8.5.20</tomcat-dbcp.ver>
 		<spring-ws.ver>3.0.8.RELEASE</spring-ws.ver>
-		<commons-net.ver>3.7.2</commons-net.ver>
+		<commons-net.ver>3.9.0</commons-net.ver>
 		<logback-ext-loggly.ver>0.1.5</logback-ext-loggly.ver>
 		<urlrewritefilter.ver>4.0.4</urlrewritefilter.ver>
 		<berkeleydb.ver>4.0.103</berkeleydb.ver>
