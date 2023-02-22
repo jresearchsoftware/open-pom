@@ -72,7 +72,7 @@
 		<orika.version>1.5.4</orika.version>
 		<logback.version>1.2.10</logback.version>
 		<jsr305.version>3.0.2</jsr305.version>
-		<commons-fileupload.version>1.4</commons-fileupload.version>
+		<commons-fileupload.version>1.5</commons-fileupload.version>
 		<commons-lang3.version>3.11</commons-lang3.version>
 		<httpclient.ver>4.5.13</httpclient.ver>
 		<httpcore.ver>4.4.13</httpcore.ver>
