@@ -43,7 +43,6 @@
     <properties>
         <hg-revision-plugin-version>0.12</hg-revision-plugin-version>
         <central-publishing-maven-plugin-version>0.8.0</central-publishing-maven-plugin-version>
-        <!--<nexus-staging-maven-plugin-version>1.6.8</nexus-staging-maven-plugin-version>-->
         <maven-gpg-plugin-version>3.2.8</maven-gpg-plugin-version>
         <replacer-version>1.5.3</replacer-version>
         <flyway-maven-plugin-version>11.12.0</flyway-maven-plugin-version>
@@ -482,30 +481,6 @@
                         </gpgArguments>
                     </configuration>
                 </plugin>
-                <!--<plugin>
-                    <groupId>org.sonatype.plugins</groupId>
-                    <artifactId>nexus-staging-maven-plugin</artifactId>
-                    <version>${nexus-staging-maven-plugin-version}</version>
-                    <extensions>true</extensions>
-                    <configuration>
-                        <serverId>ossrh</serverId>
-                        <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-                        <autoReleaseAfterClose>true</autoReleaseAfterClose>
-                        <stagingProgressTimeoutMinutes>60</stagingProgressTimeoutMinutes>
-                    </configuration>
-                    <dependencies>
-
-							TODO:
-							Remove after OSSRH-66257, NEXUS-26993 are fixed,
-							possibly via https://github.com/sonatype/nexus-maven-plugins/pull/91
-
-                        <dependency>
-                            <groupId>com.thoughtworks.xstream</groupId>
-                            <artifactId>xstream</artifactId>
-                            <version>1.4.15</version>
-                        </dependency>
-                    </dependencies>
-                </plugin>-->
                 <plugin>
                     <groupId>org.sonatype.central</groupId>
                     <artifactId>central-publishing-maven-plugin</artifactId>
@@ -597,11 +572,6 @@
             </plugins>
         </pluginManagement>
         <plugins>
-            <!-- Run owasp check on build -->
-            <!-- <plugin>
-				<groupId>org.owasp</groupId>
-				<artifactId>dependency-check-maven</artifactId>
-			</plugin> -->
             <!-- set the dockerTag property to dev/latest -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -623,10 +593,6 @@
                 <groupId>org.sonatype.central</groupId>
                 <artifactId>central-publishing-maven-plugin</artifactId>
             </plugin>
-            <!--<plugin>
-                <groupId>org.sonatype.plugins</groupId>
-                <artifactId>nexus-staging-maven-plugin</artifactId>
-            </plugin>-->
             <!-- flat the POM before install/deploy -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -640,12 +606,6 @@
             </executions> </plugin> </plugins> </build> -->
         </plugins>
     </build>
-    <!--<distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>-->
     <profiles>
         <profile>
             <!-- Enable on CI server -->
