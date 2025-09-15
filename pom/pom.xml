@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.jresearch</groupId>
     <artifactId>org.jresearch.pom</artifactId>
-    <version>31</version>
+    <version>32</version>
     <packaging>pom</packaging>
     <name>Jresearch general POM</name>
     <description>Jresearch root pom</description>
@@ -68,7 +68,8 @@
         <gwt-maven-plugin.ver>1.1.0</gwt-maven-plugin.ver>
         <gwt-maven.version>2.10.0</gwt-maven.version>
         <jooq.ver>3.20.7</jooq.ver>
-        <maven-release-plugin-version>3.1.1</maven-release-plugin-version>
+        <!-- We use this version due to POM file pom/pom.xml specified with the file command line argument does not exist -->
+        <maven-release-plugin-version>3.0.0-M5</maven-release-plugin-version>
         <maven-surefire-plugin-version>3.5.4</maven-surefire-plugin-version>
         <maven-deploy-plugin-version>3.1.4</maven-deploy-plugin-version>
         <maven-javadoc-plugin-version>3.11.3</maven-javadoc-plugin-version>
@@ -607,6 +608,19 @@
             </executions> </plugin> </plugins> </build> -->
         </plugins>
     </build>
+    <repositories>
+        <repository>
+            <name>Central Portal Snapshots</name>
+            <id>central-portal-snapshots</id>
+            <url>https://central.sonatype.com/repository/maven-snapshots/</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
     <profiles>
         <profile>
             <!-- Enable on CI server -->
